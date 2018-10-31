@@ -1,0 +1,21 @@
+# Vendor
+vendor/*
+web/app/themes/regionhalland/vendor/*
+
+# Cache
+web/app/themes/regionhalland/.cache-loader/*
+
+# OS
+.DS_Store
+
+# Application
+web/app/mu-plugins/*/
+web/app/plugins/*
+web/app/uploads/*
+
+vendor
+# Application
+
+# Dotenv
+.env
+.env.*
