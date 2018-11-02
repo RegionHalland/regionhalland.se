@@ -17,17 +17,24 @@
             $(".burger-menu__close-icon").toggle();
         });
 
+        alert("Jquery is on fire!")
         // ************************************
         // *** Find on page scroll function ***
         // ************************************    
         $('a[href^="#"]').on( "click", function() {
+        alert("start find-on-page");
         var target = $(this.hash);
+            alert(target.length);
             if (target.length) {
+                alert("Target has length!");
                 // Animate target
+                alert("start animate");
                 $('html,body').animate({scrollTop: target.offset().top}, 1000);
                 // Add class for highlight the text
+                alert("add class");
                 $(target).addClass("content-highlight");
-                // Wait 1.5 s and then remove the highlight class 
+                // Wait 1.5 s and then remove the highlight class
+                alert("set timeout"); 
                 setTimeout(function(){
                     $(target).removeClass("content-highlight");
                 }, 1500);
