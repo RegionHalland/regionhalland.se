@@ -23,6 +23,8 @@
         // ************************************    
         $('a[href^="#"]').on( "click", function() {
         alert("start find-on-page");
+        var myHash = location.hash;
+        alert("myHash = " + myHash);
         var target = $(this.hash);
             alert(target.length);
             if (target.length) {
