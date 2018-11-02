@@ -25,6 +25,9 @@
         alert("start find-on-page");
         var myHash = location.hash;
         alert("myHash = " + myHash);
+        var testTarget = $(":target");
+        alert("testTarget = " + testTarget);
+        alert(testTarget.length);
         var target = $(this.hash);
             alert(target.length);
             if (target.length) {
