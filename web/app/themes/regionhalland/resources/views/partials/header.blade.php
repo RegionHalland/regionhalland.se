@@ -38,7 +38,7 @@
                     </a>
                 </span>
                 <span class="ml1 pl1" style="border-left: 1px solid grey">
-                RegionHalland.se
+                www.regionhalland.se
                 </span>
             </div>
         </div>
