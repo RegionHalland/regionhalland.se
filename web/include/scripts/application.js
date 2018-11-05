@@ -22,13 +22,11 @@
         // ************************************    
         $('a[href^="#"]').on( "click", function() {
         alert("start find-on-page");
-        var myHash = location.hash;
-        alert("myHash = " + myHash);
-        var testTarget = $(":target");
-        alert("testTarget = " + testTarget);
-        alert(testTarget.length);
+        var newTarget = $(":target");
+        alert("newTarget = " + newTarget);
+        alert("newTargetLength = " + newTarget.length);
         var target = $(this.hash);
-            alert(target.length);
+            alert("targetLength = " + target.length);
             if (target.length) {
                 alert("Target has length!");
                 // Animate target
