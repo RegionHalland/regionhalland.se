@@ -33,8 +33,8 @@
             </div>
             <div class="col col-6">
                 <span>
-                    <a href="http://stage-rh.regionhalland.se/" class="rh-site-nav__logo" aria-label="Till startsidan">
-                        <img src="http://stage-rh.regionhalland.se/include/img/navigation_logo.svg" alt="">
+                    <a href="{!! env('WP_HOME') !!}" class="rh-site-nav__logo" aria-label="Till startsidan">
+                        <img src="{!! env('WP_HOME') !!}/include/img/navigation_logo.svg" alt="">
                     </a>
                 </span>
                 <span class="ml1 pl1" style="border-left: 1px solid grey">

@@ -17,7 +17,6 @@
             $(".burger-menu__close-icon").toggle();
         });
 
-        alert("Jquery is on fire!")
         // ************************************
         // *** Find on page scroll function ***
         // ************************************    
