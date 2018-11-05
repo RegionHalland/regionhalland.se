@@ -22,6 +22,7 @@
         // ************************************    
         $('a[href^="#"]').on( "click", function() {
         alert("start find-on-page");
+        alert(this);
         var target = $(this.hash);
             alert("targetLength = " + target.length);
             if (target.length) {
