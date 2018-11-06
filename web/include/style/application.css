@@ -12,8 +12,7 @@ html {
 
 .rh-get-sticky {
 		position: -webkit-sticky;
-    position: fixed;
-		position: sticky;
+    position: sticky;
 		top: 15px;
 	}
 

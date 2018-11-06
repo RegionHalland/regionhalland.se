@@ -1,7 +1,5 @@
 @if(function_exists('get_region_halland_find_on_page'))
-	<?php echo "funktionen finns" ?>
 	@php($myNavs = get_region_halland_find_on_page())
-	<?php var_dump($myNavs) ?>
 	@if(isset($myNavs) && count($myNavs) > 0)
 		@php($id = uniqid())
 		<nav class="content-nav-container rh-get-sticky">
