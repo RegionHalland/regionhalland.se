@@ -1,5 +1,5 @@
-@if(function_exists('get_region_halland_breadcrumbs'))
-	@php($myBreadcrumbs = get_region_halland_breadcrumbs())	
+@if(function_exists('get_region_halland_breadcrumbs_pages'))
+	@php($myBreadcrumbs = get_region_halland_breadcrumbs_pages())	
 	@if(isset($myBreadcrumbs))
 		<div class="pr2 pl2 pb1 pt2">
 			<div class="px3">
