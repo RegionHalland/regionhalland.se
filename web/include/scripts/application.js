@@ -17,21 +17,6 @@
             $(".burger-menu__close-icon").toggle();
         });
 
-        // *****************************
-        // *** Fix fixed css for IE  ***
-        // *****************************    
-        if ($("body.page-template-default")[0]){
-            $(window).scroll(debounce(function() {
-                var myContentPosition = Math.round($('#placeholder').offset().top);
-                var myPosition = Math.round($('#placeholder').offset().top - $(window).scrollTop());
-                if (myPosition < 30) {
-                    $("#content-nav-container").addClass("rh-get-fixed-sticky");
-                } else {
-                    $("#content-nav-container").removeClass("rh-get-fixed-sticky");
-                }
-            }, 10));   
-        }
-
         // ************************************
         // *** Find on page scroll function ***
         // ************************************    
@@ -59,6 +44,21 @@
             // Hide div with cookie notice text + button
             $("#cookie-notice").hide();
         });
+
+        // *****************************
+        // *** Fix fixed css for IE  ***
+        // *****************************    
+        if ($("body.page-template-default")[0]){
+            $(window).scroll(debounce(function() {
+                var myContentPosition = Math.round($('#placeholder').offset().top);
+                var myPosition = Math.round($('#placeholder').offset().top - $(window).scrollTop());
+                if (myPosition < 30) {
+                    $("#content-nav-container").addClass("rh-get-fixed-sticky");
+                } else {
+                    $("#content-nav-container").removeClass("rh-get-fixed-sticky");
+                }
+            }, 10));   
+        }
 
     });
 

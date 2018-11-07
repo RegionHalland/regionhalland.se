@@ -3,7 +3,7 @@
 	@if(isset($myNavs) && count($myNavs) > 0)
 		@php($id = uniqid())
 		<div id="placeholder"></div>
-		<nav class="content-nav-container rh-get-sticky">
+		<nav class="content-nav-container rh-get-sticky" id="content-nav-container">
 			<div class="content-nav">
 				<h4 id="{{ $id }}">Hitta på sidan</h4>
 				<ul class="content-nav__list" itemscope itemtype="http://schema.org/ItemList" aria-labelledby="{{ $id }}">
