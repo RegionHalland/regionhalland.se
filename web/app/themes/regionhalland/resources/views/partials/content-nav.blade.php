@@ -2,7 +2,7 @@
 	@php($myNavs = get_region_halland_find_on_page())
 	@if(isset($myNavs) && count($myNavs) > 0)
 		@php($id = uniqid())
-		<div id="placeholder"></div>
+		<div id="content-nav-placeholder"></div>
 		<nav class="content-nav-container rh-get-sticky" id="content-nav-container">
 			<div class="content-nav">
 				<h4 id="{{ $id }}">Hitta på sidan</h4>

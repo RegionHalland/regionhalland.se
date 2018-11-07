@@ -50,8 +50,8 @@
         // *****************************    
         if ($("body.page-template-default")[0]){
             $(window).scroll(debounce(function() {
-                var myContentPosition = Math.round($('#placeholder').offset().top);
-                var myPosition = Math.round($('#placeholder').offset().top - $(window).scrollTop());
+                var myContentPosition = Math.round($('#content-nav-placeholder').offset().top);
+                var myPosition = Math.round($('#content-nav-placeholder').offset().top - $(window).scrollTop());
                 if (myPosition < 30) {
                     $("#content-nav-container").addClass("rh-get-fixed-sticky");
                 } else {
