@@ -8,6 +8,11 @@ use Roots\Sage\Template\Blade;
 use Roots\Sage\Template\BladeProvider;
 
 /**
+ * Disable all plugin updates
+ */
+add_filter('site_transient_update_plugins', '__return_false');
+
+/**
  * Theme assets
  */
 add_action('wp_enqueue_scripts', function () {
