@@ -118,7 +118,7 @@
     "roots/wp-config": "1.0.0",
 
     "advanced-custom-fields/advanced-custom-fields-pro": "*",
-    "wpackagist-plugin/xml-sitemap-feed": "5.0.7",
+    "wpackagist-plugin/google-sitemap-generator": "4.1.0",
     "wpackagist-plugin/wp-nested-pages": "2.0.4",
     "wpackagist-plugin/disable-gutenberg": "*",
     "wpackagist-plugin/admin-menu-editor": "1.8.5",
