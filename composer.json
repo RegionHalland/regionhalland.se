@@ -31,17 +31,67 @@
       "type": "composer",
       "url": "https://wpackagist.org"
     },
-
+    {
+      "type": "vcs",
+      "url": "https://github.com/RegionHalland/region-halland-acf-add-theme-subpage.git"
+    },
+    {
+      "type": "vcs",
+      "url": "https://github.com/RegionHalland/region-halland-acf-cookie-notice.git"
+    },
+    {
+      "type": "vcs",
+      "url": "https://github.com/RegionHalland/region-halland-breadcrumbs.git"
+    },
+    {
+      "type": "vcs",
+      "url": "https://github.com/RegionHalland/region-halland-tree-first-level.git"
+    },
+    {
+      "type": "vcs",
+      "url": "https://github.com/RegionHalland/region-halland-mobile-detect.git"
+    },
+    {
+      "type": "vcs",
+      "url": "https://github.com/RegionHalland/region-halland-varbi-works.git"
+    },    
+    {
+      "type": "vcs",
+      "url": "https://github.com/RegionHalland/std-plugin.git"
+    },
+    {
+      "type": "vcs",
+      "url": "https://github.com/RegionHalland/region-halland-prepare-the-content.git"
+    },
+    {
+      "type": "vcs",
+      "url": "https://github.com/RegionHalland/region-halland-find-on-page.git"
+    },
+    {
+      "type": "vcs",
+      "url": "https://github.com/RegionHalland/region-halland-mixed-functions.git"
+    },
+    {
+      "type": "vcs",
+      "url": "https://github.com/RegionHalland/region-halland-page-children.git"
+    },
+    {
+      "type": "vcs",
+      "url": "https://github.com/RegionHalland/region-halland-nav-sidebar.git"
+    },
+    {
+      "type": "vcs",
+      "url": "https://github.com/RegionHalland/region-halland-nav-site.git"
+    },
     {
        "type": "vcs",
        "url": "https://github.com/RegionHalland/mfpconnect.git"
-     },
-     {
+    },
+    {
        "type": "vcs",
        "url": "https://github.com/RegionHalland/mfpconnectmedia.git"
-     },
-
-     {
+    },
+    {
        "type": "package",
        "package": {
          "name": "advanced-custom-fields/advanced-custom-fields-pro",
@@ -56,8 +106,7 @@
            "composer/installers": "^1.0"
          }
        }
-     }
-
+    }
   ],
   "require": {
     "php": ">=5.6",
@@ -67,15 +116,27 @@
     "oscarotero/env": "^1.1.0",
     "roots/wp-password-bcrypt": "1.0.0",
     "roots/wp-config": "1.0.0",
-
-        "wpackagist-plugin/disable-gutenberg": "*",
-        "regionhalland/mfpconnect": "1.0.1",
-        "regionhalland/mfpconnectmedia": "1.0.1",
-        "advanced-custom-fields/advanced-custom-fields-pro": "*"
-
+    "advanced-custom-fields/advanced-custom-fields-pro": "*",
+    "wpackagist-plugin/wp-nested-pages": "2.0.4",
+    "wpackagist-plugin/disable-gutenberg": "*",
+    "wpackagist-plugin/admin-menu-editor": "1.8.5",
+    "regionhalland/region-halland-acf-add-theme-subpage": "1.0.0",
+    "regionhalland/region-halland-acf-cookie-notice": "1.0.0",
+    "regionhalland/region-halland-breadcrumbs": "1.0.0",
+    "regionhalland/region-halland-tree-first-level": "1.0.0",
+    "regionhalland/region-halland-mobile-detect": "1.0.0",
+    "regionhalland/region-halland-varbi-works": "1.0.0",
+    "regionhalland/std-plugin": "4.0.3",
+    "regionhalland/region-halland-prepare-the-content": "1.0.0",
+    "regionhalland/region-halland-find-on-page": "1.0.1",
+    "regionhalland/region-halland-mixed-functions": "1.0.0",
+    "regionhalland/region-halland-page-children": "1.0.1",
+    "regionhalland/region-halland-nav-sidebar": "1.0.1",
+    "regionhalland/region-halland-nav-site": "1.0.0",
+    "regionhalland/mfpconnect": "1.0.1",
+    "regionhalland/mfpconnectmedia": "1.0.1"
   },
   "require-dev": {
-
     "squizlabs/php_codesniffer": "^3.0.2",
     "roave/security-advisories": "dev-master"
   },
