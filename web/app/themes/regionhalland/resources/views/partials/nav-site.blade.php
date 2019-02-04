@@ -7,7 +7,7 @@
 
 				{{-- Logo Container --}}
 				<a class="px-4" title="Gå till startsida" aria-label="Gå till startsida" href="{{ esc_url( home_url( '/' ) ) }}">
-					<img class="block w-40" alt="Region Halland - Vårdgivarwebben" src="{!! env('WP_HOME') !!}/include/img/navigation_logo.svg')" alt="">
+					<img class="block w-40" alt="Region Halland - Vårdgivarwebben" src="{!! env('WP_HOME') !!}/include/img/navigation_logo.svg" alt="">
 				</a>
 				{{-- Logo Container END--}}
 
