@@ -1,0 +1,543 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="7505a82e-1229-4b47-a8b3-5cf7c6957ded" name="Default Changelist" comment="Updated composer + disabled top-links">
+      <change afterPath="$PROJECT_DIR$/.htaccess" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/stage-rh.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/css/dashboard.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/css/fileuploader.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/css/jquery.bxslider.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/css/jquery.fancybox-1.3.4.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/css/jquery.timepicker.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/css/loading.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/css/msdropdown/dd.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/css/msdropdown/flags.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/css/msdropdown/skin2.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/css/msdropdown/sprite.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/css/new-css.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/css/no-theme/jquery-ui-1.9.2.custom.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/css/no-theme/jquery-ui-1.9.2.custom.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/css/print.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/css/select2.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/css/smoothness/images/ui-bg_flat_0_aaaaaa_40x100.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/css/smoothness/images/ui-bg_flat_75_ffffff_40x100.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/css/smoothness/images/ui-bg_glass_55_fbf9ee_1x400.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/css/smoothness/images/ui-bg_glass_65_ffffff_1x400.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/css/smoothness/images/ui-bg_glass_75_dadada_1x400.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/css/smoothness/images/ui-bg_glass_75_e6e6e6_1x400.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/css/smoothness/images/ui-bg_glass_95_fef1ec_1x400.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/css/smoothness/images/ui-bg_highlight-soft_75_cccccc_1x100.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/css/smoothness/images/ui-icons_222222_256x240.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/css/smoothness/images/ui-icons_2e83ff_256x240.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/css/smoothness/images/ui-icons_454545_256x240.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/css/smoothness/images/ui-icons_888888_256x240.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/css/smoothness/images/ui-icons_cd0a0a_256x240.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/css/smoothness/jquery-ui-1.9.2.custom.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/css/smoothness/jquery-ui-1.9.2.custom.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/css/swiper.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/css/toastr.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/css/ui-lightness/images/ui-bg_diagonals-thick_18_b81900_40x40.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/css/ui-lightness/images/ui-bg_diagonals-thick_20_666666_40x40.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/css/ui-lightness/images/ui-bg_flat_10_000000_40x100.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/css/ui-lightness/images/ui-bg_glass_100_f6f6f6_1x400.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/css/ui-lightness/images/ui-bg_glass_100_fdf5ce_1x400.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/css/ui-lightness/images/ui-bg_glass_65_ffffff_1x400.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/css/ui-lightness/images/ui-bg_gloss-wave_35_f6a828_500x100.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/css/ui-lightness/images/ui-bg_highlight-soft_100_eeeeee_1x100.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/css/ui-lightness/images/ui-bg_highlight-soft_75_ffe45c_1x100.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/css/ui-lightness/images/ui-icons_222222_256x240.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/css/ui-lightness/images/ui-icons_228ef1_256x240.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/css/ui-lightness/images/ui-icons_ef8c08_256x240.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/css/ui-lightness/images/ui-icons_ffd27a_256x240.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/css/ui-lightness/images/ui-icons_ffffff_256x240.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/css/ui-lightness/jquery-ui-1.9.2.custom.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/css/ui-lightness/jquery-ui-1.9.2.custom.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/css/ui.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/images/ajaxload.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/images/ajaxloadbig.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/images/chosen-sprite.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/images/fancybox/blank.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/images/fancybox/fancy_close.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/images/fancybox/fancy_loading.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/images/fancybox/fancy_nav_left.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/images/fancybox/fancy_nav_right.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/images/fancybox/fancy_shadow_e.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/images/fancybox/fancy_shadow_n.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/images/fancybox/fancy_shadow_ne.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/images/fancybox/fancy_shadow_nw.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/images/fancybox/fancy_shadow_s.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/images/fancybox/fancy_shadow_se.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/images/fancybox/fancy_shadow_sw.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/images/fancybox/fancy_shadow_w.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/images/fancybox/fancy_title_left.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/images/fancybox/fancy_title_main.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/images/fancybox/fancy_title_over.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/images/fancybox/fancy_title_right.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/images/fancybox/fancybox-x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/images/fancybox/fancybox-y.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/images/fancybox/fancybox.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/images/icons/accept.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/images/icons/add.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/images/icons/add2_16.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/images/icons/arrow_down_blue_16.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/images/icons/arrow_down_grey_16.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/images/icons/arrow_up_green_16.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/images/icons/arrow_up_grey_16.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/images/icons/box_24.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/images/icons/box_closed_16.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/images/icons/box_delete_16.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/images/icons/box_new_16.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/images/icons/box_open.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/images/icons/bullet-black-alt.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/images/icons/bullet-blue.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/images/icons/bullet_ball_yellow_16.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/images/icons/bullet_black.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/images/icons/bullet_blue.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/images/icons/bullet_dark_green.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/images/icons/bullet_green.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/images/icons/bullet_grey.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/images/icons/bullet_lightblue.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/images/icons/bullet_orange.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/images/icons/bullet_pink.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/images/icons/bullet_purple.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/images/icons/bullet_red (2).png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/images/icons/bullet_red.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/images/icons/bullet_red2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/images/icons/bullet_square_green_16.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/images/icons/bullet_square_grey_16.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/images/icons/bullet_square_orange_16.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/images/icons/bullet_square_red_16.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/images/icons/bullet_white.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/images/icons/bullet_yellow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/images/icons/cancel.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/images/icons/chart_24.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/images/icons/check2_16.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/images/icons/check2_24.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/images/icons/check_16.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/images/icons/check_24.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/images/icons/checkbox_16.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/images/icons/cog.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/images/icons/cog_error.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/images/icons/cog_go.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/images/icons/collector_16.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/images/icons/credit_16.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/images/icons/creditcards_16.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/images/icons/crome_icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/images/icons/cross.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/images/icons/cubes_16.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/images/icons/currency.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/images/icons/customer_16.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/images/icons/delete.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/images/icons/delete2_16.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/images/icons/delete_16.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/images/icons/document_16.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/images/icons/document_24.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/images/icons/document_delete_16.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/images/icons/document_ok_16.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/images/icons/duplicate_16.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/images/icons/email.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/images/icons/email_16.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/images/icons/error.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/images/icons/error_24.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/images/icons/exclamation.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/images/icons/file_manager.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/images/icons/gear_in.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/images/icons/gear_preferences_48.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/images/icons/globe.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/images/icons/help.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/images/icons/house.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/images/icons/house_24.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/images/icons/information.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/images/icons/invoice_16.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/images/icons/lightbulb.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/images/icons/lorry.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/images/icons/mail_24.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/images/icons/money_bag.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/images/icons/override.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/images/icons/package_16.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/images/icons/package_link.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/images/icons/paypal_16.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/images/icons/paypal_24.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/images/icons/pencil.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/images/icons/percent_16.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/images/icons/pixel.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/images/icons/product2_24.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/images/icons/role.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/images/icons/save.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/images/icons/sofort_16.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/images/icons/sofort_24.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/images/icons/star.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/images/icons/support_24.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/images/icons/support_finished_16.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/images/icons/table-money.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/images/icons/tag.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/images/icons/updown.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/images/icons/view_16.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/images/icons/view_24.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/images/icons/warning_24.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/images/icons/wrench_24.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/images/icons/zoom.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/images/logo.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/images/logos/HomeLogo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/images/logos/gear_preferences_48.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/images/msdropdown/icons/1273404841_tick_16.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/images/msdropdown/icons/Amex-56.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/images/msdropdown/icons/Cash-56.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/images/msdropdown/icons/Discover-56.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/images/msdropdown/icons/Mastercard-56.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/images/msdropdown/icons/Paypal-56.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/images/msdropdown/icons/Visa-56.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/images/msdropdown/icons/blank.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/images/msdropdown/icons/browser-chrome.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/images/msdropdown/icons/browser-firefox.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/images/msdropdown/icons/browser-msie.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/images/msdropdown/icons/browser-opera.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/images/msdropdown/icons/browser-safari.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/images/msdropdown/icons/button-large.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/images/msdropdown/icons/demoaction.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/images/msdropdown/icons/enabled.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/images/msdropdown/icons/flagssprite_small.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/images/msdropdown/icons/giftlelo_dot_com.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/images/msdropdown/icons/icon-search.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/images/msdropdown/icons/icon_calendar.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/images/msdropdown/icons/icon_cart.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/images/msdropdown/icons/icon_cd.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/images/msdropdown/icons/icon_email.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/images/msdropdown/icons/icon_faq.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/images/msdropdown/icons/icon_games.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/images/msdropdown/icons/icon_lockopen.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/images/msdropdown/icons/icon_music.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/images/msdropdown/icons/icon_phone.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/images/msdropdown/icons/icon_sales.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/images/msdropdown/icons/icon_secure.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/images/msdropdown/icons/icon_video.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/images/msdropdown/icons/jquery-msdropdown.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/images/msdropdown/icons/msDropDown.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/images/msdropdown/icons/preview.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/images/msdropdown/icons/sprite.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/images/msdropdown/icons/sprite.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/images/msdropdown/icons/tick.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/images/msdropdown/skin1/dd_arrow.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/images/msdropdown/skin1/title-bg.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/images/msdropdown/skin2/dd_arrow.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/images/msdropdown/skin2/icon-ok.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/images/msdropdown/skin2/title-bg.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/images/select2-spinner.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/images/select2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/images/select2x2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/images/selection_icons.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/images/star-color-25px.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/images/star-no-color-25px.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/images/ui/ui-bg_flat_0_aaaaaa_40x100.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/images/ui/ui-bg_flat_30_747474_40x100.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/images/ui/ui-bg_flat_55_f5edbc_40x100.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/images/ui/ui-bg_flat_75_747474_40x100.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/images/ui/ui-bg_flat_75_F5F5F5_40x100.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/images/ui/ui-bg_highlight-soft_75_F5F5F5_1x100.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/images/ui/ui-bg_inset-soft_95_fef1ec_1x100.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/images/ui/ui-icons_2e83ff_256x240.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/images/ui/ui-icons_747474_256x240.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/images/ui/ui-icons_999999_256x240.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/images/ui/ui-icons_FFFFFF_256x240.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/images/ui/ui-icons_cd0a0a_256x240.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/images/ui/ui-icons_e5e5e5_256x240.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/js/bindings/chart.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/js/factories/dashboard.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/js/fileuploader.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/js/helpers/AnchorDelete.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/js/helpers/AnchorDownload.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/js/javascript.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/js/jquery-1.5.1.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/js/jquery-1.7.2.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/js/jquery-1.8.3.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/js/jquery-1.8.3.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/js/jquery-ui-1.7.2.custom.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/js/jquery-ui-1.9.2.custom.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/js/jquery-ui-1.9.2.custom.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/js/jquery.bxslider.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/js/jquery.fancybox-1.3.4.pack.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/js/jquery.jstree.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/js/jquery.tablednd.0.6.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/js/jquery.tablednd.0.7.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/js/jquery.tablednd.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/js/jquery.timepicker.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/js/knockout-2.2.1.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/js/lsadmin.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/js/lsbolagen.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/js/math.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/js/models/customer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/js/models/dashboard.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/js/models/site.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/js/moment.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/js/msdropdown/jquery.dd.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/js/msdropdown/jquery.dd.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/js/paginator.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/js/pricecalculator.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/js/select2.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/js/select2_locale_sv.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/js/themes/apple/bg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/js/themes/apple/d.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/js/themes/apple/dot_for_ie.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/js/themes/apple/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/js/themes/apple/throbber.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/js/themes/classic/d.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/js/themes/classic/d.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/js/themes/classic/dot_for_ie.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/js/themes/classic/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/js/themes/classic/throbber.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/js/themes/default-rtl/d.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/js/themes/default-rtl/d.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/js/themes/default-rtl/dots.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/js/themes/default-rtl/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/js/themes/default-rtl/throbber.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/js/themes/default/d.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/js/themes/default/d.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/js/themes/default/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/js/themes/default/throbber.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/js/toastr.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/js/views/article.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/js/views/dialog.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/js/views/offer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/js/views/order.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/js/views/purchaseorder.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/js/views/ticket.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/swiper/2/40/sol_2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/swiper/2/41/sol_2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/swiper/2/42/mov_ccc.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/swiper/2/tmp/mov_bbb.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+    <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/app/themes/regionhalland/resources/views/template-section-landing.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="137">
+              <caret line="31" column="68" selection-start-line="31" selection-start-column="68" selection-end-line="31" selection-end-column="68" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/web/app/themes/regionhalland/resources/views/template-std.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="126">
+              <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/web/app/themes/regionhalland/resources/views/template-section-landing.blade.php" />
+        <option value="$PROJECT_DIR$/web/app/themes/regionhalland/resources/views/template-std.blade.php" />
+      </list>
+    </option>
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration">
+    <include_path>
+      <path value="$PROJECT_DIR$/vendor/johnpbloch/wordpress" />
+      <path value="$PROJECT_DIR$/vendor/vlucas/phpdotenv" />
+      <path value="$PROJECT_DIR$/vendor/johnpbloch/wordpress-core-installer" />
+      <path value="$PROJECT_DIR$/vendor/composer" />
+      <path value="$PROJECT_DIR$/vendor/roots/wp-config" />
+      <path value="$PROJECT_DIR$/vendor/roots/wp-password-bcrypt" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-ctype" />
+      <path value="$PROJECT_DIR$/vendor/squizlabs/php_codesniffer" />
+      <path value="$PROJECT_DIR$/vendor/philippbaschke/acf-pro-installer" />
+      <path value="$PROJECT_DIR$/vendor/oscarotero/env" />
+    </include_path>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="99" />
+    <option name="y" value="18" />
+    <option name="width" value="1401" />
+    <option name="height" value="822" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="stage-rh" type="b2602c69:ProjectViewProjectNode" />
+              <item name="regionhalland.se" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="stage-rh" type="b2602c69:ProjectViewProjectNode" />
+              <item name="regionhalland.se" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="stage-rh" type="b2602c69:ProjectViewProjectNode" />
+              <item name="regionhalland.se" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="stage-rh" type="b2602c69:ProjectViewProjectNode" />
+              <item name="regionhalland.se" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="themes" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="stage-rh" type="b2602c69:ProjectViewProjectNode" />
+              <item name="regionhalland.se" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="themes" type="462c0819:PsiDirectoryNode" />
+              <item name="regionhalland" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="stage-rh" type="b2602c69:ProjectViewProjectNode" />
+              <item name="regionhalland.se" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="themes" type="462c0819:PsiDirectoryNode" />
+              <item name="regionhalland" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="stage-rh" type="b2602c69:ProjectViewProjectNode" />
+              <item name="regionhalland.se" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="themes" type="462c0819:PsiDirectoryNode" />
+              <item name="regionhalland" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="true" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7505a82e-1229-4b47-a8b3-5cf7c6957ded" name="Default Changelist" comment="" />
+      <created>1549382083072</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1549382083072</updated>
+      <workItem from="1549382084833" duration="735000" />
+    </task>
+    <task id="LOCAL-00001" summary="Updated composer + disabled top-links">
+      <created>1549382446556</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1549382446556</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="735000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Favorites" side_tool="true" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24939272" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" />
+      <window_info active="true" anchor="bottom" id="Version Control" visible="true" weight="0.3285968" />
+      <window_info anchor="bottom" id="Messages" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="Remote Host" />
+      <window_info anchor="right" id="Database" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+    <option name="exactExcludedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/web/app/plugins/admin-menu-editor/modules/plugin-visibility/plugin-visibility.js" />
+        <option value="$PROJECT_DIR$/web/app/plugins/admin-menu-editor/modules/actor-selector/actor-selector.js" />
+        <option value="$PROJECT_DIR$/web/app/plugins/admin-menu-editor/js/actor-manager.js" />
+      </list>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Updated composer + disabled top-links" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated composer + disabled top-links" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/web/app/themes/regionhalland/resources/views/template-section-landing.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="137">
+          <caret line="31" column="68" selection-start-line="31" selection-start-column="68" selection-end-line="31" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/app/themes/regionhalland/resources/views/template-std.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
