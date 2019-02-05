@@ -29,7 +29,7 @@
 								@include('partials.section-navigation')
 							</div>
 							<div class="w-full lg:w-4/12 px-4 mt-12 lg:mt-0">
-								@include('partials.top-links')
+								{{-- @include('partials.top-links') --}}
 							</div>
 						</div>
 					</div>
