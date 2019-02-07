@@ -8,19 +8,21 @@
 		<div class="flex flex-wrap items-stretch -mx-4 {{ isset($nav_sidebar) && !empty($nav_sidebar) ? 'justify-start' : 'justify-between' }}">
 		
 		{{-- Sidebar --}}
-		@php($nav_sidebar = get_region_halland_vg_nav_sidebar())	
-		@if(isset($nav_sidebar) && !empty($nav_sidebar))
-			<aside class="w-full md:w-3/12 px-4 mb-8 hidden md:block">
-				{{-- Sidebar Navigation --}}
-				@include('partials.nav-sidebar')
-				{{-- Sidebar Navigation END--}}
+		@if(function_exists('get_region_halland_nav_sidebar'))
+			@php($nav_sidebar = get_region_halland_nav_sidebar())	
+			@if(isset($nav_sidebar) && !empty($nav_sidebar))
+				<aside class="w-full md:w-3/12 px-4 mb-8 hidden md:block">
+					{{-- Sidebar Navigation --}}
+					@include('partials.nav-sidebar')
+					{{-- Sidebar Navigation END--}}
 
-				{{-- Left Sidebar END --}}
-				@if (is_active_sidebar('sidebar-left'))
-					@include('partials.sidebar-left')
-				@endif
-				{{-- Left Sidebar END --}}
-			</aside>
+					{{-- Left Sidebar END --}}
+					@if (is_active_sidebar('sidebar-left'))
+						@include('partials.sidebar-left')
+					@endif
+					{{-- Left Sidebar END --}}
+				</aside>
+			@endif
 		@endif
 		{{-- Sidebar END --}}
 
