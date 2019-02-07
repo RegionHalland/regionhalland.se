@@ -26,20 +26,22 @@
 					</form>
 				</div>
 				<div class="w-full md:w-4/12 mt-12 md:mt-0">
-				@php($popular_links = get_field('popular_links'))
-				@if(isset($popular_links) && !empty($popular_links))
-					<header class="text-lg font-bold text-white block mb-2">Snabblänkar</header>
-					<ol aria-labelledby="Snabblänkar" class="list-reset bg-white relative rounded overflow-hidden">
-						@foreach($popular_links as $link)
-						<li class="px-4 py-4 border-grey-lightest truncate overflow-hidden relative">
-							<div class="absolute bg-blue pin-l pin-t h-full w-1"></div>
-							<a class="text-black whitespace-no-wrap hover:bg-yellow-light focus:bg-yellow-light" href="{{ $link['link']['url'] }}">{{ $link['link']['title'] }}</a>
-							<svg class="h-4 w-4 align-middle ml-1">
-								<use xlink:href="#link-2"/>
-							</svg>
-						</li>
-						@endforeach
-					</ol>
+				@if(function_exists('get_region_halland_acf_front_page_links'))
+					@php($frontPageLinks = get_region_halland_acf_front_page_links())
+					@if(isset($frontPageLinks) && !empty($frontPageLinks))
+						<header class="text-lg font-bold text-white block mb-2">Snabblänkar</header>
+						<ol aria-labelledby="Snabblänkar" class="list-reset bg-white relative rounded overflow-hidden">
+							@foreach($frontPageLinks as $link)
+							<li class="px-4 py-4 border-grey-lightest truncate overflow-hidden relative">
+								<div class="absolute bg-blue pin-l pin-t h-full w-1"></div>
+								<a class="text-black whitespace-no-wrap hover:bg-yellow-light focus:bg-yellow-light" href="{{ $link['url'] }}">{{ $link['title'] }}</a>
+								<svg class="h-4 w-4 align-middle ml-1">
+									<use xlink:href="#link-2"/>
+								</svg>
+							</li>
+							@endforeach
+						</ol>
+					@endif
 				@endif
 				</div>
 			</div>
@@ -84,6 +86,24 @@
 	</div>
 	<!-- end SUBPAGE-CARD ROLLO -->
 
+	<div class="bg-white pt-16 pb-8">
+		<div class="container mx-auto px-4">
+			<div class="w-full mx-auto">
+				<header class="relative pb-4 block mb-8">
+					<span class="border-b-2 border-blue-dark text-2xl font-bold text-black pb-2 z-20 relative leading-none">Nyheter</span>
+					<hr class="absolute pin-b pin-l w-full h-0 border-b-2 mb-1 border-blue-light z-10">
+				</header>
+				<div class="flex flex-wrap -mx-4">
+					<div class="w-full w-full lg:w-6/12 px-4 mb-8">
+						@include('partials.news-list')
+					</div>
+					<div class="w-full lg:w-6/12 px-4 mb-8">
+						@include('partials.blurb-list')
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 </main>
 
 @endsection
