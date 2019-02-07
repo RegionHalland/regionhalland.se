@@ -48,10 +48,9 @@
 		</div>
 	</div>
 
-	<!-- SUBPAGE-CARD -->
 	<div class="bg-white pt-16 pb-8">
 		<div class="container mx-auto px-4">
-			<div class="w-full mx-auto"><!--  card li -->
+			<div class="w-full mx-auto">
 
 				<header class="relative pb-4 block mb-8">
 					<span class="border-b-2 border-blue-dark text-2xl font-bold text-black pb-2 z-20 relative leading-none">Vad letar du efter?</span>
@@ -81,11 +80,10 @@
 				@endif
 				</ul>
 
-			</div><!-- end card li -->
+			</div>
 		</div>
 	</div>
-	<!-- end SUBPAGE-CARD ROLLO -->
-
+	
 	<div class="bg-white pt-16 pb-8">
 		<div class="container mx-auto px-4">
 			<div class="w-full mx-auto">
