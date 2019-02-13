@@ -92,6 +92,10 @@
       "url": "https://github.com/RegionHalland/region-halland-news-archive-taxonomi-category.git"
     },
     {
+      "type": "vcs",
+      "url": "https://github.com/RegionHalland/region-halland-acf-page-kulturkatalog.git"
+    },
+    {
        "type": "vcs",
        "url": "https://github.com/RegionHalland/mfpconnect.git"
     },
@@ -144,6 +148,7 @@
     "regionhalland/region-halland-nav-site": "1.0.0",
     "regionhalland/rhkontaktkort": "1.0.3",
     "regionhalland/region-halland-news-archive-taxonomi-category": "1.0.0",
+    "regionhalland/region-halland-acf-page-kulturkatalog": "1.0.0",
     "regionhalland/mfpconnect": "1.0.1",
     "regionhalland/mfpconnectmedia": "1.0.1"
   },
