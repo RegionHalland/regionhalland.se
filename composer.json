@@ -57,10 +57,6 @@
     },
     {
       "type": "vcs",
-      "url": "https://github.com/RegionHalland/std-plugin.git"
-    },
-    {
-      "type": "vcs",
       "url": "https://github.com/RegionHalland/region-halland-prepare-the-content.git"
     },
     {
@@ -139,7 +135,6 @@
     "regionhalland/region-halland-tree-first-level": "1.0.1",
     "regionhalland/region-halland-mobile-detect": "1.0.0",
     "regionhalland/region-halland-varbi-works": "1.0.0",
-    "regionhalland/std-plugin": "4.0.3",
     "regionhalland/region-halland-prepare-the-content": "1.0.0",
     "regionhalland/region-halland-find-on-page": "1.0.1",
     "regionhalland/region-halland-mixed-functions": "1.0.0",
@@ -150,7 +145,8 @@
     "regionhalland/region-halland-news-archive-taxonomi-category": "1.0.0",
     "regionhalland/region-halland-acf-page-kulturkatalog": "1.0.0",
     "regionhalland/mfpconnect": "1.0.1",
-    "regionhalland/mfpconnectmedia": "1.0.1"
+    "regionhalland/mfpconnectmedia": "1.0.1",
+     "wpackagist-plugin/wp-migrate-db": "1.0.10"
   },
   "require-dev": {
     "squizlabs/php_codesniffer": "^3.0.2",
