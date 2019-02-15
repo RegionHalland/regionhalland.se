@@ -6,6 +6,7 @@
 
  @if(function_exists('rh_hsafrontend'))
   	@php( $rh_hak = rh_hsafrontend(get_the_ID()))
+		 @if($rh_hak['pub']==1)
 			<div class="relative p-3 bg-grey-light">
 	           @if(!empty($rh_hak['images']))
 							 <img src="{{ $rh_hak['images'] }}" width="200" align="right" />
@@ -16,5 +17,5 @@
              <p>{{ $rh_hak['email'] }}</p>
              <p>{{ $rh_hak['phone'] }}</p>
 	 		</div>
-
+			@endif
   @endif
