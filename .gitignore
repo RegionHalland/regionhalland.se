@@ -29,3 +29,4 @@ web/wp/*
 
 .htaccess
 .idea
+.idea/*
