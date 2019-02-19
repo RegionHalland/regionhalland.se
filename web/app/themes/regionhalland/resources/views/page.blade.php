@@ -6,21 +6,23 @@
 <div class="container mx-auto px-4 pt-8 md:pt-16 pb-12">
 	<div class="w-full mx-auto">
 		<div class="flex flex-wrap items-stretch -mx-4 {{ isset($nav_sidebar) && !empty($nav_sidebar) ? 'justify-start' : 'justify-between' }}">
-		
-		{{-- Sidebar --}}
-		@php($nav_sidebar = get_region_halland_nav_sidebar())	
-		@if(isset($nav_sidebar) && !empty($nav_sidebar))
-			<aside class="w-full md:w-3/12 px-4 mb-8 hidden md:block">
-				{{-- Sidebar Navigation --}}
-				@include('partials.nav-sidebar')
-				{{-- Sidebar Navigation END--}}
 
-				{{-- Left Sidebar END --}}
-				@if (is_active_sidebar('sidebar-left'))
-					@include('partials.sidebar-left')
-				@endif
-				{{-- Left Sidebar END --}}
-			</aside>
+		{{-- Sidebar --}}
+		@if(function_exists('get_region_halland_nav_sidebar'))
+			@php($nav_sidebar = get_region_halland_nav_sidebar())
+			@if(isset($nav_sidebar) && !empty($nav_sidebar))
+				<aside class="w-full md:w-3/12 px-4 mb-8 hidden md:block">
+					{{-- Sidebar Navigation --}}
+					@include('partials.nav-sidebar')
+					{{-- Sidebar Navigation END--}}
+
+					{{-- Left Sidebar END --}}
+					@if (is_active_sidebar('sidebar-left'))
+						@include('partials.sidebar-left')
+					@endif
+					{{-- Left Sidebar END --}}
+				</aside>
+			@endif
 		@endif
 		{{-- Sidebar END --}}
 
@@ -34,7 +36,7 @@
 				@endif
 				<article class="article">{!! the_content() !!}</article>
 				{{-- Content END --}}
-				
+
 				{{-- Sidebar Bottom --}}
 				@if (is_active_sidebar('sidebar-article-bottom'))
 				<aside class="w-full mt-8">
@@ -47,6 +49,11 @@
 				@include('partials.author-info')
 				{{-- Author END --}}
 			@endwhile
+
+			{{-- HSA KONTAKTKORT --}}
+				@include('partials.rh-hsa')
+			
+
 		</main>
 		{{-- Main Content END --}}
 

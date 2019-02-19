@@ -54,10 +54,6 @@
     {
       "type": "vcs",
       "url": "https://github.com/RegionHalland/region-halland-varbi-works.git"
-    },    
-    {
-      "type": "vcs",
-      "url": "https://github.com/RegionHalland/std-plugin.git"
     },
     {
       "type": "vcs",
@@ -82,6 +78,18 @@
     {
       "type": "vcs",
       "url": "https://github.com/RegionHalland/region-halland-nav-site.git"
+    },
+    {
+       "type": "vcs",
+       "url": "https://github.com/RegionHalland/rhkontaktkort.git"
+    },
+    {
+      "type": "vcs",
+      "url": "https://github.com/RegionHalland/region-halland-news-archive-taxonomi-category.git"
+    },
+    {
+      "type": "vcs",
+      "url": "https://github.com/RegionHalland/region-halland-acf-page-kulturkatalog.git"
     },
     {
        "type": "vcs",
@@ -120,19 +128,23 @@
     "wpackagist-plugin/wp-nested-pages": "2.0.4",
     "wpackagist-plugin/disable-gutenberg": "*",
     "wpackagist-plugin/admin-menu-editor": "1.8.5",
+    "wpackagist-plugin/google-sitemap-generator": "4.1.0",
+    "wpackagist-plugin/wp-migrate-db": "1.0.10",
     "regionhalland/region-halland-acf-add-theme-subpage": "1.0.0",
     "regionhalland/region-halland-acf-cookie-notice": "1.0.0",
     "regionhalland/region-halland-breadcrumbs": "1.0.0",
-    "regionhalland/region-halland-tree-first-level": "1.0.0",
+    "regionhalland/region-halland-tree-first-level": "1.1.0",
     "regionhalland/region-halland-mobile-detect": "1.0.0",
     "regionhalland/region-halland-varbi-works": "1.0.0",
-    "regionhalland/std-plugin": "4.0.3",
     "regionhalland/region-halland-prepare-the-content": "1.0.0",
     "regionhalland/region-halland-find-on-page": "1.0.1",
     "regionhalland/region-halland-mixed-functions": "1.0.0",
     "regionhalland/region-halland-page-children": "1.0.1",
     "regionhalland/region-halland-nav-sidebar": "1.0.1",
     "regionhalland/region-halland-nav-site": "1.0.0",
+    "regionhalland/rhkontaktkort": "dev-master",
+    "regionhalland/region-halland-news-archive-taxonomi-category": "1.0.0",
+    "regionhalland/region-halland-acf-page-kulturkatalog": "1.0.0",
     "regionhalland/mfpconnect": "1.0.1",
     "regionhalland/mfpconnectmedia": "1.0.1"
   },
