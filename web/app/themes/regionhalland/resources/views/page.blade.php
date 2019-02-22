@@ -39,7 +39,7 @@
 				@endif
 
 				<article class="article">
-					{{ get_region_halland_acf_page_ingress() }}<br><br>
+					<br><br><span class="italic">{{ get_region_halland_acf_page_ingress() }}</span><br><br>
 					{!! the_content() !!}
 				</article>
 				{{-- Content END --}}
