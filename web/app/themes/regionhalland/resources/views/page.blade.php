@@ -29,12 +29,19 @@
 		{{-- Main Content --}}
 		<main class="w-full px-4 md:w-9/12 lg:w-6/12" id="main">
 			@while(have_posts()) @php(the_post())
+				
 				<h1>{{ the_title() }}</h1>
+				
 				{{-- Content --}}
+				
 				@if(function_exists('get_region_halland_prepare_the_content'))
 					@php(get_region_halland_prepare_the_content())
 				@endif
-				<article class="article">{!! the_content() !!}</article>
+
+				<article class="article">
+					{{ get_region_halland_acf_page_ingress() }}<br><br>
+					{!! the_content() !!}
+				</article>
 				{{-- Content END --}}
 
 				{{-- Sidebar Bottom --}}
@@ -48,9 +55,10 @@
 				{{-- Author --}}
 				@include('partials.author-info')
 				{{-- Author END --}}
+
 			@endwhile
 
-			{{-- HSA KONTAKTKORT --}}
+				{{-- HSA KONTAKTKORT --}}
 				@include('partials.rh-hsa')
 			
 
