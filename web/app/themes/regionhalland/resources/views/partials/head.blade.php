@@ -15,9 +15,6 @@
 	<meta name="msapplication-config" content="@asset('images/favicons/browserconfig.xml')" />
 	<meta name="theme-color" content="#ffffff" />
 
-	<link rel='stylesheet' href='{!! env('WP_HOME') !!}/include/style/main.min.css' type='text/css' media='all' />
-  	<link rel='stylesheet' href='{!! env('WP_HOME') !!}/include/style/main.css' type='text/css' media='all' />  	
-  	<link rel='stylesheet' href='{!! env('WP_HOME') !!}/include/style/std-style.css' type='text/css' media='all' />
-  	<link rel='stylesheet' href='{!! env('WP_HOME') !!}/include/style/rh-main.min.css' type='text/css' media='all' />
-	<script type='text/javascript' src='{!! env('WP_HOME') !!}/include/scripts/feather.min.js'></script>
-</head>
+	<link rel='stylesheet' href='{!! env('WP_HOME') !!}/include/style/tailwind.min.css' type='text/css' media='all' />
+  	<link rel='stylesheet' href='{!! env('WP_HOME') !!}/include/style/development.css' type='text/css' media='all' />
+  </head>
