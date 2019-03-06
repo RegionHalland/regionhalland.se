@@ -112,6 +112,10 @@
       "url": "https://github.com/RegionHalland/region-halland-acf-page-links-blurbs.git"
     },
     {
+      "type": "vcs",
+      "url": "https://github.com/RegionHalland/region-halland-site-map-regionhalland.git"
+    },
+    {
        "type": "vcs",
        "url": "https://github.com/RegionHalland/mfpconnect.git"
     },
@@ -171,6 +175,7 @@
     "regionhalland/region-halland-acf-page-kulturevenemang": "1.1.1",
     "regionhalland/region-halland-use-taxonomy-category-on-page": "1.0.0",
     "regionhalland/region-halland-acf-page-links-blurbs": "1.1.0",
+    "regionhalland/region-halland-site-map-regionhalland": "1.1.0",
     "regionhalland/mfpconnect": "1.0.1",
     "regionhalland/mfpconnectmedia": "1.0.1"
   },
