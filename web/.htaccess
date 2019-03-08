@@ -4,7 +4,7 @@
 	
 	Redirect 301 /1177 https://www.1177.se/Halland/?ar=True
 	Redirect 301 /jobb http://stage-rh.local/varbi/
-	Redirect 301 /region-halland-site-map.xml http://stage-rh.local/app/plugins/region-halland-site-map-regionhalland/site-map/site-map.php
+	Redirect 301 /region-halland-site-map.xml http://stage-rh.regionhalland.se/app/plugins/region-halland-site-map-regionhalland/site-map/site-map.php
 	
 	RewriteBase /
 	
