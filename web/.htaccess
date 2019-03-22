@@ -14,11 +14,4 @@
 	
 	RewriteRule . /index.php [L]
 
-<<<<<<< HEAD
 </IfModule>
-=======
-</IfModule>
-# BEGIN WordPress
-
-# END WordPress
->>>>>>> 78d85bf7f9ae6d59510a3c62e4f626a812661687
