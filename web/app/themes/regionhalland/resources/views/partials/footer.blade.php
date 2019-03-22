@@ -1,5 +1,5 @@
 <div style="background-color: #C3DCC1">
-    <div class="clearfix center pt3 px3" style="max-width: 1440px;">
+    <div class="clearfix center pt3" style="max-width: 1440px;">
         <div class="left-align col col-12 sm-col-6 md-col-6 lg-col-4">
             <p class="h2">Kontakta oss</p>
             <p>
