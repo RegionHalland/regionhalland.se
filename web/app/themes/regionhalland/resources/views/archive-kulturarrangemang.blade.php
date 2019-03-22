@@ -2,24 +2,44 @@
 
 @section('content')
 
-<main class="bg-white pt-12 pb-8" id="main">
-	<div class="container mx-auto px-4">
-		<div class="w-full mx-auto">
-			@php($myItems = get_region_halland_acf_page_kulturarrangemang_items())
-			@foreach($myItems as $item)
-				<h2>{{ $item->post_title }}</h2><br>
-				<span>{{ $item->post_ingress }}</span><br><br>
-				<span>{!! $item->post_content !!}</span><br><br>
-				<span><strong>Typ:</strong> {{ $item->kultur_typ }}</span><br>
-				<span><strong>Kategori:</strong> {{ $item->kultur_category }}</span><br>
-				<span><strong>Subkategori:</strong> {{ $item->kultur_sub_category }}</span><br>
-				<span><strong>Fullbokat:</strong> {{ $item->kultur_fullbokat }}</span><br>
-				<span><strong>Tid:</strong> {{ $item->kultur_tid }}</span><br>
-				<span><strong>Plats:</strong> {{ $item->kultur_plats }}</span><br>
-				<span><strong>Målgrupp:</strong> {{ $item->kultur_malgrupp }}</span><br><br>
-			@endforeach	
-		</div>
-	</div>
+<main class="" id="main">
+	<div class="center px4 pt3 pb2" style="max-width: 1440px;">
+        <h1 class="left-align pb2">
+            Arrangemangskalender
+        </h1>
+    </div>
+    <div style="background-color: #E4E4E4">
+        <div class="center px4 pt4 pb4" style="max-width:1440px">
+            @php($myItems = get_region_halland_acf_page_kulturarrangemang_items())
+            <ul class="left-align" aria-label="Arrangemangskalender">
+                @foreach($myItems as $item)
+                    <li>
+                        <div class="rh-event-card-calendar mb2 l2" style="background-color: white;">
+                            <div class="pl3 pr1" style="color: black; position: relative; top:50%; transform: translateY(+100%);">
+                                <span class="h2 rh-event-card-calendar-date-day" style="color:black">{{ $item->kultur_starttid }}</span>
+                            </div>
+                            <div class="py2 rh-event-card-calendar-description">
+                                <h2 class="rh-event-card-calendar-title">
+                                    <a href="{{ $item->url }}" class="rh-event-card-calendar-title-link" style="color: black;">
+                                        {{ $item->post_title }}
+                                    </a>
+                                </h2>
+                                <p class="rh-event-card-calendar-inline rh-event-card-calendar-time">
+                                    {{ $item->kultur_tid }}
+                                </p>
+                                <p class="">
+                                    {{ $item->kultur_plats }}
+                                </p>
+                                <span class="rh-labels">
+                                    {{ $item->kultur_sub_category }}
+                                </span>
+                            </div>
+                        </div>
+                    </li>
+                @endforeach
+            </ul>
+        </div>
+    </div>
 </main>
 
 @endsection
