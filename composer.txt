@@ -113,11 +113,7 @@
     },
     {
       "type": "vcs",
-      "url": "https://github.com/RegionHalland/region-halland-current-page-and-child-pages.git"
-    },
-    {
-      "type": "vcs",
-      "url": "https://github.com/RegionHalland/region-halland-parent-page.git"
+      "url": "https://github.com/RegionHalland/region-halland-findwise-region-halland.git"
     },
     {
        "type": "vcs",
@@ -161,14 +157,14 @@
     "wpackagist-plugin/user-role-editor": "^4.35",
     "regionhalland/region-halland-acf-add-theme-subpage": "1.0.0",
     "regionhalland/region-halland-acf-cookie-notice": "1.0.0",
-    "regionhalland/region-halland-breadcrumbs": "1.0.1",
+    "regionhalland/region-halland-breadcrumbs": "1.0.0",
     "regionhalland/region-halland-tree-first-level": "1.1.0",
     "regionhalland/region-halland-mobile-detect": "1.0.0",
     "regionhalland/region-halland-varbi-works": "1.0.0",
     "regionhalland/region-halland-prepare-the-content": "1.0.0",
     "regionhalland/region-halland-find-on-page": "1.0.1",
     "regionhalland/region-halland-mixed-functions": "1.0.0",
-    "regionhalland/region-halland-page-children": "1.1.0",
+    "regionhalland/region-halland-page-children": "1.0.1",
     "regionhalland/region-halland-nav-sidebar": "1.0.1",
     "regionhalland/region-halland-nav-site": "1.0.1",
     "regionhalland/region-halland-news-archive-taxonomi-category": "1.2.0",
@@ -178,9 +174,8 @@
     "regionhalland/region-halland-acf-page-kulturarrangemang": "2.0.0",
     "regionhalland/region-halland-use-taxonomy-category-on-page": "1.0.0",
     "regionhalland/region-halland-acf-page-links-blurbs": "1.3.0",
-    "regionhalland/region-halland-a-b-c-page-links-repeater": "1.0.1",
-    "regionhalland/region-halland-current-page-and-child-pages": "1.0.0",
-    "regionhalland/region-halland-parent-page": "1.0.0",
+    "regionhalland/region-halland-a-b-c-page-links-repeater": "1.0.0",
+    "regionhalland/region-halland-findwise-region-halland": "1.0.1",
     "regionhalland/mfpconnect": "1.0.1",
     "regionhalland/mfpconnectmedia": "1.0.1"
   },
