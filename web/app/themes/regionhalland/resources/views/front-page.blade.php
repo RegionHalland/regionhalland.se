@@ -66,11 +66,7 @@
 								<h2 class="mb-2 text-xl md:text-2xl">{{ $top_level_page->post_title }}</h2>
 							</a>
 							<p class="leading-tight text-lg text-grey-darkest">
-								@if(get_field('excerpt', $top_level_page->ID))
-									{{ the_field('excerpt', $top_level_page->ID) }}
-								@else
-									{{ html_entity_decode(wp_trim_words($top_level_page->post_content, 10, '...')) }}
-								@endif
+								{{ get_region_halland_acf_page_navigation_text($top_level_page->ID) }}
 							</p>
 						</li>
 					@endforeach

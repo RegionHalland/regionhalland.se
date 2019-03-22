@@ -10,6 +10,7 @@
 						<article class="">
 							<h1 class="mb-8">{{ get_the_title() }}</h1>
 							<div class="article">
+								{{ get_region_halland_acf_page_kulturevenemang_ingress() }}
 								<p>{{ the_content() }}</p>
 							</div>
 							@include('partials.author-info')
@@ -36,10 +37,7 @@
 								<span><strong>Fullbokat:</strong> {{ get_region_halland_acf_page_kulturevenemang_fullbokat() }}</span>
 							</li>
 							<li class="px-4 py-4 border-grey-lightest truncate overflow-hidden relative">
-								<span><strong>Starttid:</strong> {{ get_region_halland_acf_page_kulturevenemang_start_tid() }}</span>
-							</li>
-							<li class="px-4 py-4 border-grey-lightest truncate overflow-hidden relative">
-								<span><strong>Sluttid:</strong> {{ get_region_halland_acf_page_kulturevenemang_slut_tid() }}</span>
+								<span><strong>Ttid:</strong> {{ get_region_halland_acf_page_kulturevenemang_tid() }}</span>
 							</li>
 							<li class="px-4 py-4 border-grey-lightest truncate overflow-hidden relative">
 								<span><strong>Plats:</strong> {{ get_region_halland_acf_page_kulturevenemang_plats() }}</span>
