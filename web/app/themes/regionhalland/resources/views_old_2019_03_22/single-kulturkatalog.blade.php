@@ -24,31 +24,30 @@
 						</header>
 						<ol class="list-reset bg-yellow-light relative rounded border border-grey-lightest overflow-hidden">
 							<li class="px-4 py-4 border-grey-lightest truncate overflow-hidden relative">
-								<span><strong>Typ:</strong> {{ get_region_halland_acf_page_kulturevenemang_type_name() }}</span>
+								<span>
+									<strong>Typ:</strong>
+									@php($arrLabels = get_region_halland_acf_page_kulturkatalog_type_labels())	
+									@if(isset($arrLabels))
+										@foreach ($arrLabels as $label)
+											{{ $label['label'] }}, 
+										@endforeach
+									@endif
+								</span>
 							</li>
 							<li class="px-4 py-4 border-grey-lightest truncate overflow-hidden relative">
-								<span><strong>Kategori:</strong> {{ get_region_halland_acf_page_kulturevenemang_category_name() }}</span>
+								<span><strong>Publik:</strong> {{ get_region_halland_acf_page_kulturkatalog_publik() }}</span>
 							</li>
 							<li class="px-4 py-4 border-grey-lightest truncate overflow-hidden relative">
-								<span><strong>Subkategori:</strong> {{ get_region_halland_acf_page_kulturevenemang_subcategory_name() }}</span>
+								<span><strong>Speltid:</strong> {{ get_region_halland_acf_page_kulturkatalog_speltid() }}</span>
 							</li>
 							<li class="px-4 py-4 border-grey-lightest truncate overflow-hidden relative">
-								<span><strong>Fullbokat:</strong> {{ get_region_halland_acf_page_kulturevenemang_fullbokat() }}</span>
+								<span><strong>Lokal:</strong> {{ get_region_halland_acf_page_kulturkatalog_lokal() }}</span>
 							</li>
 							<li class="px-4 py-4 border-grey-lightest truncate overflow-hidden relative">
-								<span><strong>Starttid:</strong> {{ get_region_halland_acf_page_kulturevenemang_start_tid() }}</span>
+								<span><strong>Turnéperiod:</strong> {{ get_region_halland_acf_page_kulturkatalog_turne_period() }}</span>
 							</li>
 							<li class="px-4 py-4 border-grey-lightest truncate overflow-hidden relative">
-								<span><strong>Sluttid:</strong> {{ get_region_halland_acf_page_kulturevenemang_slut_tid() }}</span>
-							</li>
-							<li class="px-4 py-4 border-grey-lightest truncate overflow-hidden relative">
-								<span><strong>Plats:</strong> {{ get_region_halland_acf_page_kulturevenemang_plats() }}</span>
-							</li>
-							<li class="px-4 py-4 border-grey-lightest truncate overflow-hidden relative">
-								<span><strong>Sista anmälningsdag:</strong> {{ get_region_halland_acf_page_kulturevenemang_sista_anmalningstid() }}</span>
-							</li>
-							<li class="px-4 py-4 border-grey-lightest truncate overflow-hidden relative">
-								<span><strong>Målgrupp:</strong> {{ get_region_halland_acf_page_kulturevenemang_malgrupp() }}</span>
+								<span><strong>Pris:</strong> {{ get_region_halland_acf_page_kulturkatalog_pris() }}</span>
 							</li>
 						</ol>
 					</div>
