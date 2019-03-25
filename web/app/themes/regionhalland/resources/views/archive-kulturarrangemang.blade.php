@@ -25,7 +25,10 @@
                                     </a>
                                 </h2>
                                 <p class="rh-event-card-calendar-inline rh-event-card-calendar-time">
-                                    {{ $item->kultur_tid }}
+                                    {{ $item->kultur_start_tid }}
+                                </p>
+                                <p class="rh-event-card-calendar-inline rh-event-card-calendar-time">
+                                    {{ $item->kultur_slut_tid }}
                                 </p>
                                 <p class="">
                                     {{ $item->kultur_plats }}
