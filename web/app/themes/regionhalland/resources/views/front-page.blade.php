@@ -9,10 +9,10 @@
             @foreach($first_level_pages as $index => $page)
                 <li class="rh-navigation-card col-12 sm-col-6 md-col-4 lg-col-3 pr2">
                     <div class="rh-navigation-card-title">
+                        <span class="rh-navigation-card-title-icon"></span>
                         <strong><a href="{{ $page->url }}" class="h3" style="color:black; text-decoration: none;">
                             {{ $page->post_title }}
                         </a></strong>
-                        <span class="rh-navigation-card-title-icon"></span>
                     </div>
                     <p class="rh-navigation-card-description left-align" style="color:#575757;">
                         {{ get_region_halland_acf_page_navigation_text($page->ID) }}
