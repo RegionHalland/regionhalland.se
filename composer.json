@@ -182,7 +182,8 @@
     "regionhalland/region-halland-current-page-and-child-pages": "1.0.0",
     "regionhalland/region-halland-parent-page": "1.0.0",
     "regionhalland/mfpconnect": "1.0.1",
-    "regionhalland/mfpconnectmedia": "1.0.1"
+    "regionhalland/mfpconnectmedia": "1.0.1",
+    "wpackagist-plugin/enable-media-replace":"3.2.9"
   },
   "require-dev": {
     "squizlabs/php_codesniffer": "^3.0.2",
