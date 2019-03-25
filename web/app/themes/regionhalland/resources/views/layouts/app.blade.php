@@ -9,7 +9,6 @@
 		@include('partials.site-message')
         @include('partials.jump-to-content')
 		{{--@include('partials.cookie-notice')--}}
-		@include('partials.site-notices')
 
 		@include('partials.header')
 
