@@ -4,7 +4,6 @@
 	
 	Redirect 301 /1177 https://www.1177.se/Halland/?ar=True
 	Redirect 301 /jobb /varbi/
-	Redirect 301 /kultur/kulturutveckling /om-region-halland/internt-miljoarbete/
 	
 	RewriteBase /
 	
