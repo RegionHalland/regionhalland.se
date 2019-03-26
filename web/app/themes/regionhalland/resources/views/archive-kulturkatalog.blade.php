@@ -5,8 +5,11 @@
 <main class="center" id="main" style="max-width: 1440px;">
 	<div class="left-align px4 pt3 pb2">
 		<div class="">
-			@php($myItems = get_region_halland_acf_page_kulturkatalog_items())
+			
+			@php($myItems = get_region_halland_acf_page_kulturkatalog_label_items())
+			
 			<ul class="rh-lists">
+				
 				<h1 class="pb2 rh-lists-title">Kulturprogram</h1>
 				
 				<h3 class="pb2 rh-lists-title">Dans</h3>
@@ -71,6 +74,7 @@
 						<hr class="rh-lists-items-hr">
 					</li>
 				@endforeach
+
 			</ul>
 		</div>
 	</div>

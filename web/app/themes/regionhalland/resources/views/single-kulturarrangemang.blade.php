@@ -28,6 +28,9 @@
 								<div class="mt2 pt2 pl2 pb2" style="border-left: 4px solid #61A2D8; background-color: #D0E3F3; border-bottom-left-radius: 5px; border-top-left-radius: 5px;">
 									<p><strong>Kategori:</strong> {{ get_region_halland_acf_page_kulturarrangemang_subcategory_name() }}</p>
 									<p><strong>Tid:</strong> {{ get_region_halland_acf_page_kulturarrangemang_tid() }}</p>
+									<p><strong>Dag:</strong> {{ get_region_halland_acf_page_kulturarrangemang_start_tid_dag() }}</p>
+									<p><strong>Månad:</strong> {{ get_region_halland_acf_page_kulturarrangemang_start_tid_manad() }}</p>									
+
 									<p><strong>Plats:</strong> {{ get_region_halland_acf_page_kulturarrangemang_plats() }}</p>
 									<p><strong>Sista anmälningsdag:</strong> {{ get_region_halland_acf_page_kulturarrangemang_sista_anmalningstid() }}</p>
 									<p><strong>Målgrupp:</strong> {{ get_region_halland_acf_page_kulturarrangemang_malgrupp() }}</p>
