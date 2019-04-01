@@ -11,14 +11,14 @@
 	@php($myPages = get_region_halland_current_page_and_child_pages())
 	@if(isset($myPages))
 		<ul class="rh-secondary-nav">
-			<li class="rh-secondary-nav-item-parentlevel">
-				<a class="rh-secondary-nav-link">{{ $myPages['current_page']->post_title }}</a>
-			</li>
+			<a class="rh-secondary-nav-link" style="color:white; font-size: 1.125em;"><li class="rh-secondary-nav-item-parentlevel">
+				{{ $myPages['current_page']->post_title }}
+			</li></a>
 			@if (!empty($myPages['page_children']))
 				@foreach ($myPages['page_children'] as $myChilds)
-					<li class="rh-secondary-nav-item-toplevel">
-						<a class="rh-secondary-nav-link" href="{{ $myChilds->url }}">{{ $myChilds->post_title }}</a>
-					</li>
+					<a class="rh-secondary-nav-link" style="color:black; font-size: 1.125em; text-decoration:none;" href="{{ $myChilds->url }}"><li class="rh-secondary-nav-item-toplevel">
+						{{ $myChilds->post_title }}
+					</li></a>
 				@endforeach
 			@endif
 		</ul>
