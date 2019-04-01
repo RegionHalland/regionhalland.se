@@ -20,9 +20,6 @@
                     <div class="">
                         @include('partials.section-navigation')
                     </div>
-                    <div class="">
-                        @include('partials.top-links')
-                    </div>
                 </div>
             </div>
         </div>
@@ -39,15 +36,15 @@
                                 <h1 class="pb2">Nyheter</h1>
                             </div>
                             <ul class="flex flex-wrap pb3 mx3 pt3 px2" aria-label="Nyheter" style="background-color: white; border-radius: 0.4ex; box-shadow: 1px 2px 6px grey;">
-                                @foreach($newsitems as $newsitem)
+                                @for ($i = 0; $i < 4; $i++)
                                     <li class="rh-article pb2 col-12 sm-col-6 md-col-6 lg-col-6 px2">
-                                        <h2 class="h3 rh-article-title"><a class="rh-article-title-link" style="color: #378A30;" href="{{ $newsitem['permalink'] }}">{{ $newsitem['title'] }}<a/></h2>
-                                        <p class="rh-article-published">Publicerad: {{ $newsitem['date'] }}</p>
+                                        <h2 class="h3 rh-article-title"><a class="rh-article-title-link" style="color: #378A30;" href="{{ $newsitems[$i]['permalink'] }}">{{ $newsitems[$i]['title'] }}<a/></h2>
+                                        <p class="rh-article-published">Publicerad: {{ $newsitems[$i]['date'] }}</p>
                                         <p class="rh-article-description">
-                                            {{ wp_trim_words(region_halland_remove_shortcode($newsitem['content']), 20, '...') }}
+                                            {{ wp_trim_words(region_halland_remove_shortcode($newsitems[$i]['content']), 20, '...') }}
                                         </p>
                                     </li>
-                                @endforeach
+                                @endfor
                             </ul>
                             <div class="col-12 center mt3">
                                 <a href="/nyheter" class="rh-button rh-button--secondary" aria-label="Visa fler nyheter" role="button" style="text-decoration: none;">Visa fler nyheter</a>
@@ -61,5 +58,26 @@
     </main>
 
     @endwhile
+
+    @php($myBlurbs = get_region_halland_acf_main_post_page_links_blurbs())
+    @if(isset($myBlurbs))
+        <div class="center" style="max-width: 1440px;">
+            <ul class="flex flex-wrap pt4 pb3 mx3" aria-label="Puffar">
+                @foreach ($myBlurbs as $blurbs)
+                    <li class="col-12 sm-col-6 md-col-4 lg-col-4 pr3">
+                        <div class="demo">
+                            <div class="rh-block">
+                                <img src="{!! $blurbs['image_url'] !!}">
+                                <div class="rh-text">
+                                    <h3><a href="{{ $blurbs['link_url'] }}" target="{{ $blurbs['link_target'] }}">{{ $blurbs['link_title'] }}</a></h3>
+                                    <p>{{ $blurbs['post_content'] }}</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                @endforeach
+            </ul>
+        </div>
+    @endif
 
 @endsection
