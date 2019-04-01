@@ -22,7 +22,100 @@
         </ul>
     </nav>
 
-    @include('partials.new_blurbs-list')
+    @php($myBlurbs = get_region_halland_acf_main_post_page_links_blurbs())
+    @if(isset($myBlurbs))
+    <ul class="clearfix center px3 mb2 mt2" style="max-width:1440px;">
+
+        <li class="left-align col col-12 sm-col-6 md-col-6 lg-col-4">
+            <div class="mx1 my2" style="border-bottom: 4px solid #C3DCC1; border-left: 1px solid #E4E4E4; border-right: 1px solid #E4E4E4;">
+                <div style="height: 200px; overflow:hidden;">
+                    <img src="{!! $myBlurbs[0]['image_url'] !!}" style="width:100%">
+                </div>
+                <div class="mx2 pt2" style="height: 18ex; overflow:hidden;">
+                    <h3><a href="{{ $myBlurbs[0]['link_url'] }}" target="{{ $myBlurbs[0]['link_target'] }}">{{ $myBlurbs[0]['link_title'] }}</a></h3>
+                    <p>{{ $myBlurbs[0]['post_content'] }}</p>
+                </div>
+            </div>
+        </li>
+
+        <li class="left-align  col col-12 sm-col-6 md-col-6 lg-col-4">
+            <div class="mx1 my2" style="border-bottom: 4px solid #C3DCC1; border-left: 1px solid #E4E4E4; border-right: 1px solid #E4E4E4;">
+                <div style="height: 200px; overflow:hidden;">
+                <img src="{!! $myBlurbs[1]['image_url'] !!}" style="width:100%">
+                </div>
+                <div class="mx2 pt2" style="height: 18ex; overflow:hidden;">
+                    <h3><a href="{{ $myBlurbs[1]['link_url'] }}" target="{{ $myBlurbs[1]['link_target'] }}">{{ $myBlurbs[1]['link_title'] }}</a></h3>
+                    <p>{{ $myBlurbs[1]['post_content'] }}</p>
+                </div>
+            </div>
+        </li>
+
+        <li class="left-align  col col-12 sm-col-6 md-col-6 lg-col-4">
+            <div class="mx1 my2" style="border-bottom: 4px solid #C3DCC1; border-left: 1px solid #E4E4E4; border-right: 1px solid #E4E4E4;">
+                <div style="height: 200px; overflow:hidden;">
+                <img src="{!! $myBlurbs[2]['image_url'] !!}" style="width:100%">
+                </div>
+                <div class="mx2 pt2" style="height: 18ex; overflow:hidden;">
+                    <h3><a href="{{ $myBlurbs[2]['link_url'] }}" target="{{ $myBlurbs[2]['link_target'] }}">{{ $myBlurbs[2]['link_title'] }}</a></h3>
+                    <p>{{ $myBlurbs[2]['post_content'] }}</p>
+                </div>
+            </div>
+        </li>
+
+        <li class="left-align  col col-12 sm-col-6 md-col-6 lg-col-6">
+            <div class="mx1 my2" style="border-bottom: 4px solid #C3DCC1; border-left: 1px solid #E4E4E4; border-right: 1px solid #E4E4E4;">
+                <div style="height: 200px; overflow:hidden;">
+                <img src="{!! $myBlurbs[3]['image_url'] !!}" style="width:100%">
+                </div>
+                <div class="mx2 pt2" style="height: 18ex; overflow:hidden;">
+                    <h3><a href="{{ $myBlurbs[3]['link_url'] }}" target="{{ $myBlurbs[3]['link_target'] }}">{{ $myBlurbs[3]['link_title'] }}</a></h3>
+                    <p>{{ $myBlurbs[3]['post_content'] }}</p>
+                </div>
+            </div>
+        </li>
+
+        <li class="left-align col col-12 sm-col-12 md-col-12 lg-col-6">
+            <div class="mx1 my2" style="border-bottom: 4px solid #C3DCC1; border-left: 1px solid #E4E4E4; border-right: 1px solid #E4E4E4;">
+                <div style="height: 200px; overflow:hidden;">
+                <img src="{!! $myBlurbs[4]['image_url'] !!}" style="width:100%">
+                </div>
+                <div class="mx2 pt2" style="height: 18ex; overflow:hidden;">
+                    <h3><a href="{{ $myBlurbs[4]['link_url'] }}" target="{{ $myBlurbs[4]['link_target'] }}">{{ $myBlurbs[4]['link_title'] }}</a></h3>
+                    <p>{{ $myBlurbs[4]['post_content'] }}</p>
+                </div>
+            </div>
+        </li>
+    </ul>
+    @endif
+
+
+
+
+ {{--
+        @php($myBlurbs = get_region_halland_acf_main_post_page_links_blurbs())
+        @if(isset($myBlurbs))
+            <div class="center" style="max-width: 1440px;">
+                <ul class="flex flex-wrap pt4 pb3 mx3" aria-label="Puffar">
+                    @foreach ($myBlurbs as $blurbs)
+                        <li class="col-12 sm-col-6 md-col-4 lg-col-4 pr3">
+                            <div class="demo">
+                                <div class="rh-block">
+                                    <img src="{!! $blurbs['image_url'] !!}">
+                                    <div class="rh-text">
+                                        <h3><a href="{{ $blurbs['link_url'] }}" target="{{ $blurbs['link_target'] }}">{{ $blurbs['link_title'] }}</a></h3>
+                                        <p>{{ $blurbs['post_content'] }}</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    @endforeach
+                </ul>
+            </div>
+        @endif--}}
+
+
+
+   {{--  @include('partials.new_blurbs-list')--}}
 {{--
 <main id="main">
 	<div class="bg-blue-dark">
