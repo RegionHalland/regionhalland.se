@@ -36,15 +36,15 @@
                             <h1 class="pb2">Nyheter</h1>
                         </div>
                         <ul class="flex flex-wrap pb3 mx3 pt3 px2" aria-label="Nyheter" style="background-color: white; border-radius: 0.4ex; box-shadow: 1px 2px 6px grey;">
-                            @foreach($newsitems as $newsitem)
+                            @for ($i = 0; $i < 4; $i++)
                                 <li class="rh-article pb2 col-12 sm-col-6 md-col-6 lg-col-6 px2">
-                                    <h2 class="h3 rh-article-title"><a class="rh-article-title-link" style="color: #378A30;" href="{{ $newsitem['permalink'] }}">{{ $newsitem['title'] }}<a/></h2>
-                                    <p class="rh-article-published">Publicerad: {{ $newsitem['date'] }}</p>
+                                    <h2 class="h3 rh-article-title"><a class="rh-article-title-link" style="color: #378A30;" href="{{ $newsitems[$i]['permalink'] }}">{{ $newsitems[$i]['title'] }}<a/></h2>
+                                    <p class="rh-article-published">Publicerad: {{ $newsitems[$i]['date'] }}</p>
                                     <p class="rh-article-description">
-                                        {{ wp_trim_words(region_halland_remove_shortcode($newsitem['content']), 20, '...') }}
+                                        {{ wp_trim_words(region_halland_remove_shortcode($newsitems[$i]['content']), 20, '...') }}
                                     </p>
                                 </li>
-                            @endforeach
+                            @endfor
                         </ul>
                         <div class="col-12 center mt3">
                             <a href="/nyheter" class="rh-button rh-button--secondary" aria-label="Visa fler nyheter" role="button" style="text-decoration: none;">Visa fler nyheter</a>
