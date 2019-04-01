@@ -1,6 +1,6 @@
 <!doctype html>
 
-<html style="height: 101%" @php(language_attributes())>
+<html style="height: 101%;" @php(language_attributes())>
 	
 	@include('partials.head')
 	
