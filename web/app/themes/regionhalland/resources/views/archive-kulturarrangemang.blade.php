@@ -31,10 +31,12 @@
                                     {{ $item->kultur_start_tid_dag }} {{ $item->kultur_start_tid_manad }}
                                 </p>
                                 <p class="">
-                                    {{ $item->kultur_plats }}
+                                    {!! $item->kultur_plats !!}
                                 </p>
                                 <span class="rh-labels">
-                                    {{ $item->kultur_sub_category }}
+                                    @foreach($item->sub_category_labels as $label)
+                                    {{ $label['label'] }}
+                                    @endforeach
                                 </span>
                             </div>
                         </div>
