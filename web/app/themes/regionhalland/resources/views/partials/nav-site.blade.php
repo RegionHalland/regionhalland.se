@@ -13,15 +13,32 @@
             </li>
         </ul>
     </div>
+
     {{-- Utilities END --}}
     <div class="rh-header-search-desktop">
-        <div class="rh-search-field">
-            <input type="text" class="rh-search-term" placeholder="Skriv din sökning här" aria-label="Sökruta">
-            <button type="submit" class="rh-search-button">
-                Sök
-            </button>
-        </div>
+        <?php 
+            $strSearchText = "";
+            if(isset($_GET["q"])){
+                $strSearchText = $_GET["q"];
+            }
+        ?>
+        <form name="myForm" method="get" action="{!! env('FINDWISE_SEARCH_URL') !!}">
+            <?php 
+                $strSearchText = "";
+                if(isset($_GET["q"])){
+                    $strSearchText = $_GET["q"];
+                }
+            ?>
+            <div class="rh-search-field">
+                <input type="text" name="q" class="rh-search-term" placeholder="Skriv din sökning här" value="<?=$strSearchText?>" aria-label="Sökruta">
+                <button type="submit" class="rh-search-button">
+                    Sök
+                </button>
+            </div>
+        </form>
+
     </div>
+
     <div class="rh-header-menu">
         <button class="rh-header-button rh-header-button--search"></button>
         {{--<button class="rh-header-button rh-header-button--menu"></button>--}}
