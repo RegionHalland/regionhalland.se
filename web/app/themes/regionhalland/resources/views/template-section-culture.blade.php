@@ -59,7 +59,7 @@
 
     @endwhile
 
-    @php($myBlurbs = get_region_halland_acf_main_post_page_links_blurbs())
+    @php($myBlurbs = get_region_halland_acf_main_post_page_links_blurbs(1571))
     @if(isset($myBlurbs))
         <div class="center" style="max-width: 1440px;">
             <ul class="flex flex-wrap pt4 pb3 mx3" aria-label="Puffar">
