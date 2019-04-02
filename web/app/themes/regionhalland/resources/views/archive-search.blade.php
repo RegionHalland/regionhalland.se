@@ -32,7 +32,7 @@
 		    <span>sidan {{$currentPage}} av {{$numberOfPages}}</span><br><br>
 		    
 		    @foreach ($myData['documentList']['documents'] as $data)
-		    	<span>{!! $data['title'] !!}</span><br>
+		    	<span><a href="{{ $data['url'] }}">{!! $data['title'] !!}</a></span><br>
 		    @endforeach
 		    
 		    <br>
