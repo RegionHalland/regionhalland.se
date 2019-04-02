@@ -24,7 +24,7 @@
 
     @php($myBlurbs = get_region_halland_acf_main_post_page_links_blurbs())
     @if(isset($myBlurbs))
-    <ul class="clearfix center mx3 mb2 mt2" style="max-width:1440px;">
+    <ul class="clearfix center mb2 mt2" style="max-width:1440px;">
 
         <li class="left-align col col-12 sm-col-6 md-col-6 lg-col-4">
             <div class="mx1 my2" style="border-bottom: 4px solid #C3DCC1; border-left: 1px solid #E4E4E4; border-right: 1px solid #E4E4E4;">
