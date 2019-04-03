@@ -8,6 +8,7 @@
 		&nbsp;
 		</div>
 		<div class="pt3 pb3 pl4 col col-12 sm-col-12 md-col-4 lg-col-8">
+			<h2 style="border-bottom: 4px solid #378A30">Sökresultat</h2>
 			
 			@php($myData = get_region_halland_search_findwise_region_halland())
 								    
@@ -33,7 +34,7 @@
 		    
 		    @foreach ($myData['documentList']['documents'] as $data)
 		    	<span><a href="{{ $data['url'] }}">{!! $data['title'] !!}</a></span><br>
-		    	<span>{{ $data['content'] }}</span><br><br>
+		    	{{-- <span>{{ $data['content'] }}</span><br><br> --}}
 		    @endforeach
 		    
 		    <br><br>
