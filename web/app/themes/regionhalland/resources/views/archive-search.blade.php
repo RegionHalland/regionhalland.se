@@ -32,10 +32,11 @@
 		    <span>sidan {{$currentPage}} av {{$numberOfPages}}</span><br><br>
 		    
 		    @foreach ($myData['documentList']['documents'] as $data)
-		    	<span>{!! $data['title'] !!}</span><br>
+		    	<span><a href="{{ $data['url'] }}">{!! $data['title'] !!}</a></span><br>
+		    	<span>{{ $data['content'] }}</span><br><br>
 		    @endforeach
 		    
-		    <br>
+		    <br><br>
 		    
 		    @if($arrFirst)
 		    	<span style="color:red;"><a href="{!! env('FINDWISE_SEARCH_URL') !!}/?<?=$myData['documentList']['pagination']['firstPage']['query']?>">FÖRSTA</a></span>

@@ -128,6 +128,10 @@
       "url": "https://github.com/RegionHalland/region-halland-search-findwise-region-halland.git"
     },
     {
+      "type": "vcs",
+      "url": "https://github.com/RegionHalland/region-halland-dummy-data-personer-enheter.git"
+    },
+    {
        "type": "vcs",
        "url": "https://github.com/RegionHalland/mfpconnect.git"
     },
@@ -179,11 +183,11 @@
     "regionhalland/region-halland-page-children": "1.1.0",
     "regionhalland/region-halland-nav-sidebar": "1.0.1",
     "regionhalland/region-halland-nav-site": "1.0.1",
-    "regionhalland/region-halland-news-archive-taxonomi-category": "1.2.0",
+    "regionhalland/region-halland-news-archive-taxonomi-category": "1.2.2",
     "regionhalland/region-halland-acf-page-kulturprogram": "2.0.0",
     "regionhalland/region-halland-acf-options-page-site-message": "1.0.1",
     "regionhalland/region-halland-acf-page-ingress": "1.1.1",
-    "regionhalland/region-halland-acf-page-kulturarrangemang": "2.2.0",
+    "regionhalland/region-halland-acf-page-kulturarrangemang": "2.3.0",
     "regionhalland/region-halland-use-taxonomy-category-on-page": "1.0.0",
     "regionhalland/region-halland-acf-page-links-blurbs": "1.4.1",
     "regionhalland/region-halland-a-b-c-page-links-repeater": "1.0.2",
@@ -191,6 +195,7 @@
     "regionhalland/region-halland-parent-page": "1.0.0",
     "regionhalland/region-halland-findwise-region-halland": "1.0.1",
     "regionhalland/region-halland-search-findwise-region-halland": "1.0.1",
+    "regionhalland/region-halland-dummy-data-personer-enheter": "1.0.0",
     "regionhalland/mfpconnect": "1.0.1",
     "regionhalland/mfpconnectmedia": "1.0.1",
     "wpackagist-plugin/enable-media-replace":"3.2.9"
