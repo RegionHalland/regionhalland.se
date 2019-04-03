@@ -1,4 +1,4 @@
-<div style="background-color: #C3DCC1; line-height: 1.4;">
+<div id="footer-top-placeholder" style="background-color: #C3DCC1; line-height: 1.4;">
     <div class="clearfix center pt3" style="max-width: 1440px;">
         <div class="left-align col col-12 sm-col-6 md-col-6 lg-col-4">
             <p class="h2">Kontakta oss</p>
@@ -155,12 +155,24 @@
 
     if ($("body.page-template-default")[0]){
         $(window).scroll(function() {
-            var myContentPosition = Math.round($('#content-nav-placeholder').offset().top);
+
             var myPosition = Math.round($('#content-nav-placeholder').offset().top - $(window).scrollTop());
+            var myFooterTop = Math.round($('#footer-top-placeholder').offset().top - $(window).scrollTop());
+            var myContentNavBottom = Math.round($('#content-nav-bottom-placeholder').offset().top - $(window).scrollTop());
             if (myPosition < 30) {
-                $("#content-nav-container").addClass("rh-get-fixed-sticky");
+                if (myFooterTop < myContentNavBottom + 40) {
+                    console.log("Removed fixed class INSIDE DOUBLE IF" + "myFooterTop " + myFooterTop + " myContentNavBottom " + myContentNavBottom);
+                    $(".content-nav__item").addClass("content-nav__item--tight");
+                } else {
+                    $("#content-nav-container").addClass("rh-get-fixed-sticky");
+                    console.log("Added fixed class" + "myFooterTop " + myFooterTop + " myContentNavBottom " + myContentNavBottom);
+                    $(".content-nav__item--tight").removeClass("content-nav__item--tight");
+                }                                                               
             } else {
                 $("#content-nav-container").removeClass("rh-get-fixed-sticky");
+                console.log("Removed fixed class" + "myFooterTop " + myFooterTop + " myContentNavBottom x" + myContentNavBottom);
+                $(".content-nav__item--tight").removeClass("content-nav__item--tight");
+
             }
         });
     }

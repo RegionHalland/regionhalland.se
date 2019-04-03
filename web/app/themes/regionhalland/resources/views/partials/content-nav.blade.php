@@ -17,6 +17,7 @@
 					@endforeach
 				</ul>
 			</div>
+			<div id="content-nav-bottom-placeholder"></div>
 		</nav>
 	@endif
 @endif

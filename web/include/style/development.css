@@ -24,6 +24,12 @@
   padding-bottom: 0.8ex;
 }
 
+.content-nav__item--tight {
+  line-height: 1.1;
+  padding-top: 0.2ex;
+  padding-bottom: 0.2ex;
+}
+
 .content-nav__item-link {
   text-decoration: none;
   color: black;
