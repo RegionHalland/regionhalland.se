@@ -39,6 +39,10 @@
   border-left: 4px solid #378A30;
 }
 
+.content-nav-container {
+  background-color: white;
+}
+
 .content-highlight {
   -webkit-animation-name: content-hightlight-animation;
   -o-animation-name: content-hightlight-animation;
