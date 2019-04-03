@@ -8,7 +8,7 @@
 				<p class="h2" id="{{ $id }}">Hitta på sidan</p>
 				<ul>
 					@foreach ($myNavs as $myNav)
-						<li class="content-nav__item">
+						<li class="content-nav__item {{ $myNav['class'] }}" >
 							<a class="content-nav__item-link" href="#{{ $myNav['slug'] }}" data-pointstoid="{{ $myNav['slug'] }}">
 								{!! $myNav['content'] !!}
 							</a>

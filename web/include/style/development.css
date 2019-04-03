@@ -30,6 +30,14 @@
   padding-bottom: 0.2ex;
 }
 
+.content-nav__item-level--3 {
+  padding-left: 2ex;
+}
+
+.content-nav__item-level--4 {
+  padding-left: 4ex;
+}
+
 .content-nav__item-link {
   text-decoration: none;
   color: black;
@@ -42,6 +50,8 @@
 .content-nav-container {
   background-color: white;
 }
+
+
 
 .content-highlight {
   -webkit-animation-name: content-hightlight-animation;
