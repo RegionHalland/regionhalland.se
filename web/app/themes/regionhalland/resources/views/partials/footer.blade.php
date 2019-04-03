@@ -161,16 +161,13 @@
             var myContentNavBottom = Math.round($('#content-nav-bottom-placeholder').offset().top - $(window).scrollTop());
             if (myPosition < 30) {
                 if (myFooterTop < myContentNavBottom + 40) {
-                    console.log("Removed fixed class INSIDE DOUBLE IF" + "myFooterTop " + myFooterTop + " myContentNavBottom " + myContentNavBottom);
                     $(".content-nav__item").addClass("content-nav__item--tight");
                 } else {
                     $("#content-nav-container").addClass("rh-get-fixed-sticky");
-                    console.log("Added fixed class" + "myFooterTop " + myFooterTop + " myContentNavBottom " + myContentNavBottom);
                     $(".content-nav__item--tight").removeClass("content-nav__item--tight");
                 }                                                               
             } else {
                 $("#content-nav-container").removeClass("rh-get-fixed-sticky");
-                console.log("Removed fixed class" + "myFooterTop " + myFooterTop + " myContentNavBottom x" + myContentNavBottom);
                 $(".content-nav__item--tight").removeClass("content-nav__item--tight");
 
             }
