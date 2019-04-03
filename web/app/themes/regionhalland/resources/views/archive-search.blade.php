@@ -5,9 +5,10 @@
 <main class="center px4" id="main" style="max-width: 1440px;">
 	<div class="left-align clearfix">
 		<div class="pt3 pb3 pl4 col col-12 sm-col-12 md-col-4 lg-col-2">
-		&nbsp;
 		</div>
 		<div class="pt3 pb3 pl4 col col-12 sm-col-12 md-col-4 lg-col-8">
+			<p>Din sökning gav @php($numberOfHits = $myData['documentList']['numberOfHits']) träffar</p>
+
 			<h2 style="border-bottom: 4px solid #378A30">Sökresultat</h2>
 			
 			@php($myData = get_region_halland_search_findwise_region_halland())
