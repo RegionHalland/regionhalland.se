@@ -7,30 +7,30 @@
 		<div class="pt3 pb3 pl4 col col-12 sm-col-12 md-col-4 lg-col-2">
 		</div>
 		<div class="pt3 pb3 pl4 col col-12 sm-col-12 md-col-4 lg-col-8">
-			<p>Din sökning gav @php($numberOfHits = $myData['documentList']['numberOfHits']) träffar</p>
+			@php($myData = get_region_halland_search_findwise_region_halland())
+
+			@php($numberOfHits = $myData['documentList']['numberOfHits'])
+
+			@php($query = $myData['query'])
+
+			@php($hitsPerPage = $myData['documentList']['pagination']['hitsPerPage'])
+
+			@php($currentPage = 1+$myData['documentList']['pagination']['offset']/$hitsPerPage)
+
+			@php($numberOfPages = ceil($numberOfHits/$hitsPerPage))
+
+			@php($arrFirst = $myData['documentList']['pagination']['firstPage'])
+
+			@php($arrPrev = $myData['documentList']['pagination']['previousPage'])
+
+			@php($arrNext = $myData['documentList']['pagination']['nextPage'])
+
+			@php($arrLast = $myData['documentList']['pagination']['lastPage'])
+			<h1>Sök på Region Halland</h1>
+			<p class="pt3">Din sökning på '{{ $query }}' gav {{ $numberOfHits }} träffar</p>
 
 			<h2 style="border-bottom: 4px solid #378A30">Sökresultat</h2>
-			
-			@php($myData = get_region_halland_search_findwise_region_halland())
-								    
-		    @php($numberOfHits = $myData['documentList']['numberOfHits'])
-		    
-		    @php($hitsPerPage = $myData['documentList']['pagination']['hitsPerPage'])
-		    
-		    @php($currentPage = 1+$myData['documentList']['pagination']['offset']/$hitsPerPage)
-		    
-		    @php($numberOfPages = ceil($numberOfHits/$hitsPerPage))
-		    
-		    @php($arrFirst = $myData['documentList']['pagination']['firstPage'])
-		    
-		    @php($arrPrev = $myData['documentList']['pagination']['previousPage'])
-		    
-		    @php($arrNext = $myData['documentList']['pagination']['nextPage'])
-		    
-		    @php($arrLast = $myData['documentList']['pagination']['lastPage'])
-		    
-		    <span>{{$numberOfHits}} träffar</span>
-		    <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+
 		    <span>sidan {{$currentPage}} av {{$numberOfPages}}</span><br><br>
 		    
 		    @foreach ($myData['documentList']['documents'] as $data)
