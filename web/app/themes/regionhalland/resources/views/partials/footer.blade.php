@@ -132,3 +132,36 @@
 <script src="{!! env('WP_HOME') !!}/include/scripts/jquery.3.3.1.min.js?ver=3.3.1"></script>
 
 <script src="{!! env('WP_HOME') !!}/styleguide2.2.1/js/components.js"></script>
+
+<script>
+    $('a[href^="#"]').on( "click", function() {
+        var target = $(this.hash);
+        if (target.length) {
+
+            // Animate target
+            $('html,body').animate({scrollTop: target.offset().top}, 800);
+
+            // Add class for highlight the text
+            $(target).addClass("content-highlight");
+
+            // Wait 2s and then remove the highlight class
+            setTimeout(function(){
+                $(target).removeClass("content-highlight");
+            }, 2000);
+
+            return false;
+        }
+    });
+
+    if ($("body.page-template-default")[0]){
+        $(window).scroll(function() {
+            var myContentPosition = Math.round($('#content-nav-placeholder').offset().top);
+            var myPosition = Math.round($('#content-nav-placeholder').offset().top - $(window).scrollTop());
+            if (myPosition < 30) {
+                $("#content-nav-container").addClass("rh-get-fixed-sticky");
+            } else {
+                $("#content-nav-container").removeClass("rh-get-fixed-sticky");
+            }
+        });
+    }
+</script>
