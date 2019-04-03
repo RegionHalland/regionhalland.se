@@ -5,6 +5,80 @@
  *
 **/
 
+.rh-get-sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 15px;
+}
+
+.rh-get-fixed-sticky {
+  position: fixed;
+  top: 15px;
+}
+
+.content-nav__item {
+  border-left: 4px solid #E4E4E4;
+  line-height: 1.4;
+  padding-left: 1ex;
+  padding-top: 0.8ex;
+  padding-bottom: 0.8ex;
+}
+
+.content-nav__item-link {
+  text-decoration: none;
+  color: black;
+}
+
+.content-nav__item:hover {
+  border-left: 4px solid #378A30;
+}
+
+.content-highlight {
+  -webkit-animation-name: content-hightlight-animation;
+  -o-animation-name: content-hightlight-animation;
+  animation-name: content-hightlight-animation;
+  -webkit-animation-duration: 1.5s;
+  -o-animation-duration: 1.5s;
+  animation-duration: 1.5s;
+  -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  -o-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  -webkit-animation-iteration-count: 1;
+  -o-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+}
+
+@-webkit-keyframes content-hightlight-animation {
+  0% {
+    background: #378A30;
+  }
+
+  100% {
+    background: none;
+  }
+}
+
+@-o-keyframes content-hightlight-animation {
+  0% {
+    background: #378A30;
+  }
+
+  100% {
+    background: none;
+  }
+}
+
+@keyframes content-hightlight-animation {
+  0% {
+    background: #378A30;
+  }
+
+  100% {
+    background: none;
+  }
+}
+
+
 #__ba_panel {
   display: none;
 }
@@ -33,51 +107,6 @@
   padding: 0.5rem;
   height: auto;
   color: black;
-}
-
-.content-highlight {
-  -webkit-animation-name: content-hightlight-animation;
-       -o-animation-name: content-hightlight-animation;
-          animation-name: content-hightlight-animation;
-  -webkit-animation-duration: 1.5s;
-       -o-animation-duration: 1.5s;
-          animation-duration: 1.5s;
-  -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
-       -o-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
-          animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
-  -webkit-animation-iteration-count: 1;
-       -o-animation-iteration-count: 1;
-          animation-iteration-count: 1;
-}
-
-@-webkit-keyframes content-hightlight-animation {
-  0% {
-    background: #6ca2d5;
-  }
-
-  100% {
-    background: none;
-  }
-}
-
-@-o-keyframes content-hightlight-animation {
-  0% {
-    background: #6ca2d5;
-  }
-
-  100% {
-    background: none;
-  }
-}
-
-@keyframes content-hightlight-animation {
-  0% {
-    background: #6ca2d5;
-  }
-
-  100% {
-    background: none;
-  }
 }
 
 .cookie-notice__container {
