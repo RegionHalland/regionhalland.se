@@ -5,6 +5,21 @@
 	<div class="left-align">
 		@if (!have_posts())
 			<h1 class="">{{ __('Sidan du söker efter verkar inte finnas.', 'halland') }}</h1>
+
+			<h2>Det här kan du göra</h2>
+			<ul>
+				<li>Gå till startsidan <a href="/">www.regionhalland.se</a> och försök klicka dig fram till informationen du söker.</li>
+				<li>Använd den här webbplatsens sökfunktion.</li>
+				<li>Sök via en extern sökmotor som till exempel Google eller Bing.</li>
+				<li>Ladda om sidan för att se om det var ett tillfälligt fel.</li>
+				<li>Kontrollera om du skrivit in adressen rätt.</li>
+			</ul>
+
+			<h2 class="pt2">Ansökningsperiod skolor</h2>
+			<a href="http://regionhalland.se/vara-skolor/">Information och ansökan till lantbruksgymnasium och folkhögskolor</a>
+
+			<h2 class="pt2">Hjälp oss att bli bättre</h2>
+			Att sidan inte hittades kan bero på flera saker. Det kan vara så att vi gjort fel eller så är det fel någon annanstans. Välkommen att <a href="mailto:infomaster@regionhalland.se">höra av dig via e-post</a> så har vi större chans att rätta till det.
 		@endif
 	</div>
 </div>
