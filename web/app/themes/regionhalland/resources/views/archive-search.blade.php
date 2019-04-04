@@ -3,7 +3,7 @@
 @section('content')
 
 <main class="center px4" id="main" style="max-width:1440px;">
-	<div class="left-align px3">
+	<div class="left-align px4">
         <h1 class="mb3">Sök på Region Halland</h1>
 
         <form name="myForm" method="get" action="{!! env('FINDWISE_SEARCH_URL') !!}">
