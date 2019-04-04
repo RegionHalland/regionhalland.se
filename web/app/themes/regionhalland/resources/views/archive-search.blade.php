@@ -37,10 +37,12 @@
                 <h1>Sök på Region Halland</h1>
                 <p class="pt3">Din sökning på <strong>'{{$strSearchText}}'</strong> gav {{ $numberOfHits }} träffar</p>
 
-                <h2 style="border-bottom: 4px solid #378A30">Sökresultat - sida {{$currentPage}} av {{$numberOfPages}}</h2>
+                <h2 class="mb1" style="border-bottom: 4px solid #378A30">Sökresultat - sida {{$currentPage}} av {{$numberOfPages}}</h2>
 
                 @foreach ($myData['documentList']['documents'] as $data)
-                    <p><a class="h3" href="{{ $data['url'] }}">{!! $data['title'] !!}</a></p>
+                    <p class="pt1">
+                        <a class="h3" href="{{ $data['url'] }}">{!! $data['title'] !!}</a>
+                    </p>
                     {{-- <span>{{ $data['content'] }}</span><br><br> --}}
                 @endforeach
 
