@@ -27,7 +27,7 @@
 
 			@php($arrLast = $myData['documentList']['pagination']['lastPage'])
 			<h1>Sök på Region Halland</h1>
-			<p class="pt3">Din sökning på '{{ $query }}' gav {{ $numberOfHits }} träffar</p>
+			<p class="pt3">Din sökning gav {{ $numberOfHits }} träffar</p>
 
 			<h2 style="border-bottom: 4px solid #378A30">Sökresultat</h2>
 
