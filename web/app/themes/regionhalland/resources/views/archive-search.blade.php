@@ -2,8 +2,8 @@
 
 @section('content')
 
-<main class="center px4" id="main" style="max-width: 1440px;">
-	<div class="left-align">
+<main class="center px4" id="main" style="max-width:1440px;">
+	<div class="left-align px3">
         <h1 class="mb3">Sök på Region Halland</h1>
 
         <form name="myForm" method="get" action="{!! env('FINDWISE_SEARCH_URL') !!}">
@@ -23,7 +23,7 @@
     </div>
 
     <div class="left-align clearfix">
-		<div class="pt3 pb3 pl4 col col-12 sm-col-12 md-col-8 lg-col-8">
+		<div class="pt3 pb3 px3 col col-12 sm-col-12 md-col-8 lg-col-8">
 			@php($myData = get_region_halland_search_findwise_region_halland())
 
 			@php($numberOfHits = $myData['documentList']['numberOfHits'])
