@@ -78,9 +78,11 @@
                     <span style="color:#eeeeee;">SISTA</span>
                 @endif
 
-            @endif
+            @else
 
-            <p class="h2">Din sökning gav tyvärr inga träffar</p>
+                <p class="h2">Din sökning gav tyvärr inga träffar</p>
+
+            @endif
 
 		</div>
 		<div class="pt3 pb3 pl4 col col-12 sm-col-12 md-col-4 lg-col-2">
