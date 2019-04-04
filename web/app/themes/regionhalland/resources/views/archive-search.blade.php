@@ -27,9 +27,15 @@
 
 			@php($arrLast = $myData['documentList']['pagination']['lastPage'])
 
+            <?php $strSearchText = "";
+                if(isset($_GET["q"])){
+                    $strSearchText = $_GET["q"];
+                }
+            ?>
+
             @if(isset($myData))
                 <h1>Sök på Region Halland</h1>
-                <p class="pt3">Din sökning gav {{ $numberOfHits }} träffar</p>
+                <p class="pt3">Din sökning på {{$strSearchText}} gav {{ $numberOfHits }} träffar</p>
 
                 <h2 style="border-bottom: 4px solid #378A30">Sökresultat - sida {{$currentPage}} av {{$numberOfPages}}</h2>
 
