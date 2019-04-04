@@ -20,6 +20,7 @@
                 </button>
             </div>
         </form>
+        <p class="pt3">Din sökning på <strong>'{{$strSearchText}}'</strong> gav {{ $numberOfHits }} träffar</p>
     </div>
 
     <div class="left-align clearfix">
@@ -52,9 +53,6 @@
 
 
             @if(isset($myData))
-
-                <p class="pt3">Din sökning på <strong>'{{$strSearchText}}'</strong> gav {{ $numberOfHits }} träffar</p>
-
                 <h2 class="mb1" style="border-bottom: 4px solid #378A30">Sökresultat - sida {{$currentPage}} av {{$numberOfPages}}</h2>
 
                 @foreach ($myData['documentList']['documents'] as $data)
