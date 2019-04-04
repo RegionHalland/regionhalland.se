@@ -36,19 +36,23 @@
                 <span>sidan {{$currentPage}} av {{$numberOfPages}}</span><br><br>
 
                 @foreach ($myData['documentList']['documents'] as $data)
-                    <span><a href="{{ $data['url'] }}">{!! $data['title'] !!}</a></span><br>
+                    <p><a class="h3" href="{{ $data['url'] }}">{!! $data['title'] !!}</a></p>
                     {{-- <span>{{ $data['content'] }}</span><br><br> --}}
                 @endforeach
 
                 <br><br>
 
                 @if($arrFirst)
-                    <span style="color:red;"><a class="rh-pagination-link rh-pagination-link-previous" href="{!! env('FINDWISE_SEARCH_URL') !!}/?<?=$myData['documentList']['pagination']['firstPage']['query']?>">Första sidan</a></span>
+                    <a class="rh-pagination-link rh-pagination-link-previous" href="{!! env('FINDWISE_SEARCH_URL') !!}/?<?=$myData['documentList']['pagination']['firstPage']['query']?>">Första sidan</a>
+                @else
+                    <span class="rh-pagination-link rh-pagination-link-previous">Första sidan</span>
                 @endif
 
 
                 @if($arrPrev)
-                    <span style="color:red;"><a class="rh-pagination-link rh-pagination-link-previous" href="http://stage-demo.local/search/?<?=$myData['documentList']['pagination']['previousPage']['query']?>">Föregående sida</a></span>
+                    <a class="rh-pagination-link rh-pagination-link-previous" href="http://stage-demo.local/search/?<?=$myData['documentList']['pagination']['previousPage']['query']?>">Föregående sida</a>
+                @else
+                    <span class="rh-pagination-link rh-pagination-link-previous">Föregående sida</span>
                 @endif
 
                 <span>
@@ -64,11 +68,15 @@
                 </span>
 
                 @if($arrNext)
-                    <span style="color:red;"><a class="rh-pagination-link rh-pagination-link-next" href="{!! env('FINDWISE_SEARCH_URL') !!}/?<?=$myData['documentList']['pagination']['nextPage']['query']?>">Nästa sida</a></span>
+                    <a class="rh-pagination-link rh-pagination-link-next" href="{!! env('FINDWISE_SEARCH_URL') !!}/?<?=$myData['documentList']['pagination']['nextPage']['query']?>">Nästa sida</a>
+                @else
+                    <span class="rh-pagination-link rh-pagination-link-next">Nästa sida</span>
                 @endif
 
                 @if($arrLast)
-                    <span style="color:red;"><a class="rh-pagination-link rh-pagination-link-next" href="{!! env('FINDWISE_SEARCH_URL') !!}/?<?=$myData['documentList']['pagination']['lastPage']['query']?>">Sista sidan</a></span>
+                    <a class="rh-pagination-link rh-pagination-link-next" href="{!! env('FINDWISE_SEARCH_URL') !!}/?<?=$myData['documentList']['pagination']['lastPage']['query']?>">Sista sidan</a>
+                    @else
+                    <span class="rh-pagination-link rh-pagination-link-next">Sista sidan</span>
                 @endif
 
             @else
