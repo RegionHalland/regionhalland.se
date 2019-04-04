@@ -23,7 +23,7 @@
     </div>
 
     <div class="left-align clearfix">
-		<div class="pt3 pb3 px3 col col-12 sm-col-12 md-col-8 lg-col-8">
+		<div class="pt3 pb3 pl4 col col-12 sm-col-12 md-col-8 lg-col-8">
 			@php($myData = get_region_halland_search_findwise_region_halland())
 
 			@php($numberOfHits = $myData['documentList']['numberOfHits'])
@@ -110,7 +110,7 @@
             @endif
 
 		</div>
-		<div class="pt3 pb3 pl4 col col-12 sm-col-12 md-col-4 lg-col-4">
+		<div class="pt3 pb3 pl2 pr4 col col-12 sm-col-12 md-col-4 lg-col-4">
             <h2 class="h3" style="border-bottom: 4px solid #378A30">Söktips - Region Halland</h2>
             <div class="mt2 pt2 pl2 pb2" style="border-left: 4px solid #378A30; background-color: #C3DCC1; border-bottom-left-radius: 5px; border-top-left-radius: 5px;">
             <ul>
