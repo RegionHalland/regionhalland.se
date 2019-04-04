@@ -65,7 +65,7 @@
                     <span>&nbsp;</span>
                     @foreach ($myData['documentList']['pagination']['pages'] as $pages)
                         @if($pages['selected'] == 1)
-                        <strong><a class="rh-pagination-link" style="background-color: #FCAF15; color: white;" href="{!! env('FINDWISE_SEARCH_URL') !!}/?<?=$pages['query']?>">{!! $pages['displayName'] !!}</a></strong>
+                        <strong><a class="rh-pagination-link" style="background-color: #FCAF15;" href="{!! env('FINDWISE_SEARCH_URL') !!}/?<?=$pages['query']?>">{!! $pages['displayName'] !!}</a></strong>
                         @else
                         <span><a class="rh-pagination-link" href="{!! env('FINDWISE_SEARCH_URL') !!}/?<?=$pages['query']?>">{!! $pages['displayName'] !!}</a></span>
                         @endif
