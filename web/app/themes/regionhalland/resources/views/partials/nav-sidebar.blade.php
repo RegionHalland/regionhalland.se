@@ -11,7 +11,7 @@
 	@php($myPages = get_region_halland_current_page_and_child_pages())
 	@if(isset($myPages))
 		<ul class="rh-secondary-nav">
-			<a class="rh-secondary-nav-link" style="color:white; font-size: 1.125em;"><li class="rh-secondary-nav-item-parentlevel">
+			<a class="rh-secondary-nav-link" style="color:white; font-size: 1.125em;"><li class="rh-secondary-nav-item-parentlevel" style="color: #378A30; background-color:#E4E4E4; border:none;">
 				{{ $myPages['current_page']->post_title }}
 			</li></a>
 			@if (!empty($myPages['page_children']))
