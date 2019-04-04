@@ -55,12 +55,14 @@
             @if(isset($myData))
                 <h2 class="mb1" style="border-bottom: 4px solid #378A30">Sökresultat - sida {{$currentPage}} av {{$numberOfPages}}</h2>
 
+                <ul>
                 @foreach ($myData['documentList']['documents'] as $data)
-                    <p class="pt1">
-                        <a class="h3" href="{{ $data['url'] }}">{!! $data['title'] !!}</a>
-                    </p>
+                    <li class="pt1">
+                        <a class="h2" href="{{ $data['url'] }}" style="color: black; text-decoration: none;">{!! $data['title'] !!}</a>
+                    </li>
                     {{-- <span>{{ $data['content'] }}</span><br><br> --}}
                 @endforeach
+                </ul>
 
                 <br><br>
 
