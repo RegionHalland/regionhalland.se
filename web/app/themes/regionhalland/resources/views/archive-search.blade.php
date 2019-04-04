@@ -57,7 +57,7 @@
 
                 <ul>
                 @foreach ($myData['documentList']['documents'] as $data)
-                    <li class="pt1">
+                    <li class="py2">
                         <a class="h2" href="{{ $data['url'] }}" style="color: black; text-decoration: none;">{!! $data['title'] !!}</a>
                     </li>
                     {{-- <span>{{ $data['content'] }}</span><br><br> --}}
