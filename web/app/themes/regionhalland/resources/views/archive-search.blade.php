@@ -80,6 +80,8 @@
 
             @endif
 
+            <p class="h2">Din sökning gav tyvärr inga träffar</p>
+
 		</div>
 		<div class="pt3 pb3 pl4 col col-12 sm-col-12 md-col-4 lg-col-2">
 		&nbsp;
