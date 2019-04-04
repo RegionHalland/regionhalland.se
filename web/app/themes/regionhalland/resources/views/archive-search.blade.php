@@ -109,7 +109,7 @@
 
 		</div>
 		<div class="pt3 pb3 pl2 pr4 col col-12 sm-col-12 md-col-4 lg-col-4">
-            <h2 class="h3" style="border-bottom: 4px solid #378A30">Söktips - Region Halland</h2>
+            <h2 style="border-bottom: 4px solid #378A30">Söktips - Region Halland</h2>
             <div class="mt2 pt2 pl2 pb2" style="border-left: 4px solid #378A30; background-color: #C3DCC1; border-bottom-left-radius: 5px; border-top-left-radius: 5px;">
             <ul>
                 <li>Se till att alla ord är rättstavade</li>
