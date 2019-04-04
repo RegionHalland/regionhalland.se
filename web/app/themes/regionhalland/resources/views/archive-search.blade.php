@@ -3,10 +3,27 @@
 @section('content')
 
 <main class="center px4" id="main" style="max-width: 1440px;">
-	<div class="left-align clearfix">
-		<div class="pt3 pb3 pl4 col col-12 sm-col-12 md-col-4 lg-col-2">
-		</div>
-		<div class="pt3 pb3 pl4 col col-12 sm-col-12 md-col-4 lg-col-8">
+	<div class="left-align">
+        <h1 class="mb3">Sök på Region Halland</h1>
+
+        <form name="myForm" method="get" action="{!! env('FINDWISE_SEARCH_URL') !!}">
+            <?php
+            $strSearchText = "";
+            if(isset($_GET["q"])){
+                $strSearchText = $_GET["q"];
+            }
+            ?>
+            <div class="rh-search-field">
+                <input type="text" name="q" class="rh-search-term rh-search-term-larger" placeholder="Skriv din sökning här" value="<?=$strSearchText?>" aria-label="Sökruta">
+                <button type="submit" class="rh-search-button rh-search-button-larger">
+                    Sök
+                </button>
+            </div>
+        </form>
+    </div>
+
+    <div class="left-align clearfix">
+		<div class="pt3 pb3 pl4 col col-12 sm-col-12 md-col-8 lg-col-8">
 			@php($myData = get_region_halland_search_findwise_region_halland())
 
 			@php($numberOfHits = $myData['documentList']['numberOfHits'])
@@ -33,22 +50,6 @@
                 }
             ?>
 
-            <h1>Sök på Region Halland</h1>
-
-            <form name="myForm" method="get" action="{!! env('FINDWISE_SEARCH_URL') !!}">
-                <?php
-                $strSearchText = "";
-                if(isset($_GET["q"])){
-                    $strSearchText = $_GET["q"];
-                }
-                ?>
-                <div class="rh-search-field">
-                    <input type="text" name="q" class="rh-search-term rh-search-term-larger" placeholder="Skriv din sökning här" value="<?=$strSearchText?>" aria-label="Sökruta">
-                    <button type="submit" class="rh-search-button rh-search-button-larger">
-                        Sök
-                    </button>
-                </div>
-            </form>
 
             @if(isset($myData))
 
@@ -109,8 +110,15 @@
             @endif
 
 		</div>
-		<div class="pt3 pb3 pl4 col col-12 sm-col-12 md-col-4 lg-col-2">
-		&nbsp;
+		<div class="pt3 pb3 pl4 col col-12 sm-col-12 md-col-4 lg-col-4">
+            <h2 class="h3" style="border-bottom: 4px solid #378A30">Söktips - Region Halland</h2>
+            <div class="mt2 pt2 pl2 pb2" style="border-left: 4px solid #378A30; background-color: #C3DCC1; border-bottom-left-radius: 5px; border-top-left-radius: 5px;">
+            <ul>
+                <li>Se till att alla ord är rättstavade</li>
+                <li>Försök att använda synonymer</li>
+                <li>Försök med fler generella ord eller ta bort ett sökord</li>
+            </ul>
+            </div>
 		</div>
 	</div>
 </main>
