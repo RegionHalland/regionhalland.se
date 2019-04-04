@@ -50,7 +50,7 @@
 
 
                 @if($arrPrev)
-                    <a class="rh-pagination-link rh-pagination-link-previous" href="http://stage-demo.local/search/?<?=$myData['documentList']['pagination']['previousPage']['query']?>">Föregående sida</a>
+                    <a class="rh-pagination-link rh-pagination-link-previous" href="{!! env('FINDWISE_SEARCH_URL') !!}/?<?=$myData['documentList']['pagination']['previousPage']['query']?>">Föregående sida</a>
                 @else
                     <span class="rh-pagination-link rh-pagination-link-previous">Föregående sida</span>
                 @endif
