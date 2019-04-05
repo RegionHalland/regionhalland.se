@@ -59,6 +59,7 @@
                 @foreach ($myData['documentList']['documents'] as $data)
                     <li class="py2">
                         <a class="h2" href="{{ $data['url'] }}" style="color: black; text-decoration: none;">{!! $data['title'] !!}</a>
+                        <p>{!! $data['modified'] !!}</p>
                     </li>
                     {{-- <span>{{ $data['content'] }}</span><br><br> --}}
                 @endforeach
@@ -83,7 +84,8 @@
                     <span>&nbsp;</span>
                     @foreach ($myData['documentList']['pagination']['pages'] as $pages)
                         @if($pages['selected'] == 1)
-                        <strong><a class="rh-pagination-link" style="background-color: #FCAF15;" href="{!! env('FINDWISE_SEARCH_URL') !!}/?<?=$pages['query']?>">{!! $pages['displayName'] !!}</a></strong>
+                        <p><strong><a class="rh-pagination-link" style="background-color: #FCAF15;" href="{!! env('FINDWISE_SEARCH_URL') !!}/?<?=$pages['query']?>">{!! $pages['displayName'] !!}</a></strong></p>
+                            <p>{!! $pages['modified'] !!}</p>
                         @else
                         <span><a class="rh-pagination-link" href="{!! env('FINDWISE_SEARCH_URL') !!}/?<?=$pages['query']?>">{!! $pages['displayName'] !!}</a></span>
                         @endif
