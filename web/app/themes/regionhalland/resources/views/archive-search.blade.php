@@ -68,46 +68,46 @@
 
                 <ul class="pt2">
                     @if($arrFirst)
-                        <li class="rh-pagination-link rh-pagination-link-previous">
+                        <li class="rh-pagination-link rh-pagination-link-previous" style="display:inline;">
                         <a href="{!! env('FINDWISE_SEARCH_URL') !!}/?<?=$myData['documentList']['pagination']['firstPage']['query']?>">Första sidan</a>
                         </li>
                     @else
-                        <li class="rh-pagination-link rh-pagination-link-previous">Första sidan</li>
+                        <li class="rh-pagination-link rh-pagination-link-previous" style="display:inline;">Första sidan</li>
                     @endif
 
 
                     @if($arrPrev)
-                        <li class="rh-pagination-link">
+                        <li class="rh-pagination-link" style="display:inline;">
                         <a href="{!! env('FINDWISE_SEARCH_URL') !!}/?<?=$myData['documentList']['pagination']['previousPage']['query']?>">Föregående sida</a>
                         </li>
                     @else
-                        <li class="rh-pagination-link">Föregående sida</li>
+                        <li class="rh-pagination-link" style="display:inline;">Föregående sida</li>
                     @endif
 
                     @foreach ($myData['documentList']['pagination']['pages'] as $pages)
                         @if($pages['selected'] == 1)
-                            <li>
+                            <li style="display:inline;">
                         <strong><a class="rh-pagination-link" style="background-color: #FCAF15;" href="{!! env('FINDWISE_SEARCH_URL') !!}/?<?=$pages['query']?>">{!! $pages['displayName'] !!}</a></strong>
                             </li>
                         @else
-                        <li><a class="rh-pagination-link" href="{!! env('FINDWISE_SEARCH_URL') !!}/?<?=$pages['query']?>">{!! $pages['displayName'] !!}</a></li>
+                        <li style="display:inline;"><a class="rh-pagination-link" href="{!! env('FINDWISE_SEARCH_URL') !!}/?<?=$pages['query']?>">{!! $pages['displayName'] !!}</a></li>
                         @endif
                     @endforeach
 
                     @if($arrNext)
-                        <li>
+                        <li style="display:inline;">
                         <a class="rh-pagination-link" href="{!! env('FINDWISE_SEARCH_URL') !!}/?<?=$myData['documentList']['pagination']['nextPage']['query']?>">Nästa sida</a>
                         </li>
                     @else
-                        <li class="rh-pagination-link">Nästa sida</li>
+                        <li class="rh-pagination-link" style="display:inline;">Nästa sida</li>
                     @endif
 
                     @if($arrLast)
-                        <li>
+                        <li style="display:inline;">
                         <a class="rh-pagination-link rh-pagination-link-next" href="{!! env('FINDWISE_SEARCH_URL') !!}/?<?=$myData['documentList']['pagination']['lastPage']['query']?>">Sista sidan</a>
                         </li>
                         @else
-                        <li class="rh-pagination-link rh-pagination-link-next">Sista sidan</li>
+                        <li class="rh-pagination-link rh-pagination-link-next" style="display:inline;">Sista sidan</li>
                     @endif
                 </ul>
 
