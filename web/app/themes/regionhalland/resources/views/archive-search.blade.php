@@ -58,8 +58,8 @@
                 <ul>
                 @foreach ($myData['documentList']['documents'] as $data)
                     <li class="py2">
-                        <a class="h2" href="{{ $data['url'] }}" style="color: black; text-decoration: none;">{!! $data['title'] !!}</a>
-                        <p>{!! $data['modified'] !!}</p>
+                        <p><a class="h2" href="{{ $data['url'] }}" style="color: black; text-decoration: none;">{!! $data['title'] !!}</a></p>
+                        <p>Senast ändrad: {!! $data['modified'] !!}</p>
                     </li>
                     {{-- <span>{{ $data['content'] }}</span><br><br> --}}
                 @endforeach
