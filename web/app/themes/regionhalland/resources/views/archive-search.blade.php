@@ -75,9 +75,9 @@
 
 
                     @if($arrPrev)
-                        <a class="rh-pagination-link rh-pagination-link-previous" href="{!! env('FINDWISE_SEARCH_URL') !!}/?<?=$myData['documentList']['pagination']['previousPage']['query']?>">Föregående sida</a>
+                        <a class="rh-pagination-link" href="{!! env('FINDWISE_SEARCH_URL') !!}/?<?=$myData['documentList']['pagination']['previousPage']['query']?>">Föregående sida</a>
                     @else
-                        <span class="rh-pagination-link rh-pagination-link-previous">Föregående sida</span>
+                        <span class="rh-pagination-link">Föregående sida</span>
                     @endif
 
                     @foreach ($myData['documentList']['pagination']['pages'] as $pages)
