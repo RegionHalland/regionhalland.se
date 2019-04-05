@@ -56,7 +56,18 @@
 	                    <li class="py2">
 	                        <p><a class="h2" href="{{ $data['url'] }}" style="color: black; text-decoration: none;">{!! $data['title'] !!}</a></p>
 	                        <p>Senast ändrad: {!! $data['modified'] !!}</p>
-	                        
+	                        @if(function_exists('get_region_halland_breadcrumbs'))
+	                            @php($myBreadcrumbs = get_region_halland_breadcrumbs_pages_search(get_region_halland_breadcrumbs_pages_search_id($data['_id']), $data['title'], 'Start'))
+	                            @if(isset($myBreadcrumbs))
+	                                @foreach ($myBreadcrumbs as $myBreadcrumb)
+	                                    @if ($myBreadcrumb['url'])
+	                                        <a href="{{ $myBreadcrumb['url'] }}" style="color:#378A30; text-decoration:none;">{!! $myBreadcrumb['name'] !!}</a><span style="color:#378A30">  >  </span>
+	                                    @else
+	                                        <a href="{{ $data['url'] }}" style="color:#378A30; text-decoration:none;">{!! $myBreadcrumb['name'] !!}</a>
+	                                    @endif
+	                                @endforeach
+	                            @endif
+	                        @endif
 	                    </li>
 	                    {{-- <span>{{ $data['content'] }}</span><br><br> --}}
 
