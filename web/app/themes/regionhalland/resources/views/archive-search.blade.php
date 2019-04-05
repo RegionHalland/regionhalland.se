@@ -65,45 +65,41 @@
                 @endforeach
                 </ul>
 
-                <br><br>
 
-                @if($arrFirst)
-                    <a class="rh-pagination-link rh-pagination-link-previous" href="{!! env('FINDWISE_SEARCH_URL') !!}/?<?=$myData['documentList']['pagination']['firstPage']['query']?>">Första sidan</a>
-                @else
-                    <span class="rh-pagination-link rh-pagination-link-previous">Första sidan</span>
-                @endif
+                <div class="pt2">
+                    @if($arrFirst)
+                        <a class="rh-pagination-link rh-pagination-link-previous" href="{!! env('FINDWISE_SEARCH_URL') !!}/?<?=$myData['documentList']['pagination']['firstPage']['query']?>">Första sidan</a>
+                    @else
+                        <span class="rh-pagination-link rh-pagination-link-previous">Första sidan</span>
+                    @endif
 
 
-                @if($arrPrev)
-                    <a class="rh-pagination-link rh-pagination-link-previous" href="{!! env('FINDWISE_SEARCH_URL') !!}/?<?=$myData['documentList']['pagination']['previousPage']['query']?>">Föregående sida</a>
-                @else
-                    <span class="rh-pagination-link rh-pagination-link-previous">Föregående sida</span>
-                @endif
+                    @if($arrPrev)
+                        <a class="rh-pagination-link rh-pagination-link-previous" href="{!! env('FINDWISE_SEARCH_URL') !!}/?<?=$myData['documentList']['pagination']['previousPage']['query']?>">Föregående sida</a>
+                    @else
+                        <span class="rh-pagination-link rh-pagination-link-previous">Föregående sida</span>
+                    @endif
 
-                <span>
-                    <span>&nbsp;</span>
                     @foreach ($myData['documentList']['pagination']['pages'] as $pages)
                         @if($pages['selected'] == 1)
-                        <p><strong><a class="rh-pagination-link" style="background-color: #FCAF15;" href="{!! env('FINDWISE_SEARCH_URL') !!}/?<?=$pages['query']?>">{!! $pages['displayName'] !!}</a></strong></p>
-                            <p>{!! $pages['modified'] !!}</p>
+                        <strong><a class="rh-pagination-link" style="background-color: #FCAF15;" href="{!! env('FINDWISE_SEARCH_URL') !!}/?<?=$pages['query']?>">{!! $pages['displayName'] !!}</a></strong>
                         @else
                         <span><a class="rh-pagination-link" href="{!! env('FINDWISE_SEARCH_URL') !!}/?<?=$pages['query']?>">{!! $pages['displayName'] !!}</a></span>
                         @endif
                     @endforeach
-                    <span>&nbsp;</span>
-                </span>
 
-                @if($arrNext)
-                    <a class="rh-pagination-link rh-pagination-link-next" href="{!! env('FINDWISE_SEARCH_URL') !!}/?<?=$myData['documentList']['pagination']['nextPage']['query']?>">Nästa sida</a>
-                @else
-                    <span class="rh-pagination-link rh-pagination-link-next">Nästa sida</span>
-                @endif
-
-                @if($arrLast)
-                    <a class="rh-pagination-link rh-pagination-link-next" href="{!! env('FINDWISE_SEARCH_URL') !!}/?<?=$myData['documentList']['pagination']['lastPage']['query']?>">Sista sidan</a>
+                    @if($arrNext)
+                        <a class="rh-pagination-link rh-pagination-link-next" href="{!! env('FINDWISE_SEARCH_URL') !!}/?<?=$myData['documentList']['pagination']['nextPage']['query']?>">Nästa sida</a>
                     @else
-                    <span class="rh-pagination-link rh-pagination-link-next">Sista sidan</span>
-                @endif
+                        <span class="rh-pagination-link rh-pagination-link-next">Nästa sida</span>
+                    @endif
+
+                    @if($arrLast)
+                        <a class="rh-pagination-link rh-pagination-link-next" href="{!! env('FINDWISE_SEARCH_URL') !!}/?<?=$myData['documentList']['pagination']['lastPage']['query']?>">Sista sidan</a>
+                        @else
+                        <span class="rh-pagination-link rh-pagination-link-next">Sista sidan</span>
+                    @endif
+                </div>
 
             @else
 
