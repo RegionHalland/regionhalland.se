@@ -63,7 +63,9 @@
                     </li>
                     {{-- <span>{{ $data['content'] }}</span><br><br> --}}
                     @if(function_exists('get_region_halland_breadcrumbs'))
-                        @php(getID($data['_id']))
+                        <?php
+                            getID($data['_id'])
+                        ?>
                         @php($myBreadcrumbs = get_region_halland_breadcrumbs(getID($data['_id'])))
                         @if(isset($myBreadcrumbs))
                             @foreach ($myBreadcrumbs as $myBreadcrumb)
