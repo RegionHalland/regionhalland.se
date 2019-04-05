@@ -27,17 +27,32 @@
 				<h1>{{ the_title() }}</h1>
 				
 				{{-- Content --}}
-				
 				@if(function_exists('get_region_halland_prepare_the_content'))
 					@php(get_region_halland_prepare_the_content())
 				@endif
-
 				<article class="rh-article">
 					<p><strong>{{ get_region_halland_acf_page_ingress() }}</strong></p>
 					{!! the_content() !!}
 				</article>
 				{{-- Content END --}}
 
+				{{-- HSA --}}
+				@php($myPerson = get_region_halland_acf_page_personer_enheter_person())
+				@php($myEnhet = get_region_halland_acf_page_personer_enheter_enhet())
+				{{ $myPerson }}<br>
+				{{ $myEnhet }}
+				<br><br>
+				
+				@php($myPersonData = get_region_halland_personer_enheter(1, $myPerson, ""))
+    			<?php var_dump($myPersonData); ?>
+				
+				<br><br>
+
+				@php($myEnhetData = get_region_halland_personer_enheter(2, "", $myEnhet))
+    			<?php var_dump($myEnhetData); ?>
+
+				{{-- HSA END --}}
+				
 				{{-- Author --}}
 				<div class="pt4">
 					@include('partials.author-info')

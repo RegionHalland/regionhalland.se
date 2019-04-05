@@ -23,7 +23,7 @@
                 </div>
                 </div>
             </div>
-
+            
             @include('partials.new_blurbs-list')
 
             @if(function_exists('get_region_halland_page_news_taxonomi_category'))

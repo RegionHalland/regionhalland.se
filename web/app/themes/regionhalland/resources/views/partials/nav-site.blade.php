@@ -16,12 +16,6 @@
 
     {{-- Utilities END --}}
     <div class="rh-header-search-desktop">
-        <?php 
-            $strSearchText = "";
-            if(isset($_GET["q"])){
-                $strSearchText = $_GET["q"];
-            }
-        ?>
         <form name="myForm" method="get" action="{!! env('FINDWISE_SEARCH_URL') !!}">
             <?php 
                 $strSearchText = "";
