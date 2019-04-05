@@ -65,7 +65,7 @@
                             @if(isset($myBreadcrumbs))
                                 @foreach ($myBreadcrumbs as $myBreadcrumb)
                                     @if ($myBreadcrumb['url'])
-                                        <a href="{{ $myBreadcrumb['url'] }}" style="color:green; text-underline:none;">{!! $myBreadcrumb['name'] !!}</a>
+                                        <a href="{{ $myBreadcrumb['url'] }}" style="color:green; text-decoration:none;">{!! $myBreadcrumb['name'] !!}</a>
                                     @else
                                         <a href="{{ $data['url'] }}" style="color:green; text-decoration:none;">{!! $myBreadcrumb['name'] !!}</a>
                                     @endif
