@@ -11,62 +11,57 @@
                 <strong>Telefon:</strong> 035 - 13 48 00<br>
                 <strong>E-post:</strong> <a href="mailto:regionen@regionhalland.se">regionen@regionhalland.se</a>
             </p>
-            <p class="h2 pt3">
-                Fler kontaktvägar
+            <p>
+                <a href="/om-region-halland/kontakt/">Fler kontaktvägar</a>
             </p>
             <p>
-                <a href="">Visselblås</a>
+                <a href="/om-region-halland/kontakt/anmal-misstanke-om-jav-mutor-eller-tjanstefel/">Anmäl misstanke om jäv, mutor eller tjänstefel</a>
             </p>
 
         </div>
 
         <div class="left-align col col-12 sm-col-6 md-col-6 lg-col-4">
-            <p class="h2">Nyheter och press</p>
-            <p><a href="">(länk till sida)</a></p>
-            <p class="h2 pt3">Följ oss</p>
-            <p><a href="">Region Halland i sociala medier</a></p>
+            <p class="h2">Aktuellt</p>
+            <ul>
+                <li><a href="/nyheter">Nyhetsarkiv</a></li>
+                <li><a href="http://press.regionhalland.se">Pressrum</a></li>
+                <li><a href="/om-region-halland/kontakt/region-halland-i-sociala-medier/">Region Halland i sociala medier</a></li>
+                <li><a href="/demokrati-och-politik/anslagstavla/">Anslagstavla</a></li>
+                <li><a href="/demokrati-och-politik/moten-och-handlingar/">Möten och handlingar</a></li>
+            </ul>
+            <p class="h2 pt2">Andra webbplatser</p>
+            <ul>
+                <li><a href="https://www.1177.se/Halland">1177</a></li>
+                <li><a href="https://vardgivare.regionhalland.se/">Vårdgivarwebben</a></li>
+                <li><a href="https://www.hallandstrafiken.se/">Hallandstrafiken</a></li>
+                <li><a href="https://www.visithalland.com/">Visit Halland</a></li>
+                <li><a href="http://www.teaterhalland.nu/">Teater Halland</a></li>
+            </ul>
+        </div>
+        <div class="left-align col col-12 sm-col-6 md-col-6 lg-col-4">
+            <p class="h2">Om webbplatsen</p>
+            <ul>
+                <li><a href="/om-region-halland/om-webbplatsen/">Information om cookies</a></li>
+                <li><a href="/om-region-halland/dataskydd/">Behandling av personuppgifter</a></li>
+            </ul>
+
             <p class="h2 pt3">Ämnesområden</p>
             @php($first_level_pages = get_region_halland_tree_first_level())
             @if(isset($first_level_pages) && !empty($first_level_pages))
                 <ul>
-                @foreach($first_level_pages as $first_level_page)
-                    @if($first_level_page->active === true)
-                        <li>
-                            <a class="active" href="{{ $first_level_page->url }}">{{ $first_level_page->post_title }}</a>
-                        </li>
-                    @else
-                        <li>
-                            <a href="{{ $first_level_page->url }}">{{ $first_level_page->post_title }}</a>
-                        </li>
-                    @endif
-                @endforeach
+                    @foreach($first_level_pages as $first_level_page)
+                        @if($first_level_page->active === true)
+                            <li>
+                                <a class="active" href="{{ $first_level_page->url }}">{{ $first_level_page->post_title }}</a>
+                            </li>
+                        @else
+                            <li>
+                                <a href="{{ $first_level_page->url }}">{{ $first_level_page->post_title }}</a>
+                            </li>
+                        @endif
+                    @endforeach
                 </ul>
             @endif
-
-
-        </div>
-        <div class="left-align col col-12 sm-col-6 md-col-6 lg-col-4">
-            <p class="h2">Om webbplatsen<p>
-            <p>
-                <a href="">Om webbplatsen</a><br>
-                <a href="">Behandling av personuppgifter</a>
-            </p>
-            <p class="h2 pt3">
-                Felanmälan och synpunkter
-            </p>
-            <a href="">Felanmälanssystem</a>
-            <p class="h2 pt3">Demokrati och politik</p>
-            <p>
-                @if(function_exists('get_region_halland_page_children'))
-                    @php($myPages = get_region_halland_page_children(14))
-                    @if(isset($myPages))
-                        @foreach ($myPages as $myChilds)
-                            <a href="{{ $myChilds->url }}">{{ $myChilds->post_title }}</a><br>
-                        @endforeach
-                    @endif
-                @endif
-
-            </p>
 
         </div>
     </div>
