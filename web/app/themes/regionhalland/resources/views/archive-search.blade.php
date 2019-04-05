@@ -60,8 +60,6 @@
                     <li class="py2">
                         <p><a class="h2" href="{{ $data['url'] }}" style="color: black; text-decoration: none;">{!! $data['title'] !!}</a></p>
                         <p>Senast ändrad: {!! $data['modified'] !!}</p>
-                    </li>
-                    {{-- <span>{{ $data['content'] }}</span><br><br> --}}
                         @if(function_exists('get_region_halland_breadcrumbs'))
                             @php($myBreadcrumbs = get_region_halland_breadcrumbs_pages_search(getID($data['_id']), $data['title'], 'Start'))
                             @if(isset($myBreadcrumbs))
@@ -74,6 +72,9 @@
                                 @endforeach
                             @endif
                         @endif
+                    </li>
+                    {{-- <span>{{ $data['content'] }}</span><br><br> --}}
+
 
                 @endforeach
                 </ul>
