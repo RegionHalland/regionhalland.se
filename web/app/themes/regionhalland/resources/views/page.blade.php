@@ -36,21 +36,6 @@
 				</article>
 				{{-- Content END --}}
 
-				{{-- HSA --}}
-				@php($myPerson = get_region_halland_acf_page_personer_enheter_person())
-				@php($myEnhet = get_region_halland_acf_page_personer_enheter_enhet())
-				{{ $myPerson }}<br>
-				{{ $myEnhet }}
-				<br><br>
-				
-				@php($myPersonData = get_region_halland_personer_enheter(1, $myPerson, ""))
-    			<?php var_dump($myPersonData); ?>
-				
-				<br><br>
-
-				@php($myEnhetData = get_region_halland_personer_enheter(2, "", $myEnhet))
-    			<?php var_dump($myEnhetData); ?>
-
 				{{-- HSA END --}}
 				
 				{{-- Author --}}
