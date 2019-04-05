@@ -62,7 +62,20 @@
                         <p>Senast ändrad: {!! $data['modified'] !!}</p>
                     </li>
                     {{-- <span>{{ $data['content'] }}</span><br><br> --}}
-                    
+                        @if(function_exists('get_region_halland_breadcrumbs'))
+                            {!! getID($data['_id']) !!}
+                            @php($myBreadcrumbs = get_region_halland_breadcrumbs_pages_search(getID($data['_id']), $data['title'], 'Start'))
+                            @if(isset($myBreadcrumbs))
+                                @foreach ($myBreadcrumbs as $myBreadcrumb)
+                                    @if ($myBreadcrumb['url'])
+                                        <a href="{{ $myBreadcrumb['url'] }}">{!! $myBreadcrumb['name'] !!}</a>
+                                    @else
+                                        <span>{!! $myBreadcrumb['name'] !!}</span>
+                                    @endif
+                                @endforeach
+                            @endif
+                        @endif
+
                 @endforeach
                 </ul>
 
