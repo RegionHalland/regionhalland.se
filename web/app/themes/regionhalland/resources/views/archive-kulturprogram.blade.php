@@ -13,7 +13,7 @@
 				<h1 class="pb2 rh-lists-title">Kulturprogram</h1>
 				
 				@if($myItems['dans'])
-					<h3 class="pb2 rh-lists-title">Dans</h3>
+					<h2 class="pb2 rh-lists-title">Dans</h2>
 					@foreach($myItems['dans'] as $item)
 						<li class="rh-lists-items">
 							<p class="rh-lists-items-left"><a href="{{ $item['page']->url }}" style="color:black; text-decoration: none;">{{ $item['page']->post_title }}</a></p>
@@ -24,7 +24,7 @@
 				@endif
 				
 				@if($myItems['film'])
-					<h3 class="pb2 rh-lists-title">Film</h3>
+					<h2 class="pb2 rh-lists-title">Film</h2>
 					@foreach($myItems['film'] as $item)
 						<li class="rh-lists-items">
 							<p class="rh-lists-items-left"><a href="{{ $item['page']->url }}" style="color:black; text-decoration: none;">{{ $item['page']->post_title }}</a></p>
@@ -35,7 +35,7 @@
 				@endif
 
 				@if($myItems['konst'])
-					<h3 class="pb2 rh-lists-title">Konst</h3>
+					<h2 class="pb2 rh-lists-title">Konst</h2>
 					@foreach($myItems['konst'] as $item)
 						<li class="rh-lists-items">
 							<p class="rh-lists-items-left"><a href="{{ $item['page']->url }}" style="color:black; text-decoration: none;">{{ $item['page']->post_title }}</a></p>
@@ -46,7 +46,7 @@
 				@endif
 
 				@if($myItems['kulturarv'])
-					<h3 class="pb2 rh-lists-title">Kulturarv</h3>
+					<h2 class="pb2 rh-lists-title">Kulturarv</h2>
 					@foreach($myItems['kulturarv'] as $item)
 						<li class="rh-lists-items">
 							<p class="rh-lists-items-left"><a href="{{ $item['page']->url }}" style="color:black; text-decoration: none;">{{ $item['page']->post_title }}</a></p>
@@ -57,7 +57,7 @@
 				@endif
 
 				@if($myItems['musik'])
-					<h3 class="pb2 rh-lists-title">Musik</h3>
+					<h2 class="pb2 rh-lists-title">Musik</h2>
 					@foreach($myItems['musik'] as $item)
 						<li class="rh-lists-items">
 							<p class="rh-lists-items-left"><a href="{{ $item['page']->url }}" style="color:black; text-decoration: none;">{{ $item['page']->post_title }}</a></p>
@@ -68,7 +68,7 @@
 				@endif
 					
 				@if($myItems['slojd'])
-					<h3 class="pb2 rh-lists-title">Slöjd</h3>
+					<h2 class="pb2 rh-lists-title">Slöjd</h2>
 					@foreach($myItems['slojd'] as $item)
 						<li class="rh-lists-items">
 							<p class="rh-lists-items-left"><a href="{{ $item['page']->url }}" style="color:black; text-decoration: none;">{{ $item['page']->post_title }}</a></p>
@@ -79,7 +79,7 @@
 				@endif
 
 				@if($myItems['teater'])
-					<h3 class="pb2 rh-lists-title">Teater</h3>
+					<h2 class="pb2 rh-lists-title">Teater</h2>
 					@foreach($myItems['teater'] as $item)
 						<li class="rh-lists-items">
 							<p class="rh-lists-items-left"><a href="{{ $item['page']->url }}" style="color:black; text-decoration: none;">{{ $item['page']->post_title }}</a></p>
