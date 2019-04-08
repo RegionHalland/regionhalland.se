@@ -33,11 +33,9 @@
                                 <p class="">
                                     {!! $item->kultur_plats !!}
                                 </p>
-                                <span class="rh-labels">
                                     @foreach($item->sub_category_labels as $label)
-                                    {{ $label['label'] }}
+                                    <span class="rh-labels">{{ $label['label'] }}</span>
                                     @endforeach
-                                </span>
                             </div>
                         </div>
                     </li>
