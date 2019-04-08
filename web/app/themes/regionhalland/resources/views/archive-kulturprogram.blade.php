@@ -16,8 +16,8 @@
 					<h3 class="pb2 rh-lists-title">Dans</h3>
 					@foreach($myItems['dans'] as $item)
 						<li class="rh-lists-items">
-							<p class="rh-lists-items-left"><a href="{{ $item['page']->url }}" style="color:black; text-decoration: none;">{{ $item['page']->post_title }}</a></p>
-							<p class="rh-lists-items-right"><strong>Målgrupp:</strong> {{ $item['page']->malgrupp }}</p>
+							<p class=""><a href="{{ $item['page']->url }}" style="color:black; text-decoration: none;">{{ $item['page']->post_title }}</a></p>
+							{{--<p class=""><strong>Målgrupp:</strong> {{ $item['page']->malgrupp }}</p>--}}
 							<hr class="rh-lists-items-hr">
 						</li>
 					@endforeach
@@ -28,7 +28,7 @@
 					@foreach($myItems['film'] as $item)
 						<li class="rh-lists-items">
 							<p class="rh-lists-items-left"><a href="{{ $item['page']->url }}" style="color:black; text-decoration: none;">{{ $item['page']->post_title }}</a></p>
-							<p class="rh-lists-items-right"><strong>Målgrupp:</strong> {{ $item['page']->malgrupp }}</p>
+							{{--<p class="rh-lists-items-right"><strong>Målgrupp:</strong> {{ $item['page']->malgrupp }}</p>--}}
 							<hr class="rh-lists-items-hr">
 						</li>
 					@endforeach
@@ -39,7 +39,7 @@
 					@foreach($myItems['konst'] as $item)
 						<li class="rh-lists-items">
 							<p class="rh-lists-items-left"><a href="{{ $item['page']->url }}" style="color:black; text-decoration: none;">{{ $item['page']->post_title }}</a></p>
-							<p class="rh-lists-items-right"><strong>Målgrupp:</strong> {{ $item['page']->malgrupp }}</p>
+							{{--<p class="rh-lists-items-right"><strong>Målgrupp:</strong> {{ $item['page']->malgrupp }}</p>--}}
 							<hr class="rh-lists-items-hr">
 						</li>
 					@endforeach
@@ -50,7 +50,7 @@
 					@foreach($myItems['kulturarv'] as $item)
 						<li class="rh-lists-items">
 							<p class="rh-lists-items-left"><a href="{{ $item['page']->url }}" style="color:black; text-decoration: none;">{{ $item['page']->post_title }}</a></p>
-							<p class="rh-lists-items-right"><strong>Målgrupp:</strong> {{ $item['page']->malgrupp }}</p>
+							{{--<p class="rh-lists-items-right"><strong>Målgrupp:</strong> {{ $item['page']->malgrupp }}</p>--}}
 							<hr class="rh-lists-items-hr">
 						</li>
 					@endforeach
@@ -61,7 +61,7 @@
 					@foreach($myItems['musik'] as $item)
 						<li class="rh-lists-items">
 							<p class="rh-lists-items-left"><a href="{{ $item['page']->url }}" style="color:black; text-decoration: none;">{{ $item['page']->post_title }}</a></p>
-							<p class="rh-lists-items-right"><strong>Målgrupp:</strong> {{ $item['page']->malgrupp }}</p>
+							{{--<p class="rh-lists-items-right"><strong>Målgrupp:</strong> {{ $item['page']->malgrupp }}</p>--}}
 							<hr class="rh-lists-items-hr">
 						</li>
 					@endforeach
@@ -72,7 +72,7 @@
 					@foreach($myItems['slojd'] as $item)
 						<li class="rh-lists-items">
 							<p class="rh-lists-items-left"><a href="{{ $item['page']->url }}" style="color:black; text-decoration: none;">{{ $item['page']->post_title }}</a></p>
-							<p class="rh-lists-items-right"><strong>Målgrupp:</strong> {{ $item['page']->malgrupp }}</p>
+							{{--<p class="rh-lists-items-right"><strong>Målgrupp:</strong> {{ $item['page']->malgrupp }}</p>--}}
 							<hr class="rh-lists-items-hr">
 						</li>
 					@endforeach
@@ -83,7 +83,7 @@
 					@foreach($myItems['teater'] as $item)
 						<li class="rh-lists-items">
 							<p class="rh-lists-items-left"><a href="{{ $item['page']->url }}" style="color:black; text-decoration: none;">{{ $item['page']->post_title }}</a></p>
-							<p class="rh-lists-items-right"><strong>Målgrupp:</strong> {{ $item['page']->malgrupp }}</p>
+							{{--<p class="rh-lists-items-right"><strong>Målgrupp:</strong> {{ $item['page']->malgrupp }}</p>--}}
 							<hr class="rh-lists-items-hr">
 						</li>
 					@endforeach
