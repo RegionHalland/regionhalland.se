@@ -1,9 +1,5 @@
 <nav class="rh-header center px3" aria-label="Sidhuvud" style="max-width: 1440px;">
-    <div class="rh-header-logo">
-        <div class="rh-logo-sitename">
-            <a href="/"><img class="rh-logo-sitename-logo" src="/styleguide2.2.1/images/components/rh-logo-sitename/navigation_logo.svg" alt="Länk till förstasidan"></a>
-        </div>
-    </div>
+    <a href="/"><img class="" src="/include/img/rh-logo.jpg" alt="Länk till förstasidan"></a>
     {{-- Utilities --}}
     <div class="rh-toplinks">
         <ul class="rh-toplinks-nav" aria-label="Genvägar i sidhuvudet">
