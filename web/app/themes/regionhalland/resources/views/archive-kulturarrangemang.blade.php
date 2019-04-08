@@ -27,9 +27,9 @@
                                 <p class="rh-event-card-calendar-inline rh-event-card-calendar-time">
                                     {{ $item->kultur_tid }}
                                 </p>
-                                <p class="">
+                                {{-- <p class="">
                                     {{ $item->kultur_start_tid_dag }} {{ $item->kultur_start_tid_manad }}
-                                </p>
+                                </p>--}}
                                 <p class="">
                                     {!! $item->kultur_plats !!}
                                 </p>
