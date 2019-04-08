@@ -11,7 +11,7 @@
 			</div>
 		</div>
 
-		<div class="center px4 pt3 pb4" style="max-width: 1440px;">
+		<div class="center px4 pt3 pb4 rh-article" style="max-width: 1440px;">
 			<div class="left-align">
 				<div class="">
 					@while(have_posts()) @php(the_post())

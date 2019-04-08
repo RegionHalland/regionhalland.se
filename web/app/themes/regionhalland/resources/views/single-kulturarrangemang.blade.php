@@ -17,7 +17,7 @@
 		<div class="left-align">
 			<div class="">
 				@while(have_posts()) @php(the_post())
-					<article class="clearfix">
+					<article class="rh-article clearfix">
 						<div class="col col-12 md-col-9 pr4">
 							<h1 class="">{{ $post->post_title }}</h1>
 							{{ get_region_halland_acf_page_kulturarrangemang_ingress() }}
