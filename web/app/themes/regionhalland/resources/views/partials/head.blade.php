@@ -28,7 +28,7 @@
 		}
 
 		.rh-article ol {
-			list-style-type: initial;
+			list-style-type: decimal;
 			padding-left: 2ex;
 			line-height: 1.37em;
 		}
