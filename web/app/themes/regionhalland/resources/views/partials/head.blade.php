@@ -24,8 +24,9 @@
 		.rh-article ul {
 			list-style-type: disc;
 			padding-left: 2ex;
+			line-height: 1.37em;
 		}
 
-		
+
 	</style>
 </head>
