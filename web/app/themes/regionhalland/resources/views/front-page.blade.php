@@ -7,14 +7,14 @@
         <ul class="flex flex-wrap px3 pt3 center" aria-label="Undersidor" style="max-width: 1440px;">
         @php($first_level_pages = get_region_halland_tree_first_level())
             @foreach($first_level_pages as $index => $page)
-                <li class="rh-navigation-card col-12 sm-col-6 md-col-4 lg-col-3 pr2">
+                <li class="rh-navigation-card col-12 sm-col-6 md-col-4 lg-col-3 pr2" style="height: 100px; position:relative">
                     <div class="rh-navigation-card-title">
                         <span class="rh-navigation-card-title-icon"></span>
                         <strong><a href="{{ $page->url }}" class="h3" style="color:black; text-decoration: none;">
                             {{ $page->post_title }}
                         </a></strong>
                     </div>
-                    <p class="rh-navigation-card-description left-align" style="color:#575757;">
+                    <p class="rh-navigation-card-description left-align" style="overflow:hidden; color:#575757;">
                         {{ get_region_halland_acf_page_navigation_text($page->ID) }}
                     </p>
                 </li>
