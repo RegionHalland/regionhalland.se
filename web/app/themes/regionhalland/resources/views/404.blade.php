@@ -2,7 +2,7 @@
 
 @section('content')
 <div class="center py4 px4" style="max-width:1440px;">
-	<div class="left-align">
+	<div class="rh-article left-align">
 		@if (!have_posts())
 			<h1 class="">{{ __('Sidan du söker efter verkar inte finnas.', 'halland') }}</h1>
 
