@@ -1,5 +1,5 @@
 <footer id="footer-top-placeholder" style="background-color: #C3DCC1; line-height: 1.4;">
-    <div class="clearfix center pt3 pb3" style="max-width: 1440px;">
+    <div class="clearfix center px3 pt3 pb3" style="max-width: 1440px;">
         <div class="left-align col col-12 sm-col-6 md-col-6 lg-col-3">
             <p class="h2">Kontakta oss</p>
             <p>
