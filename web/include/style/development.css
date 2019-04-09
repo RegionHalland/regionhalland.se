@@ -5,6 +5,10 @@
  *
 **/
 
+footer a {
+  color: black;
+}
+
 .rh-get-sticky {
   position: -webkit-sticky;
   position: sticky;
