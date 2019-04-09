@@ -29,14 +29,6 @@
                 <li><a href="/demokrati-och-politik/anslagstavla/">Anslagstavla</a></li>
                 <li><a href="/demokrati-och-politik/moten-och-handlingar/">Möten och handlingar</a></li>
             </ul>
-            <p class="h2 pt2">Andra webbplatser</p>
-            <ul>
-                <li><a href="https://www.1177.se/Halland">1177</a></li>
-                <li><a href="https://vardgivare.regionhalland.se/">Vårdgivarwebben</a></li>
-                <li><a href="https://www.hallandstrafiken.se/">Hallandstrafiken</a></li>
-                <li><a href="https://www.visithalland.com/">Visit Halland</a></li>
-                <li><a href="http://www.teaterhalland.nu/">Teater Halland</a></li>
-            </ul>
         </div>
         <div class="left-align col col-12 sm-col-6 md-col-6 lg-col-3">
             <p class="h2">Om webbplatsen</p>
