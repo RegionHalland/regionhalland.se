@@ -19,7 +19,7 @@
 			<a href="http://regionhalland.se/vara-skolor/">Information och ansökan till naturbruksgymnasium och folkhögskolor</a>
 
 			<h2 class="pt2">Hjälp oss att bli bättre</h2>
-			Att sidan inte hittades kan bero på flera saker. Det kan vara så att vi gjort fel eller så är det fel någon annanstans. Välkommen att <a href="mailto:infomaster@regionhalland.se">höra av dig via e-post</a> så har vi större chans att rätta till det.
+			Att sidan inte hittades kan bero på flera saker. Det kan vara vi som har gjort fel eller det kan vara felaktiga länkar till vår webbplats någon annanstans. Välkommen att <a href="mailto:infomaster@regionhalland.se">höra av dig via e-post</a> så att vi får reda på vad som inte fungerar.
 		@endif
 	</div>
 </div>
