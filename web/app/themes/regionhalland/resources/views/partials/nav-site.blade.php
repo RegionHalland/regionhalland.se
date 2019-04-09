@@ -4,7 +4,7 @@
     <div class="rh-toplinks">
         <ul class="rh-toplinks-nav" aria-label="Genvägar i sidhuvudet">
             <li class="rh-toplinks-nav-item">
-                <i class="feather icon-headphones rh-toplinks-nav-link-icon"></i>
+                <i class="feather icon-volume-1 rh-toplinks-nav-link-icon"></i>
                 <a class="rh-toplinks-nav-link" href="#">Talande webb</a>
             </li>
         </ul>
