@@ -140,6 +140,10 @@
       "url": "https://github.com/RegionHalland/region-halland-acf-page-personer-enheter.git"
     },
     {
+      "type": "vcs",
+      "url": "https://github.com/RegionHalland/region-halland-acf-page-i-frame.git"
+    },
+    {
        "type": "vcs",
        "url": "https://github.com/RegionHalland/mfpconnect.git"
     },
@@ -205,7 +209,8 @@
     "regionhalland/region-halland-search-findwise-region-halland": "1.0.1",
     "regionhalland/region-halland-dummy-data-personer-enheter": "1.0.0",
     "regionhalland/region-halland-breadcrumbs-pages-search": "1.1.0",
-    "regionhalland/region-halland-acf-page-personer-enheter": "1.0.0",
+    "regionhalland/region-halland-acf-page-personer-enheter": "1.0.1",
+    "regionhalland/region-halland-acf-page-i-frame": "1.1.0",
     "regionhalland/mfpconnect": "1.0.1",
     "regionhalland/mfpconnectmedia": "1.0.1",
     "wpackagist-plugin/enable-media-replace":"3.2.9"
