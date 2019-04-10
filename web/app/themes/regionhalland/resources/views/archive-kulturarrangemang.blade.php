@@ -7,7 +7,7 @@
         <h1 class="left-align pb2">
             Kulturarrangemang
         </h1>
-        <div class="col-12 sm-col-8 md-col-8 lg-col-8 left-align" style="font-size: 1.1em;">
+        <div class="col-12 sm-col-8 md-col-8 lg-col-8 left-align" style="font-size: 1.2em; line-height: 1.4;">
             Region Halland gör många olika kulturarrangemang, ofta i samarbete med andra arrangörer. Välkommen till föreställningar, konserter, samtal och andra aktiviteter!
         </div>
     </div>
