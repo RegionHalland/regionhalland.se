@@ -11,7 +11,9 @@
 			<ul class="rh-lists">
 				
 				<h1 class="pb2 rh-lists-title">Kulturprogram för barn och unga</h1>
-				
+				<div style="font-size: 1.2em; line-height: 1.4;" class="mx3 col-12 sm-col-8 md-col-8 lg-col-8">Förskola, skola och andra arrangörer kan köpa subventionerade kulturprogram för barn och unga 2-18 år, för skolföreställningar eller offentliga föreställningar i Halland</div>
+				<p><a href="/kultur/kulturbarnunga/bokning-av-kulturprogram-for-barn-och-unga/">Så här bokar och redovisar du subventionerade kulturprogram för barn och unga</a></p>
+				<p><a href="/kultur/kulturbarnunga/regionala-subventioner-till-kultur-for-barn-och-unga/">Läs mer om regionala subventioner till kultur för barn och unga</a></p>
 				@if($myItems['dans'])
 					<h2 class="pb2 rh-lists-title">Dans</h2>
 					@foreach($myItems['dans'] as $item)
