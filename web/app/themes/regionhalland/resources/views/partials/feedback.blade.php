@@ -1,0 +1,1 @@
+<a class="pt4" href="mailto:infomaster@regionhalland.se?subject=Synpunkt på {{ get_bloginfo($show = 'name') }} - {{ $post->post_title }}&body={{ esc_url(home_url('/')) }}{{$post->post_name}}">Lämna en synpunkt</a>

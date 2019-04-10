@@ -43,6 +43,7 @@
 					@include('partials.author-info')
 				</div>
 				{{-- Author END --}}
+				@include('partials.feedback')
 
 			@endwhile
 
