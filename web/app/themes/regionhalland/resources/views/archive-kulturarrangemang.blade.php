@@ -5,7 +5,7 @@
 <main class="" id="main">
 	<div class="center px4 pt3 pb2" style="max-width: 1440px;">
         <h1 class="left-align pb2">
-            Arrangemangskalender
+            Kulturarrangemang
         </h1>
     </div>
     <div style="background-color: #E4E4E4">
