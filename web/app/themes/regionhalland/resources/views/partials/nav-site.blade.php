@@ -20,8 +20,8 @@
                 }
             ?>
             <div class="rh-search-field">
-                <input type="text" name="q" class="rh-search-term" placeholder="Skriv din sökning här" value="<?=$strSearchText?>" aria-label="Sökruta">
-                <button type="submit" class="rh-search-button">
+                <input type="text" name="q" class="rh-search-term" placeholder="Skriv din sökning här" value="<?=$strSearchText?>" style="height:5ex;" aria-label="Sökruta">
+                <button type="submit" class="rh-search-button" style="height:5ex; width:8ex;">
                     Sök
                 </button>
             </div>
