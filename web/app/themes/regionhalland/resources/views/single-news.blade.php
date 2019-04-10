@@ -7,6 +7,12 @@
 			@while(have_posts()) @php(the_post())
 				<h1 class="">{{ get_the_title() }}</h1>
 				<div class="">
+					@php($myIngress = get_region_halland_page_news_taxonomi_category_ingress())
+					@if($myIngress)
+						<p>
+							<strong>{{ $myIngress }}</strong>
+						</p>
+					@endif
 					<p>{{ the_content() }}</p>
 				</div>
 			@include('partials.feedback')
