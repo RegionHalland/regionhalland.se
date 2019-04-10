@@ -9,6 +9,7 @@
 				<div class="">
 					<p>{{ the_content() }}</p>
 				</div>
+			@include('partials.feedback')
 
 			@endwhile
 		</main>
@@ -17,7 +18,6 @@
         <div class="mt2 pt2 pl2 pb2" style="border-left: 4px solid #61A2D8; background-color: #D0E3F3; border-bottom-left-radius: 5px; border-top-left-radius: 5px;">
             <p><strong>Publicerad:</strong> {{ get_the_date('Y-m-d') }}
             <p><strong>Senast ändrad:</strong> <time itemprop="dateModified" datetime="{{ the_modified_date('Y-m-d') }}">{{ the_modified_date('Y-m-d') }}</time></p>
-			@include('partials.feedback')
         </div>
     </div>
 </div>
