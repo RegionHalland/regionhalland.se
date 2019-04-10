@@ -10,7 +10,7 @@
 			
 			<ul class="rh-lists">
 				
-				<h1 class="pb2 rh-lists-title">Kulturprogram</h1>
+				<h1 class="pb2 rh-lists-title">Kulturprogram för barn och unga</h1>
 				
 				@if($myItems['dans'])
 					<h2 class="pb2 rh-lists-title">Dans</h2>
