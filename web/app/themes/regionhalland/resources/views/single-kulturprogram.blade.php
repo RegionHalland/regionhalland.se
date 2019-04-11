@@ -55,7 +55,7 @@
                                         @php($arrLabels = get_region_halland_acf_page_kulturprogram_type_labels())
                                         @if(isset($arrLabels))
                                             @foreach ($arrLabels as $label)
-                                                {{ $label['label'] }},
+                                                {{ $label['label'] }}@if ($loop->last) @else,@endif
                                             @endforeach
                                         @endif
 								    </p>
