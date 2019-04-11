@@ -15,7 +15,7 @@
 
                 <div class="rh-xpad-B pt3 pb3">
                     <h1 class="px3 pb1">{!! get_the_title() !!}</h1>
-                    <div class="px3 col-12 sm-col-8 md-col-8 lg-col-8">{{ get_region_halland_acf_page_ingress() }}</div>
+                    <div style="font-size: 1.2em; line-height: 1.4;"class="px3 col-12 sm-col-8 md-col-8 lg-col-8">{{ get_region_halland_acf_page_ingress() }}</div>
                 </div>
                 <div class="">
                     @include('partials.section-navigation')

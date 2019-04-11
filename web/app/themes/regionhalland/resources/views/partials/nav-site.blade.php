@@ -4,7 +4,7 @@
     <div class="rh-toplinks">
         <ul class="rh-toplinks-nav" aria-label="Genvägar i sidhuvudet">
             <li class="rh-toplinks-nav-item">
-                <i class="feather icon-headphones rh-toplinks-nav-link-icon"></i>
+                <i class="feather icon-volume-1 rh-toplinks-nav-link-icon"></i>
                 <a class="rh-toplinks-nav-link" href="#">Talande webb</a>
             </li>
         </ul>
@@ -20,8 +20,8 @@
                 }
             ?>
             <div class="rh-search-field">
-                <input type="text" name="q" class="rh-search-term" placeholder="Skriv din sökning här" value="<?=$strSearchText?>" aria-label="Sökruta">
-                <button type="submit" class="rh-search-button">
+                <input type="text" name="q" class="rh-search-term" placeholder="Skriv din sökning här" value="<?=$strSearchText?>" style="height:5ex;" aria-label="Sökruta">
+                <button type="submit" class="rh-search-button" style="height:5ex; width:8ex;">
                     Sök
                 </button>
             </div>

@@ -5,8 +5,11 @@
 <main class="" id="main">
 	<div class="center px4 pt3 pb2" style="max-width: 1440px;">
         <h1 class="left-align pb2">
-            Arrangemangskalender
+            Kulturarrangemang
         </h1>
+        <div class="col-12 sm-col-8 md-col-8 lg-col-8 left-align" style="font-size: 1.2em; line-height: 1.4;">
+            Region Halland gör många olika kulturarrangemang, ofta i samarbete med andra arrangörer. Välkommen till föreställningar, konserter, samtal och andra aktiviteter!
+        </div>
     </div>
     <div style="background-color: #E4E4E4">
         <div class="center px4 pt4 pb4" style="max-width:1440px">

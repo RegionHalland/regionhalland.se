@@ -1,6 +1,6 @@
-<div id="footer-top-placeholder" style="background-color: #C3DCC1; line-height: 1.4;">
-    <div class="clearfix center pt3 pb3" style="max-width: 1440px;">
-        <div class="left-align col col-12 sm-col-6 md-col-6 lg-col-4">
+<footer id="footer-top-placeholder" style="background-color: #C3DCC1; line-height: 1.4;">
+    <div class="clearfix center px3 pt3 pb3" style="max-width: 1440px;">
+        <div class="left-align col col-12 sm-col-6 md-col-6 lg-col-3">
             <p class="h2">Kontakta oss</p>
             <p>
                 Region Halland<br>
@@ -20,7 +20,7 @@
 
         </div>
 
-        <div class="left-align col col-12 sm-col-6 md-col-6 lg-col-4">
+        <div class="left-align col col-12 sm-col-6 md-col-6 lg-col-3">
             <p class="h2">Aktuellt</p>
             <ul>
                 <li><a href="/nyheter">Nyhetsarkiv</a></li>
@@ -29,16 +29,8 @@
                 <li><a href="/demokrati-och-politik/anslagstavla/">Anslagstavla</a></li>
                 <li><a href="/demokrati-och-politik/moten-och-handlingar/">Möten och handlingar</a></li>
             </ul>
-            <p class="h2 pt2">Andra webbplatser</p>
-            <ul>
-                <li><a href="https://www.1177.se/Halland">1177</a></li>
-                <li><a href="https://vardgivare.regionhalland.se/">Vårdgivarwebben</a></li>
-                <li><a href="https://www.hallandstrafiken.se/">Hallandstrafiken</a></li>
-                <li><a href="https://www.visithalland.com/">Visit Halland</a></li>
-                <li><a href="http://www.teaterhalland.nu/">Teater Halland</a></li>
-            </ul>
         </div>
-        <div class="left-align col col-12 sm-col-6 md-col-6 lg-col-4">
+        <div class="left-align col col-12 sm-col-6 md-col-6 lg-col-3">
             <p class="h2">Om webbplatsen</p>
             <ul>
                 <li><a href="/om-region-halland/om-webbplatsen/">Information om cookies</a></li>
@@ -64,8 +56,19 @@
             @endif
 
         </div>
+
+        <div class="left-align col col-12 sm-col-6 md-col-6 lg-col-3">
+            <p class="h2">Andra webbplatser</p>
+            <ul>
+                <li><a href="https://www.1177.se/Halland">1177</a></li>
+                <li><a href="https://vardgivare.regionhalland.se/">Vårdgivarwebben</a></li>
+                <li><a href="https://www.hallandstrafiken.se/">Hallandstrafiken</a></li>
+                <li><a href="https://www.visithalland.com/">Visit Halland</a></li>
+                <li><a href="http://www.teaterhalland.nu/">Teater Halland</a></li>
+            </ul>
+        </div>
     </div>
-</div>
+</footer>
 {{--
 <div class="rh-footer">
 
