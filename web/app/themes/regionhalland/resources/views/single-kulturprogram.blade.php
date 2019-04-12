@@ -19,7 +19,9 @@
 						<div class="col col-12 md-col-9 pr4">
 							<h1 class="">{{ get_the_title() }}</h1>
 							<p>{{ the_content() }}</p>
+							<p class="pt2">
 							@include('partials.author-info')
+							</p>
 						</div>
 						<div class="col col-12 md-col-3">
 							<div class="" >
