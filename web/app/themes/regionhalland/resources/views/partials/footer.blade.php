@@ -1,7 +1,7 @@
 <footer id="footer-top-placeholder" style="background-color: #C3DCC1; line-height: 1.4;">
-    <div class="clearfix center px3 pt3 pb3" style="max-width: 1440px;">
-        <div class="left-align col col-12 sm-col-6 md-col-6 lg-col-3">
-            <p class="h2">Kontakta oss</p>
+    <div class="clearfix center px3 pb3" style="max-width: 1440px;">
+        <div class="left-align col col-12 sm-col-12 md-col-3 lg-col-3">
+            <p class="h2 pt3">Kontakta oss</p>
             <p>
                 Region Halland<br>
                 Box 517<br>
@@ -20,8 +20,8 @@
 
         </div>
 
-        <div class="left-align col col-12 sm-col-6 md-col-6 lg-col-3">
-            <p class="h2">Aktuellt</p>
+        <div class="left-align col col-12 sm-col-12 md-col-3 lg-col-3">
+            <p class="h2 pt3">Aktuellt</p>
             <ul>
                 <li><a href="/nyheter">Nyhetsarkiv</a></li>
                 <li><a href="http://press.regionhalland.se">Pressrum</a></li>
@@ -30,8 +30,8 @@
                 <li><a href="/demokrati-och-politik/moten-och-handlingar/">Möten och handlingar</a></li>
             </ul>
         </div>
-        <div class="left-align col col-12 sm-col-6 md-col-6 lg-col-3">
-            <p class="h2">Om webbplatsen</p>
+        <div class="left-align col col-12 sm-col-12 md-col-3 lg-col-3">
+            <p class="h2 pt3">Om webbplatsen</p>
             <ul>
                 <li><a href="/om-region-halland/om-webbplatsen/">Information om cookies</a></li>
                 <li><a href="/om-region-halland/dataskydd/">Behandling av personuppgifter</a></li>
@@ -57,8 +57,8 @@
 
         </div>
 
-        <div class="left-align col col-12 sm-col-6 md-col-6 lg-col-3">
-            <p class="h2">Andra webbplatser</p>
+        <div class="left-align col col-12 sm-col-12 md-col-3 lg-col-3">
+            <p class="h2 pt3">Andra webbplatser</p>
             <ul>
                 <li><a href="https://www.1177.se/Halland">1177</a></li>
                 <li><a href="https://vardgivare.regionhalland.se/">Vårdgivarwebben</a></li>
