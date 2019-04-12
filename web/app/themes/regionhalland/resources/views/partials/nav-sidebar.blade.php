@@ -3,7 +3,7 @@
     <div class="pb3 rh-label-previous">
         <span class="rh-label-previous-icon"></span>
         <p class="rh-label-previous-title">
-            <a href="{{$myParentPage['url']}}">{{$myParentPage['post_title']}}
+            <a href="{{$myParentPage['url']}}" style="color:black;">{{$myParentPage['post_title']}}
         </p>
     </div>
 @endif
