@@ -8,7 +8,7 @@
                     <div style="height: 200px; overflow:hidden;position:relative;">
                         <img src="{!! $blurbs['image_url'] !!}" style="width:100%; position: absolute; top:50%; transform: translateY(-50%);">
                     </div>
-                    <div class="mx2 pt1" style="height: 18ex; overflow:hidden;">
+                    <div class="mx2 pt2" style="height: 20ex; overflow:hidden;">
                         <h3 style="line-height: 1.3"><a href="{{ $blurbs['link_url'] }}" target="{{ $blurbs['link_target'] }}" style="color:black;">{{ $blurbs['link_title'] }}</a></h3>
                         <p style="line-height: 1.4">{{ $blurbs['post_content'] }}</p>
                     </div>
