@@ -74,42 +74,6 @@
 
 						@endforeach
 						</ul>
-
-						<div class="pt3 pb3">
-							@if($arrFirst)
-								<a class="rh-pagination-link rh-pagination-link-previous" href="{!! env('FINDWISE_SEARCH_URL') !!}/?<?=$myData['documentList']['pagination']['firstPage']['query']?>">Första sidan</a>
-							@else
-								<span class="rh-pagination-link rh-pagination-link-previous">Första sidan</span>
-							@endif
-
-							@if($arrPrev)
-								<a class="rh-pagination-link" href="{!! env('FINDWISE_SEARCH_URL') !!}/?<?=$myData['documentList']['pagination']['previousPage']['query']?>">Föregående sida</a>
-							@else
-								<span class="rh-pagination-link">Föregående sida</span>
-							@endif
-
-							@foreach ($myData['documentList']['pagination']['pages'] as $pages)
-								@if($pages['selected'] == 1)
-								<strong><a class="rh-pagination-link" style="background-color: #FCAF15;" href="{!! env('FINDWISE_SEARCH_URL') !!}/?<?=$pages['query']?>">{!! $pages['displayName'] !!}</a></strong>
-								@else
-								<span><a class="rh-pagination-link" href="{!! env('FINDWISE_SEARCH_URL') !!}/?<?=$pages['query']?>">{!! $pages['displayName'] !!}</a></span>
-								@endif
-							@endforeach
-
-							@if($arrNext)
-								<a class="rh-pagination-link" href="{!! env('FINDWISE_SEARCH_URL') !!}/?<?=$myData['documentList']['pagination']['nextPage']['query']?>">Nästa sida</a>
-							@else
-								<span class="rh-pagination-link">Nästa sida</span>
-							@endif
-
-							@if($arrLast)
-								<a class="rh-pagination-link rh-pagination-link-next" href="{!! env('FINDWISE_SEARCH_URL') !!}/?<?=$myData['documentList']['pagination']['lastPage']['query']?>">Sista sidan</a>
-								@else
-								<span class="rh-pagination-link rh-pagination-link-next">Sista sidan</span>
-							@endif
-
-						</div>
-
 					@else
 
 						<p class="h2">Din sökning på <strong>'{{$strSearchText}}'</strong> gav tyvärr inga träffar</p>
@@ -127,6 +91,40 @@
 						<li>Försök med fler generella ord eller ta bort ett sökord</li>
 					</ul>
 					</div>
+				</div>
+				<div class="pt3 pb3">
+					@if($arrFirst)
+						<a class="rh-pagination-link rh-pagination-link-previous" href="{!! env('FINDWISE_SEARCH_URL') !!}/?<?=$myData['documentList']['pagination']['firstPage']['query']?>">Första sidan</a>
+					@else
+						<span class="rh-pagination-link rh-pagination-link-previous">Första sidan</span>
+					@endif
+
+					@if($arrPrev)
+						<a class="rh-pagination-link" href="{!! env('FINDWISE_SEARCH_URL') !!}/?<?=$myData['documentList']['pagination']['previousPage']['query']?>">Föregående sida</a>
+					@else
+						<span class="rh-pagination-link">Föregående sida</span>
+					@endif
+
+					@foreach ($myData['documentList']['pagination']['pages'] as $pages)
+						@if($pages['selected'] == 1)
+							<strong><a class="rh-pagination-link" style="background-color: #FCAF15;" href="{!! env('FINDWISE_SEARCH_URL') !!}/?<?=$pages['query']?>">{!! $pages['displayName'] !!}</a></strong>
+						@else
+							<span><a class="rh-pagination-link" href="{!! env('FINDWISE_SEARCH_URL') !!}/?<?=$pages['query']?>">{!! $pages['displayName'] !!}</a></span>
+						@endif
+					@endforeach
+
+					@if($arrNext)
+						<a class="rh-pagination-link" href="{!! env('FINDWISE_SEARCH_URL') !!}/?<?=$myData['documentList']['pagination']['nextPage']['query']?>">Nästa sida</a>
+					@else
+						<span class="rh-pagination-link">Nästa sida</span>
+					@endif
+
+					@if($arrLast)
+						<a class="rh-pagination-link rh-pagination-link-next" href="{!! env('FINDWISE_SEARCH_URL') !!}/?<?=$myData['documentList']['pagination']['lastPage']['query']?>">Sista sidan</a>
+					@else
+						<span class="rh-pagination-link rh-pagination-link-next">Sista sidan</span>
+					@endif
+
 				</div>
 
 			</div>
