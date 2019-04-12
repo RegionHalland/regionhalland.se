@@ -92,7 +92,7 @@
 					</ul>
 					</div>
 				</div>
-				<div class="pt3 pb3">
+				<div class="col col-12 pt3 pb3">
 					@if($arrFirst)
 						<a class="rh-pagination-link rh-pagination-link-previous" href="{!! env('FINDWISE_SEARCH_URL') !!}/?<?=$myData['documentList']['pagination']['firstPage']['query']?>">Första sidan</a>
 					@else
