@@ -27,7 +27,7 @@
     <ul class="clearfix center mb2 mt2" style="max-width:1440px;">
 
         <li class="left-align col col-12 sm-col-6 md-col-6 lg-col-4">
-            <div class="rh_blurb mx1 my2">
+            <div class="rh-blurb mx1 my2">
                 <div style="height: 200px; overflow:hidden;position:relative">
                     <img src="{!! $myBlurbs[0]['image_url'] !!}" style="width:100%; position: absolute; top:50%; transform: translateY(-50%);">
                 </div>
@@ -63,7 +63,7 @@
         </li>
 
         <li class="left-align  col col-12 sm-col-6 md-col-6 lg-col-6">
-            <div class="rh_blurb mx1 my2">
+            <div class="rh-blurb mx1 my2">
                 <div style="height: 200px; overflow:hidden;position:relative">
                 <img src="{!! $myBlurbs[3]['image_url'] !!}" style="width:100%; position: absolute; top:50%; transform: translateY(-50%);">
                 </div>
