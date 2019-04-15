@@ -54,7 +54,7 @@
 
 						<ul>
 							<li>
-								<div class="rh-search-external-1177" style="border: 1px solid #61A2D8; background-color: #D0E3F3;">
+								<div class="rh-search-external-1177" style="border: 1px solid #378A30; background-color: #C3DCC1;">
 									<h3 class="h2 rh-search-external-1177-title">
 										<a href="https://www.1177.se/" style="color:black;">1177 Vårdguiden</a>
 									</h3>
