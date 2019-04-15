@@ -132,6 +132,17 @@
 <script src="{!! env('WP_HOME') !!}/styleguide2.2.1/js/components.js"></script>
 
 <script>
+    function debounce(delay, fn) {
+        var timer = null;
+        return function () {
+            var context = this, args = arguments;
+            clearTimeout(timer);
+            timer = setTimeout(function () {
+                fn.apply(context, args);
+            }, delay);
+        };
+    }
+
     $('a[href^="#"]').on( "click", function() {
         var target = $(this.hash);
         if (target.length) {
@@ -152,7 +163,7 @@
     });
 
     if ($("body.page-template-default")[0]){
-        $(window).scroll(function() {
+        $(window).scroll(debounce(250, function() {
 
             var myPosition = Math.round($('#content-nav-placeholder').offset().top - $(window).scrollTop());
             var myFooterTop = Math.round($('#footer-top-placeholder').offset().top - $(window).scrollTop());
@@ -169,6 +180,6 @@
                 $(".content-nav__item--tight").removeClass("content-nav__item--tight");
 
             }
-        });
+        }));
     }
 </script>
