@@ -60,8 +60,8 @@
         <div class="left-align col col-12 sm-col-12 md-col-3 lg-col-3">
             <p class="h2 pt3">Andra webbplatser</p>
             <ul>
-                <li><a href="https://www.1177.se/Halland">1177</a></li>
-                <li><a href="https://vardgivare.regionhalland.se/">Vårdgivarwebben</a></li>
+                <li><a href="https://www.1177.se/Halland">1177 Vårdguiden</a></li>
+                <li><a href="https://vardgivare.regionhalland.se/">Webbplats för vårdgivare</a></li>
                 <li><a href="https://www.hallandstrafiken.se/">Hallandstrafiken</a></li>
                 <li><a href="https://www.visithalland.com/">Visit Halland</a></li>
                 <li><a href="http://www.teaterhalland.nu/">Teater Halland</a></li>
