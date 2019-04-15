@@ -69,7 +69,7 @@
 						@foreach ($myData['documentList']['documents'] as $data)
 							<li class="py2">
 								<p><a class="h2" href="{{ $data['url'] }}" style="color: black; text-decoration: none;">{!! $data['title'] !!}</a></p>
-								<p>Senast ändrad: {!! $data['modified'] !!}</p>
+								<p>Senast ändrad: {!! truncateDate($data['modified']) !!}</p>
 								@if(function_exists('get_region_halland_breadcrumbs'))
 									@php($myBreadcrumbs = get_region_halland_breadcrumbs_pages_search(get_region_halland_breadcrumbs_pages_search_id($data['_id']), $data['title'], 'Start'))
 									@if(isset($myBreadcrumbs))
@@ -144,4 +144,10 @@
 		</div>
 	</main>
 
+	<?php
+	function truncateDate($date) {
+	    $myDate = substr($date,0,10);
+	    return $myDate;
+	}
+	?>
 @endsection
