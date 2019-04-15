@@ -55,9 +55,9 @@
 						<ul>
 							<li>
 								<div class="rh-search-external-1177">
-									<h6 class="rh-search-external-1177-title">
-										<a href="https://www.1177.se/">1177 Vårdguiden</a>
-									</h6>
+									<h3 class="h2 rh-search-external-1177-title">
+										<a href="https://www.1177.se/" style="color:black;">1177 Vårdguiden</a>
+									</h3>
 									<p class="rh-search-external-1177-text">
 										Länk till annan webbplats
 									</p>
