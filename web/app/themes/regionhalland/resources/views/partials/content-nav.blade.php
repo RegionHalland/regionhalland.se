@@ -3,7 +3,7 @@
 	@if(isset($myNavs) && count($myNavs) > 0)
 		@php($id = uniqid())
 		<div id="content-nav-placeholder"></div>
-		<nav class="content-nav-container rh-get-sticky" id="content-nav-container">
+		<nav class="content-nav-container rh-get-sticky hidden-sm" id="content-nav-container">
 			<div>
 				<p class="h2" id="{{ $id }}">Hitta på sidan</p>
 				<ul>
