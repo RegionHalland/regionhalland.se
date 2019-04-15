@@ -258,7 +258,6 @@
 	Redirect 301 /jubileum400/ /kultur/kulturomraden/kulturarv/jubileum400/
 	Redirect 301 /kultur/upplev-kultur/kulturevenemang/ /kulturarrangemang/
 	Redirect 301 /kulturevenemang/ /kulturarrangemang/
-	Redirect 301 /kulturarrangemang/ /kulturarrangemang/
 	Redirect 301 /kultur/vara-arbetsomraden/vara-arbetsomraden/kulturarv/expedition-kulturarv/ /kultur/kulturomraden/kulturarv/expeditionkulturarv/
 	Redirect 301 /expeditionkulturarv/ /kultur/kulturomraden/kulturarv/expeditionkulturarv/
 	Redirect 301 /kultur/vara-arbetsomraden/vara-arbetsomraden/film/ /kultur/kulturomraden/film/
