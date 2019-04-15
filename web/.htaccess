@@ -1,12 +1,308 @@
+# BEGIN WordPress
 <IfModule mod_rewrite.c>
 	
 	RewriteEngine On
-	
-	Redirect 301 /1177 https://www.1177.se/Halland/?ar=True
-	Redirect 301 /jobb /varbi/
+
+	# *************************
+	# *** Kulturompekningar ***
+ 	# *************************
 	Redirect 301 /kultur/konst-och-kulturupplevelser/ /kulturarrangemang/
 	Redirect 301 /kultur/kulturbarnunga/kulturprogram-for-barn-och-unga/ /kulturprogram/
 	
+	# ************************
+	# *** Extern webbplats ***
+ 	# ************************
+	Redirect 301 /vard-halsa/hitta-din-vard/barn-och-ungdomspsykiatri/barn-och-ungdomspsykiatrisk-mottagning-falkenberg/ https://www.1177.se/Halland/hitta-vard/kontaktkort/BUP-mottagningen-Falkenberg-Falkenberg/
+	Redirect 301 /bupfalkenberg/ https://www.1177.se/Halland/hitta-vard/kontaktkort/BUP-mottagningen-Falkenberg-Falkenberg/
+	Redirect 301 /akutklinikenvarberg/ https://www.1177.se/Halland/hitta-vard/kontaktkort/Akutmottagningen-Hallands-sjukhus-Varberg-Varberg/
+	Redirect 301 /vard-halsa/hitta-din-vard/rehabiliteringskliniken-halland/varberg/arbetsterapi/ https://www.1177.se/Halland/hitta-vard/kontaktkort/Arbetsterapin-Hallands-sjukhus-Varberg-Varberg/
+	Redirect 301 /arbetsterapivarberg/ https://www.1177.se/Halland/hitta-vard/kontaktkort/Arbetsterapin-Hallands-sjukhus-Varberg-Varberg/
+	Redirect 301 /vard-halsa/hitta-din-vard/barn-och-ungdomskliniken-halland/ http://www.1177.se/Hitta-vard/Kontakt/?hsaid=SE2321000115-O63376/
+	Redirect 301 /barnkliniken/ http://www.1177.se/Hitta-vard/Kontakt/?hsaid=SE2321000115-O63376/
+	Redirect 301 /vard-halsa/hitta-din-vard/barnmottagningen-kungsbacka/ http://www.1177.se/Hitta-vard/Kontakt/?hsaid=SE2321000115-O85806/
+	Redirect 301 /barnkungsbacka/ http://www.1177.se/Hitta-vard/Kontakt/?hsaid=SE2321000115-O85806/
+	Redirect 301 /vard-halsa/hitta-din-vard/barn-och-ungdomskliniken-halland/barn-och-ungdomsmottagning/ http://www.1177.se/Hitta-vard/Kontakt/?hsaid=SE2321000115-O49889/
+	Redirect 301 /barnvarberg/ http://www.1177.se/Hitta-vard/Kontakt/?hsaid=SE2321000115-O49889/
+	Redirect 301 /vard-halsa/hitta-din-vard/kliniken-for-kvinnor-och-barns-halsa/kliniken-for-kvinnors-och-barns-halsa-varberg/ https://www.1177.se/Halland/hitta-vard/kontaktkort/Forlossningsavdelningen-Hallands-sjukhus-Varberg-Varberg/
+	Redirect 301 /bbvarberg/ https://www.1177.se/Halland/hitta-vard/kontaktkort/Forlossningsavdelningen-Hallands-sjukhus-Varberg-Varberg/
+	Redirect 301 /cancer/ https://vardgivare.regionhalland.se/medicinska-omraden/cancersjukdomar/
+	Redirect 301 /vard-halsa/hitta-din-vard/kvinnomottagningen-kungsbacka/ https://www.1177.se/Halland/hitta-vard/kontaktkort/Gynekologimottagningen-Hallands-sjukhus-Kungsbacka-Kungsbacka/
+	Redirect 301 /gynkungsbacka/ https://www.1177.se/Halland/hitta-vard/kontaktkort/Gynekologimottagningen-Hallands-sjukhus-Kungsbacka-Kungsbacka/
+	Redirect 301 /vard-halsa/hitta-din-vard/lanssjukhuset-i-halmstad/ https://www.1177.se/Halland/hitta-vard/kontaktkort/Hallands-sjukhus-Halmstad-Halmstad/
+	Redirect 301 /hallandssjukhushalmstad/ https://www.1177.se/Halland/hitta-vard/kontaktkort/Hallands-sjukhus-Halmstad-Halmstad/
+	Redirect 301 /vard-halsa/hitta-din-vard/kungsbacka-narsjukhus/ https://www.1177.se/Halland/hitta-vard/kontaktkort/Hallands-sjukhus-Kungsbacka-Kungsbacka/
+	Redirect 301 /hallandssjukhuskungsbacka/ https://www.1177.se/Halland/hitta-vard/kontaktkort/Hallands-sjukhus-Kungsbacka-Kungsbacka/
+	Redirect 301 /vard-halsa/hitta-din-vard/sjukhuset-i-varberg/ https://www.1177.se/Halland/hitta-vard/kontaktkort/Hallands-sjukhus-Varberg-Varberg/
+	Redirect 301 /hallandssjukhusvarberg/ https://www.1177.se/Halland/hitta-vard/kontaktkort/Hallands-sjukhus-Varberg-Varberg/
+	Redirect 301 /vard-halsa/for-vardgivare/smittskydd/ https://vardgivare.regionhalland.se/behandlingsstod/smittskydd/
+	Redirect 301 /smittskydd/ https://vardgivare.regionhalland.se/behandlingsstod/smittskydd/
+	Redirect 301 /vard-halsa/hitta-din-vard/ https://www.1177.se/Halland/
+	Redirect 301 /vard-halsa/nar-du-blir-sjuk/ https://www.1177.se/Halland/
+	Redirect 301 /vard-halsa/sjukdomar-och-behandlingar/ https://www.1177.se/Halland/
+	Redirect 301 /vard-halsa/hall-dig-frisk/ https://www.1177.se/Halland/
+	Redirect 301 /vard-halsa/regler-och-rattigheter/ https://www.1177.se/Halland/
+	Redirect 301 /vard-halsa/for-vardgivare/ https://vardgivare.regionhalland.se/
+	Redirect 301 /vard-halsa/regler-och-rattigheter/patientnamnden/ https://www.1177.se/Halland/sa-fungerar-varden/om-du-inte-ar-nojd/patientnamnden-halland/
+
+	# *********************************
+	# *** Intern webbplats & Skolor ***
+	# *********************************
+	Redirect 301 /vara-skolor/loftadalens-folkhogskola/vara-utbildningar/allman-kurs/ /vara-skolor/loftadalen/vara-utbildningar/allman-kurs/
+	Redirect 301 /vara-skolor/loftadalens-folkhogskola/vara-utbildningar/bild-och-konstlinjen/ /vara-skolor/loftadalen/vara-utbildningar/bild-och-konstlinjen/
+	Redirect 301 /vara-skolor/loftadalens-folkhogskola/vara-utbildningar/bild-och-konstlinjen-distans/ /vara-skolor/loftadalen/vara-utbildningar/bild-och-konstlinjen-distans/
+	Redirect 301 /vara-skolor/loftadalens-folkhogskola/vara-utbildningar/danslinjen/ /vara-skolor/loftadalen/vara-utbildningar/danslinjen/
+	Redirect 301 /vara-skolor/loftadalens-folkhogskola/vara-utbildningar/etableringskurs/ /vara-skolor/loftadalen/vara-utbildningar/etableringskurs/
+	Redirect 301 /vara-skolor/loftadalens-folkhogskola/vara-utbildningar/keramiklinjen/ /vara-skolor/loftadalen/vara-utbildningar/keramiklinjen/
+	Redirect 301 /vara-skolor/loftadalens-folkhogskola/vara-utbildningar/musikallinjen/ /vara-skolor/loftadalen/vara-utbildningar/musikallinjen/
+	Redirect 301 /vara-skolor/loftadalens-folkhogskola/vara-utbildningar/musikproducentlinjen/ /vara-skolor/loftadalen/vara-utbildningar/musikproducentlinjen/
+	Redirect 301 /vara-skolor/loftadalens-folkhogskola/vara-utbildningar/singer-songwriterlinjen/ /vara-skolor/loftadalen/vara-utbildningar/singer-songwriterlinjen/
+	Redirect 301 /vara-skolor/loftadalens-folkhogskola/vara-utbildningar/studiemotiverande-kurs/ /vara-skolor/loftadalen/vara-utbildningar/studiemotiverande-kurs/
+	Redirect 301 /vara-skolor/loftadalens-folkhogskola/vara-utbildningar/svenska-fran-dag-1/ /vara-skolor/loftadalen/vara-utbildningar/svenska-fran-dag-1/
+	Redirect 301 /vara-skolor/loftadalens-folkhogskola/kurs-och-konferens/korta-kurser/varochsommarkurser2019/17-20-juni-dans-for-parkinson/ /vara-skolor/loftadalen/korta-kurser/17-20-juni-dans-for-parkinson/
+	Redirect 301 /vara-skolor/loftadalens-folkhogskola/kurs-och-konferens/korta-kurser/varochsommarkurser2019/baroque-beginners/ /vara-skolor/loftadalen/korta-kurser/baroque-beginners/
+	Redirect 301 /vara-skolor/loftadalens-folkhogskola/kurs-och-konferens/korta-kurser/varochsommarkurser2019/singer-songwriter-moter-digital-musikproduktion/ /vara-skolor/loftadalen/korta-kurser/1-5-juli-singer-songwriter-moter-digital-musikproduktion/
+	Redirect 301 /vara-skolor/loftadalens-folkhogskola/kurs-och-konferens/korta-kurser/varochsommarkurser2019/baroque-advanced/ /vara-skolor/loftadalen/korta-kurser/7-13-july-international-summer-academy-of-baroque-dance-advanced-and-professionals/
+	Redirect 301 /vara-skolor/loftadalens-folkhogskola /vara-skolor/loftadalen
+	Redirect 301 /vara-skolor/katrinebergs-folkhogskola/ /vara-skolor/katrineberg/
+	Redirect 301 /vara-skolor/katrinebergs-folkhogskola/vara-utbildningar/allman-kurs/ /vara-skolor/katrineberg/vara-utbildningar/allman-kurs/
+	Redirect 301 /vara-skolor/katrinebergs-folkhogskola/vara-utbildningar/allman-linje-profilkurser/ /vara-skolor/katrineberg/vara-utbildningar/allman-kurs-profilkurser/
+	Redirect 301 /vara-skolor/katrinebergs-folkhogskola/vara-utbildningar/allman-linje-profilkurser/allman-kurs-med-programmering/ /vara-skolor/katrineberg/vara-utbildningar/allman-kurs-profilkurser/allman-kurs-programmering-bild-design/
+	Redirect 301 /vara-skolor/katrinebergs-folkhogskola/vara-utbildningar/allman-linje-profilkurser/allman-linje-musik/ /vara-skolor/katrineberg/vara-utbildningar/allman-kurs-profilkurser/allman-kurs-musik-performance/
+	Redirect 301 /vara-skolor/katrinebergs-folkhogskola/vara-utbildningar/allman-linje-profilkurser/allman-kurs-idrott-och-halsa/ /vara-skolor/katrineberg/vara-utbildningar/allman-kurs-profilkurser/allman-kurs-idrott-och-halsa/
+	Redirect 301 /vara-skolor/katrinebergs-folkhogskola/vara-utbildningar/allman-linje-profilkurser/allman-kurs-vardprofil/ /vara-skolor/katrineberg/vara-utbildningar/allman-kurs-profilkurser/allman-kurs-vardprofil/
+	Redirect 301 /vara-skolor/katrinebergs-folkhogskola/vara-utbildningar/distansutbildning-i-anatomi-och-fysiologi/ /vara-skolor/katrineberg/vara-utbildningar/allman-kurs-lararassistent/
+	Redirect 301 /vara-skolor/katrinebergs-folkhogskola/vara-utbildningar/aktivt-liv/ /vara-skolor/katrineberg/vara-utbildningar/aktivt-liv/
+	Redirect 301 /vara-skolor/katrinebergs-folkhogskola/vara-utbildningar/hallands-konstskola/ /vara-skolor/katrineberg/vara-utbildningar/hallandskonstskola/
+	Redirect 301 /hallandskonstskola/ /vara-skolor/katrineberg/vara-utbildningar/hallandskonstskola/
+	Redirect 301 /vara-skolor/katrinebergs-folkhogskola/vara-utbildningar/praktisk-linje/ /vara-skolor/katrineberg/vara-utbildningar/praktisk-linje/
+	Redirect 301 /vara-skolor/katrinebergs-folkhogskola/vara-utbildningar/skadespelarlinjen/ /vara-skolor/katrineberg/vara-utbildningar/skadespelarlinjen/
+	Redirect 301 /skadespelarlinjen/ /vara-skolor/katrineberg/vara-utbildningar/skadespelarlinjen/
+	Redirect 301 /vara-skolor/katrinebergs-folkhogskola/vara-utbildningar/filmlinje/ /vara-skolor/katrineberg/vara-utbildningar/filmlinjen/
+	Redirect 301 /filmlinjen/ /vara-skolor/katrineberg/vara-utbildningar/filmlinjen/
+	Redirect 301 /vara-skolor/katrinebergs-folkhogskola/vara-utbildningar/friskvard-halsa/ /vara-skolor/katrineberg/vara-utbildningar/diplomerad-halsovagledare/
+	Redirect 301 /vara-skolor/katrinebergs-folkhogskola/vara-utbildningar/naturen-som-halsoframjande-arena/ /vara-skolor/katrineberg/vara-utbildningar/naturen-som-halsoframjande-arena/
+	Redirect 301 /vara-skolor/katrinebergs-folkhogskola/vara-utbildningar/seniorledarutbildning/ /vara-skolor/katrineberg/vara-utbildningar/seniorledarutbildning/
+	Redirect 301 /vara-skolor/katrinebergs-folkhogskola/vara-utbildningar/entreprenorskap-inom-friskvard-och-halsa/ /vara-skolor/katrineberg/vara-utbildningar/entreprenorskap-inom-friskvard-och-halsa/
+	Redirect 301 /vara-skolor/katrinebergs-folkhogskola/vara-utbildningar/personlig-tranare/ /vara-skolor/katrineberg/vara-utbildningar/personlig-tranare/
+	Redirect 301 /vara-skolor/katrinebergs-folkhogskola/vara-utbildningar/folkhogskolan-i-halmstad/ /vara-skolor/katrineberg/vara-utbildningar/folkhogskolan-i-halmstad/
+	Redirect 301 /vara-skolor/katrinebergs-folkhogskola/vara-utbildningar/allmanbaskurs/ /vara-skolor/katrineberg/vara-utbildningar/allman-baskurs/
+	Redirect 301 /vara-skolor/katrinebergs-folkhogskola/vara-utbildningar/distans-2012-2014/ /vara-skolor/katrineberg/vara-utbildningar/distansutbildning-for-kontakttolkar/
+	Redirect 301 /vara-skolor/katrinebergs-folkhogskola/vara-utbildningar/distans-2012-2014/fordjupningskurs-att-tolka-hbtq-7-9-december-2018/ /vara-skolor/katrineberg/vara-utbildningar/distansutbildning-for-kontakttolkar/fordjupningskurs-sjukvardstolkning-med-inriktning-barn-och-kvinnosjukdomar/
+	Redirect 301 /vara-skolor/katrinebergs-folkhogskola/vara-utbildningar/distans-2012-2014/ettarig-distanskurs-for-kontakttolkar-2019-2020/ /vara-skolor/katrineberg/vara-utbildningar/distansutbildning-for-kontakttolkar/ettarig-distanskurs-for-kontakttolkar-2019-2020/
+	Redirect 301 /vara-skolor/munkagardsgymnasiet/utbildningar/tradgard/ /vara-skolor/munkagard/vara-utbildningar/tradgard/
+	Redirect 301 /vara-skolor/munkagardsgymnasiet/utbildningar/skog/ /vara-skolor/munkagard/vara-utbildningar/skog/
+	Redirect 301 /vara-skolor/munkagardsgymnasiet/utbildningar/lantbruk/ /vara-skolor/munkagard/vara-utbildningar/lantbruk/
+	Redirect 301 /vara-skolor/munkagardsgymnasiet/utbildningar/djur/ /vara-skolor/munkagard/vara-utbildningar/djur/
+	Redirect 301 /vara-skolor/munkagardsgymnasiet/utbildningar/spar-1/ /vara-skolor/munkagard/vara-utbildningar/spar-1-och-2/
+	Redirect 301 /vara-skolor/munkagardsgymnasiet/utbildningar/introduktionsprogram/ /vara-skolor/munkagard/vara-utbildningar/introduktionsprogram/
+	Redirect 301 /vara-skolor/munkagardsgymnasiet/ /vara-skolor/munkagard/
+	Redirect 301 /vara-skolor/munkagardsgymnasiet/hander-pa-munka/munkagardsdagen11 /vara-skolor/munkagard/om-munkagardsgymnasiet/munkagardsdagen/
+
+	# *********************
+	# *** Vårdcentraler ***
+	# *********************
+	Redirect 301 /vard-halsa/hitta-din-vard/vardcentralen-fjaras/ /halsa-och-vard/varden-i-halland/vard-nara-dig/vardcentralen-halland/
+	Redirect 301 /vcfjaras/ /halsa-och-vard/varden-i-halland/vard-nara-dig/vardcentralen-halland/
+	Redirect 301 /vard-halsa/hitta-din-vard/vardcentralen-kolla/ /halsa-och-vard/varden-i-halland/vard-nara-dig/vardcentralen-halland/
+	Redirect 301 /vckolla/ /halsa-och-vard/varden-i-halland/vard-nara-dig/vardcentralen-halland/
+	Redirect 301 /vard-halsa/hitta-din-vard/vardcentralen-kungsbacka/ /halsa-och-vard/varden-i-halland/vard-nara-dig/vardcentralen-halland/
+	Redirect 301 /vckungsbacka/ /halsa-och-vard/varden-i-halland/vard-nara-dig/vardcentralen-halland/
+	Redirect 301 /vard-halsa/hitta-din-vard/vardcentralen-onsala/ /halsa-och-vard/varden-i-halland/vard-nara-dig/vardcentralen-halland/
+	Redirect 301 /vconsala/ /halsa-och-vard/varden-i-halland/vard-nara-dig/vardcentralen-halland/
+	Redirect 301 /vard-halsa/hitta-din-vard/vardcentralen-saro/ /halsa-och-vard/varden-i-halland/vard-nara-dig/vardcentralen-halland/
+	Redirect 301 /vcsaro/ /halsa-och-vard/varden-i-halland/vard-nara-dig/vardcentralen-halland/
+	Redirect 301 /vard-halsa/hitta-din-vard/vardcentralen-asa/ /halsa-och-vard/varden-i-halland/vard-nara-dig/vardcentralen-halland/
+	Redirect 301 /vcasa/ /halsa-och-vard/varden-i-halland/vard-nara-dig/vardcentralen-halland/
+	Redirect 301 /vard-halsa/hitta-din-vard/vardcentralen-hyltebruk/ /halsa-och-vard/varden-i-halland/vard-nara-dig/vardcentralen-halland/
+	Redirect 301 /vchyltebruk/ /halsa-och-vard/varden-i-halland/vard-nara-dig/vardcentralen-halland/
+	Redirect 301 /vard-halsa/hitta-din-vard/vardcentralen-torup/ /halsa-och-vard/varden-i-halland/vard-nara-dig/vardcentralen-halland/
+	Redirect 301 /vctorup/ /halsa-och-vard/varden-i-halland/vard-nara-dig/vardcentralen-halland/
+	Redirect 301 /vard-halsa/hitta-din-vard/vardcentralen-centrum/ /halsa-och-vard/varden-i-halland/vard-nara-dig/vardcentralen-halland/
+	Redirect 301 /vccentrum /halsa-och-vard/varden-i-halland/vard-nara-dig/vardcentralen-halland/
+	Redirect 301 /vard-halsa/hitta-din-vard/vardcentralen-falkenberg/ /halsa-och-vard/varden-i-halland/vard-nara-dig/vardcentralen-halland/
+	Redirect 301 /vcfalkenberg/ /halsa-och-vard/varden-i-halland/vard-nara-dig/vardcentralen-halland/
+	Redirect 301 /vcsloinge/ /halsa-och-vard/varden-i-halland/vard-nara-dig/vardcentralen-halland/
+	Redirect 301 /vard-halsa/hitta-din-vard/vardcentralen-sloinge/ /halsa-och-vard/varden-i-halland/vard-nara-dig/vardcentralen-halland/
+	Redirect 301 /vard-halsa/hitta-din-vard/vardcentralen-ullared/ /halsa-och-vard/varden-i-halland/vard-nara-dig/vardcentralen-halland/
+	Redirect 301 /vcullared/ /halsa-och-vard/varden-i-halland/vard-nara-dig/vardcentralen-halland/
+	Redirect 301 /vard-halsa/hitta-din-vard/vardcentralen-vessigebro/ /halsa-och-vard/varden-i-halland/vard-nara-dig/vardcentralen-halland/
+	Redirect 301 /vcvessigebro/ /halsa-och-vard/varden-i-halland/vard-nara-dig/vardcentralen-halland/
+	Redirect 301 /vard-halsa/hitta-din-vard/vardcentralen-vastra-vall/ /halsa-och-vard/varden-i-halland/vard-nara-dig/vardcentralen-halland/
+	Redirect 301 /vcvastravall/ /halsa-och-vard/varden-i-halland/vard-nara-dig/vardcentralen-halland/
+	Redirect 301 /vard-halsa/hitta-din-vard/vardcentralen-hasten/ /halsa-och-vard/varden-i-halland/vard-nara-dig/vardcentralen-halland/
+	Redirect 301 /vchasten/ /halsa-och-vard/varden-i-halland/vard-nara-dig/vardcentralen-halland/
+	Redirect 301 /vard-halsa/hitta-din-vard/vardcentralen-tvaaker-tandemkliniken/ /halsa-och-vard/varden-i-halland/vard-nara-dig/vardcentralen-halland/
+	Redirect 301 /vctvaaker/ /halsa-och-vard/varden-i-halland/vard-nara-dig/vardcentralen-halland/
+	Redirect 301 /vard-halsa/hitta-din-vard/vardcentralen-veddige/ /halsa-och-vard/varden-i-halland/vard-nara-dig/vardcentralen-halland/
+	Redirect 301 /vcveddige/ /halsa-och-vard/varden-i-halland/vard-nara-dig/vardcentralen-halland/
+	Redirect 301 /vard-halsa/hitta-din-vard/vardcentralen-andersberg/ /halsa-och-vard/varden-i-halland/vard-nara-dig/vardcentralen-halland/
+	Redirect 301 /vcandersberg/ /halsa-och-vard/varden-i-halland/vard-nara-dig/vardcentralen-halland/
+	Redirect 301 /vard-halsa/hitta-din-vard/vardcentralen-backagard/ /halsa-och-vard/varden-i-halland/vard-nara-dig/vardcentralen-halland/
+	Redirect 301 /vcbackagard/ /halsa-och-vard/varden-i-halland/vard-nara-dig/vardcentralen-halland/
+	Redirect 301 /vard-halsa/hitta-din-vard/vardcentralen-getingeharplinge/ /halsa-och-vard/varden-i-halland/vard-nara-dig/vardcentralen-halland/
+	Redirect 301 /vcgetingeharplinge/ /halsa-och-vard/varden-i-halland/vard-nara-dig/vardcentralen-halland/
+	Redirect 301 /vard-halsa/hitta-din-vard/vardcentralen-hertig-knut/ /halsa-och-vard/varden-i-halland/vard-nara-dig/vardcentralen-halland/
+	Redirect 301 /vchertig-knut/ /halsa-och-vard/varden-i-halland/vard-nara-dig/vardcentralen-halland/
+	Redirect 301 /vard-halsa/hitta-din-vard/vardcentralen-nyhem/ /halsa-och-vard/varden-i-halland/vard-nara-dig/vardcentralen-halland/
+	Redirect 301 /vcnyhem/ /halsa-och-vard/varden-i-halland/vard-nara-dig/vardcentralen-halland/
+	Redirect 301 /vard-halsa/hitta-din-vard/vardcentralen-oskarstrom/ /halsa-och-vard/varden-i-halland/vard-nara-dig/vardcentralen-halland/
+	Redirect 301 /vcoskarstrom/ /halsa-och-vard/varden-i-halland/vard-nara-dig/vardcentralen-halland/
+	Redirect 301 /vard-halsa/hitta-din-vard/vardcentralen-vallas/ /halsa-och-vard/varden-i-halland/vard-nara-dig/vardcentralen-halland/
+	Redirect 301 /vcvallas/ /halsa-och-vard/varden-i-halland/vard-nara-dig/vardcentralen-halland/
+
+	# **********************
+	# *** Folktandvården ***
+	# **********************
+	Redirect 301 /vard-halsa/hitta-din-vard/folktandvarden-breared/ /halsa-och-vard/varden-i-halland/vard-nara-dig/folktandvarden-halland/
+	Redirect 301 /folktandvardenbreared/ /halsa-och-vard/varden-i-halland/vard-nara-dig/folktandvarden-halland/
+	Redirect 301 /vard-halsa/hitta-din-vard/folktandvarden-city/ /halsa-och-vard/varden-i-halland/vard-nara-dig/folktandvarden-halland/
+	Redirect 301 /folktandvardencity/ /halsa-och-vard/varden-i-halland/vard-nara-dig/folktandvarden-halland/
+	Redirect 301 /vard-halsa/hitta-din-vard/folktandvarden-bua/ /halsa-och-vard/varden-i-halland/vard-nara-dig/folktandvarden-halland/
+	Redirect 301 /folktandvardenbua/ /halsa-och-vard/varden-i-halland/vard-nara-dig/folktandvarden-halland/
+	Redirect 301 /vard-halsa/hitta-din-vard/folktandvarden-falkenberg/ /halsa-och-vard/varden-i-halland/vard-nara-dig/folktandvarden-halland/
+	Redirect 301 /folktandvardenfalkenberg/ /halsa-och-vard/varden-i-halland/vard-nara-dig/folktandvarden-halland/
+	Redirect 301 /vard-halsa/hitta-din-vard/folktandvarden-fjaras/ /halsa-och-vard/varden-i-halland/vard-nara-dig/folktandvarden-halland/
+	Redirect 301 /folktandvardenfjaras/ /halsa-och-vard/varden-i-halland/vard-nara-dig/folktandvarden-halland/
+	Redirect 301 /vard-halsa/hitta-din-vard/folktandvarden-getinge/ /halsa-och-vard/varden-i-halland/vard-nara-dig/folktandvarden-halland/
+	Redirect 301 /folktandvardengetinge/ /halsa-och-vard/varden-i-halland/vard-nara-dig/folktandvarden-halland/
+	Redirect 301 /vard-halsa/hitta-din-vard/folktandvarden-hyltebruktorup/ /halsa-och-vard/varden-i-halland/vard-nara-dig/folktandvarden-halland/
+	Redirect 301 /folktandvardenhyltebruktorup/ /halsa-och-vard/varden-i-halland/vard-nara-dig/folktandvarden-halland/
+	Redirect 301 /vard-halsa/hitta-din-vard/folktandvarden-knared/ /halsa-och-vard/varden-i-halland/vard-nara-dig/folktandvarden-halland/
+	Redirect 301 /folktandvardenknared/ /halsa-och-vard/varden-i-halland/vard-nara-dig/folktandvarden-halland/
+	Redirect 301 /vard-halsa/hitta-din-vard/folktandvarden-kolla/ /halsa-och-vard/varden-i-halland/vard-nara-dig/folktandvarden-halland/
+	Redirect 301 /folktandvardenkolla/ /halsa-och-vard/varden-i-halland/vard-nara-dig/folktandvarden-halland/
+	Redirect 301 /vard-halsa/hitta-din-vard/folktandvarden-nyhem/ /halsa-och-vard/varden-i-halland/vard-nara-dig/folktandvarden-halland/
+	Redirect 301 /folktandvardennyhem /halsa-och-vard/varden-i-halland/vard-nara-dig/folktandvarden-halland/
+	Redirect 301 /vard-halsa/hitta-din-vard/folktandvarden-laholm/ /halsa-och-vard/varden-i-halland/vard-nara-dig/folktandvarden-halland/
+	Redirect 301 /folktandvardenlaholm /halsa-och-vard/varden-i-halland/vard-nara-dig/folktandvarden-halland/
+	Redirect 301 /vard-halsa/hitta-din-vard/folktandvarden-oskarstrom/ /halsa-och-vard/varden-i-halland/vard-nara-dig/folktandvarden-halland/
+	Redirect 301 /folktandvardenoskarstrom/ /halsa-och-vard/varden-i-halland/vard-nara-dig/folktandvarden-halland/
+	Redirect 301 /vard-halsa/hitta-din-vard/folktandvarden-sondrum/ /halsa-och-vard/varden-i-halland/vard-nara-dig/folktandvarden-halland/
+	Redirect 301 /folktandvardensondrum /halsa-och-vard/varden-i-halland/vard-nara-dig/folktandvarden-halland/
+	Redirect 301 /vard-halsa/hitta-din-vard/folktandvarden-tvaaker-/ /halsa-och-vard/varden-i-halland/vard-nara-dig/folktandvarden-halland/
+	Redirect 301 /folktandvardentvaaker /halsa-och-vard/varden-i-halland/vard-nara-dig/folktandvarden-halland/
+	Redirect 301 /vard-halsa/hitta-din-vard/folktandvarden-ullared/ /halsa-och-vard/varden-i-halland/vard-nara-dig/folktandvarden-halland/
+	Redirect 301 /folktandvardenullared/ /halsa-och-vard/varden-i-halland/vard-nara-dig/folktandvarden-halland/
+	Redirect 301 /vard-halsa/hitta-din-vard/folktandvarden-vallas/ /halsa-och-vard/varden-i-halland/vard-nara-dig/folktandvarden-halland/
+	Redirect 301 /folktandvardenvallas/ /halsa-och-vard/varden-i-halland/vard-nara-dig/folktandvarden-halland/
+	Redirect 301 /vard-halsa/hitta-din-vard/folktandvarden-varberg/ /halsa-och-vard/varden-i-halland/vard-nara-dig/folktandvarden-halland/
+	Redirect 301 /folktandvardenvarberg/ /halsa-och-vard/varden-i-halland/vard-nara-dig/folktandvarden-halland/
+	Redirect 301 /vard-halsa/hitta-din-vard/folktandvarden-veddige/ /halsa-och-vard/varden-i-halland/vard-nara-dig/folktandvarden-halland/
+	Redirect 301 /folktandvardenveddige/ /halsa-och-vard/varden-i-halland/vard-nara-dig/folktandvarden-halland/
+	Redirect 301 /vard-halsa/hitta-din-vard/folktandvarden-vessigebro/ /halsa-och-vard/varden-i-halland/vard-nara-dig/folktandvarden-halland/
+	
+	Redirect 301 /folktandvardenvessigebro/ /halsa-och-vard/varden-i-halland/vard-nara-dig/folktandvarden-halland/
+	Redirect 301 /vard-halsa/hitta-din-vard/folktandvarden-asa/ /halsa-och-vard/varden-i-halland/vard-nara-dig/folktandvarden-halland/
+	Redirect 301 /folktandvardenasa/ /halsa-och-vard/varden-i-halland/vard-nara-dig/folktandvarden-halland/
+	Redirect 301 /vard-halsa/hitta-din-vard/tandregleringen-falkenberg/ /halsa-och-vard/varden-i-halland/vard-nara-dig/folktandvarden-halland/
+	Redirect 301 /vard-halsa/hitta-din-vard/tandregleringen-halmstad/ /halsa-och-vard/varden-i-halland/vard-nara-dig/folktandvarden-halland/
+	Redirect 301 /vard-halsa/hitta-din-vard/tandregleringen-kungsbacka/ /halsa-och-vard/varden-i-halland/vard-nara-dig/folktandvarden-halland/
+	Redirect 301 /vard-halsa/hitta-din-vard/tandregleringen-varberg/ /halsa-och-vard/varden-i-halland/vard-nara-dig/folktandvarden-halland/
+	Redirect 301 /vard-halsa/tema/tandvard/vad-finns-det-for-tandvard/folktandvard/kundenkat-resultat/ /halsa-och-vard/varden-i-halland/vard-nara-dig/folktandvarden-halland/vart-utbud/kundenkat-folktandvarden/
+
+	# ************************
+	# *** Jobb och karriär ***
+	# ************************
+	Redirect 301 /om-region-halland/att-jobba-hos-oss/ /jobb-och-karriar/
+	Redirect 301 /jobbahososs/ /jobb-och-karriar/
+	Redirect 301 /om-region-halland/att-jobba-hos-oss/lediga-jobb1/lediga-jobb/ /jobb-och-karriar/lediga-jobb/lista-lediga-jobb/
+	Redirect 301 /jobb/ /jobb-och-karriar/lediga-jobb/lista-lediga-jobb/
+	Redirect 301 /om-region-halland/att-jobba-hos-oss/lediga-jobb1/framtidskraft-sommarjobb/ /jobb-och-karriar/lediga-jobb/framtidskraft/
+	Redirect 301 /framtidskraft/ /jobb-och-karriar/lediga-jobb/framtidskraft/
+	Redirect 301 /om-region-halland/att-jobba-hos-oss/lediga-jobb1/traineeprogram-halland/ /jobb-och-karriar/lediga-jobb/trainee/
+	Redirect 301 /trainee/ /jobb-och-karriar/lediga-jobb/trainee/
+	Redirect 301 /om-region-halland/att-jobba-hos-oss/yrken-nu-och-i-framtiden/sjukskoterska-jobba-hos-oss1/ /jobb-och-karriar/att-jobba-i-region-halland/jobba-som-sjukskoterska-hos-oss/
+	Redirect 301 /om-region-halland/att-jobba-hos-oss/yrken-nu-och-i-framtiden/ftvhalland/ /jobb-och-karriar/att-jobba-i-region-halland/jobba-inom-folktandvarden-halland/
+	Redirect 301 /om-region-halland/att-jobba-hos-oss/yrken-nu-och-i-framtiden/basar/ /jobb-och-karriar/att-jobba-i-region-halland/jobba-som-sjukskoterska-hos-oss/basar-pa-hallands-sjukhus/
+	Redirect 301 /basar/ /jobb-och-karriar/att-jobba-i-region-halland/jobba-som-sjukskoterska-hos-oss/basar-pa-hallands-sjukhus/
+
+	# *************************
+	# *** Om Region Halland ***
+	# *************************
+	Redirect 301 /om-region-halland/mal-uppdrag/halland-basta-livsplatsen-2035/ /om-region-halland/vision-mal-och-uppdrag/arbete-pagar-regional-utvecklingsstrategi-2035/
+	Redirect 301 /om-region-halland/sa-styrs-region-halland/anslagstavla/ /demokrati-och-politik/anslagstavla/
+	Redirect 301 /anslagstavla/ /demokrati-och-politik/anslagstavla/
+	Redirect 301 /om-region-halland/organisation/dataskydd/ /om-region-halland/dataskydd/
+	Redirect 301 /dataskydd/ /om-region-halland/dataskydd/
+	Redirect 301 /om-region-halland/organisation/visselblas/ /om-region-halland/kontakt/anmal-misstanke-om-jav-mutor-eller-tjanstefel/
+	Redirect 301 /om-region-halland/organisation/inloggningar/inloggning-distansarbete-1/ /om-region-halland/kontakt/logga-in-i-it-system-pa-distans/
+	Redirect 301 /distans/ /om-region-halland/kontakt/logga-in-i-it-system-pa-distans/
+	Redirect 301 /om-region-halland/sa-styrs-region-halland/folj-fullmaktige-live/ /demokrati-och-politik/moten-och-handlingar/direktsandning-regionfullmaktige/
+	Redirect 301 /fullmaktige/ /demokrati-och-politik/moten-och-handlingar/direktsandning-regionfullmaktige/
+	Redirect 301 /utveckling-och-tillvaxt/omrade/naringsliv/kompetensplattformhalland/ /utveckling-och-tillvaxt/utbildning-och-kompetens/kompetensforsorjning/
+	Redirect 301 /kompetenshalland/ /utveckling-och-tillvaxt/utbildning-och-kompetens/kompetensforsorjning/
+	Redirect 301 /utveckling-och-tillvaxt/omrade/energi-miljo/energikontoret/ /utveckling-och-tillvaxt/miljo-och-energi/energikontoret/
+	Redirect 301 /energikontoret/ /utveckling-och-tillvaxt/miljo-och-energi/energikontoret/
+	Redirect 301 /utveckling-och-tillvaxt/omrade/energi-miljo/miljosamverkan/ /utveckling-och-tillvaxt/miljo-och-energi/miljosamverkan/
+	Redirect 301 /miljosamverkan/ /utveckling-och-tillvaxt/miljo-och-energi/miljosamverkan/
+	Redirect 301 /utveckling-och-tillvaxt/omrade/folkhalsa/regionalt-arbete/barn-och-unga/valmaende-ger-resultat/ /utveckling-och-tillvaxt/utbildning-och-kompetens/forskola-grundskola-och-gymnasium/valmaende-ger-resultat/
+	Redirect 301 /valmaende/ /utveckling-och-tillvaxt/utbildning-och-kompetens/forskola-grundskola-och-gymnasium/valmaende-ger-resultat/
+	Redirect 301 /om-region-halland/att-jobba-hos-oss/lediga-jobb1/borja-din-karriar-i-region-halland-sommaren-2019/ /jobb-och-karriar/lediga-jobb/sommarvikariat/
+	Redirect 301 /borjadinkarriar/ /jobb-och-karriar/lediga-jobb/sommarvikariat/
+	Redirect 301 /om-region-halland/fakta-statistik/ /om-region-halland/statistik-och-analys/
+	Redirect 301 /om-region-halland/fakta-statistik/skola-och-utbildning/ /om-region-halland/statistik-och-analys/
+	Redirect 301 /om-region-halland/fakta-statistik/arbetsmarknad/ /om-region-halland/statistik-och-analys/
+	Redirect 301 /om-region-halland/fakta-statistik/befolkning/ /om-region-halland/statistik-och-analys/
+	Redirect 301 /om-region-halland/fakta-statistik/naringsliv/ /om-region-halland/statistik-och-analys/
+	Redirect 301 /om-region-halland/fakta-statistik/regional-ekonomi/ /om-region-halland/statistik-och-analys/
+	Redirect 301 /utveckling-och-tillvaxt/omrade/sprakstart-halland/ /kultur/kulturbarnunga/sprakstart/
+	Redirect 301 /utveckling-och-tillvaxt/omrade/skola-utbildning/ /utveckling-och-tillvaxt/utbildning-och-kompetens/
+	Redirect 301 /om-region-halland/ekonomi-budget/arsredovisning-och-bokslutskommunike/ /demokrati-och-politik/budget-och-ekonomi/arsredovisning-och-bokslutskommunike/
+
+	# **************
+	# *** Kultur ***
+	# **************
+	Redirect 301 /kultur/vara-arbetsomraden/vara-arbetsomraden/slojd/om-att-valja-hantverk/ /kultur/kulturomraden/slojd/omattvaljahantverk/
+	Redirect 301 /omattvaljahantverk/ /kultur/kulturomraden/slojd/omattvaljahantverk/
+	Redirect 301 /kultur/vara-arbetsomraden/vara-arbetsomraden/kulturarv/jubileum400/ /kultur/kulturomraden/kulturarv/jubileum400/
+	Redirect 301 /jubileum400/ /kultur/kulturomraden/kulturarv/jubileum400/
+	Redirect 301 /kultur/upplev-kultur/kulturevenemang/ /kulturarrangemang/
+	Redirect 301 /kulturevenemang/ /kulturarrangemang/
+	Redirect 301 /kulturarrangemang/ /kulturarrangemang/
+	Redirect 301 /kultur/vara-arbetsomraden/vara-arbetsomraden/kulturarv/expedition-kulturarv/ /kultur/kulturomraden/kulturarv/expeditionkulturarv/
+	Redirect 301 /expeditionkulturarv/ /kultur/kulturomraden/kulturarv/expeditionkulturarv/
+	Redirect 301 /kultur/vara-arbetsomraden/vara-arbetsomraden/film/ /kultur/kulturomraden/film/
+	Redirect 301 /film/ /kultur/kulturomraden/film/
+	Redirect 301 /kultur/vara-arbetsomraden/vara-arbetsomraden/slojd/fritid-slojdtid/ /kultur/kulturomraden/slojd/fritidslojdtid/
+	Redirect 301 /fritidslojdtid/ /kultur/kulturomraden/slojd/fritidslojdtid/
+	Redirect 301 /kultur/vara-arbetsomraden/vara-arbetsomraden/film/filmkurs-for-dig-som-ar-1216-ar/ /kultur/kulturomraden/film/filmkurser/
+	Redirect 301 /filmkurs/ /kultur/kulturomraden/film/filmkurser/
+	Redirect 301 /kultur/vara-arbetsomraden/vara-arbetsomraden/slojd/hej-slojd/ /kultur/kulturomraden/slojd/hejslojd/
+	Redirect 301 /hejslojd/ /kultur/kulturomraden/slojd/hejslojd/
+	Redirect 301 /kultur/vara-arbetsomraden/vara-arbetsomraden/konst/ /kultur/kulturomraden/bild-och-form/
+	Redirect 301 /konst/ /kultur/kulturomraden/bild-och-form/
+	Redirect 301 /kultur/kulturforunga/ /kultur/kulturbarnunga/
+	Redirect 301 /kulturbarnunga/ /kultur/kulturbarnunga/
+	Redirect 301 /kultur/vara-arbetsomraden/vara-arbetsomraden/litteratur1/poetry-slam-i-halland/ /kultur/kulturomraden/litteratur/poetryslam/
+	Redirect 301 /poetryslam/ /kultur/kulturomraden/litteratur/poetryslam/
+	Redirect 301 /sprakstartramsor/ /kultur/kulturbarnunga/sprakstart/sprakstartramsor/
+	Redirect 301 /utveckling-och-tillvaxt/omrade/sprakstart-halland/ /kultur/kulturbarnunga/sprakstart/
+	Redirect 301 /sprakstart/ /kultur/kulturbarnunga/sprakstart/
+
+	# *****************************
+	# *** Sjukhus och psykiatri ***
+	# *****************************
+	Redirect 301 /vard-halsa/hitta-din-vard/psykiatrin-i-halland/psykisk-halsa/ /halsa-och-vard/utveckling-av-varden/sex-projekt-arbetar-med-psykisk-halsa/
+	Redirect 301 /psykiskhalsa/ /halsa-och-vard/utveckling-av-varden/sex-projekt-arbetar-med-psykisk-halsa/
+	Redirect 301 /vard-halsa/hitta-din-vard/psykiatrin-i-halland/vill-du-jobba-hos-oss/ /jobb-och-karriar/att-jobba-i-region-halland/jobba-inom-psykiatrin/
+	Redirect 301 /psykiatrijobb/ /jobb-och-karriar/att-jobba-i-region-halland/jobba-inom-psykiatrin/
+	Redirect 301 /om-region-halland/att-jobba-hos-oss/lediga-jobb1/sok-at-och-st-tjanstgoring/ /jobb-och-karriar/lediga-jobb/at-och-st-lakare/
+	Redirect 301 /om-region-halland/organisation/forvaltningar/regionservice1/maltidsservice/patientmeny/ /om-region-halland/vara-restauranger-och-kafeer/
+	Redirect 301 /om-region-halland/organisation/forvaltningar/regionservice1/maltidsservice/restaurangmeny/ /om-region-halland/vara-restauranger-och-kafeer/
+	Redirect 301 /om-region-halland/organisation/forvaltningar/regionservice1/maltidsservice/restaurangmeny1/ /om-region-halland/vara-restauranger-och-kafeer/
+	Redirect 301 /om-region-halland/organisation/forvaltningar/regionservice1/maltidsservice/patientmat-restaurangmeny-halmstad2/ /om-region-halland/vara-restauranger-och-kafeer/
+	Redirect 301 /om-region-halland/organisation/forvaltningar/regionservice1/maltidsservice/patientmeny1/ /om-region-halland/vara-restauranger-och-kafeer/
+	Redirect 301 /utveckling-och-tillvaxt/omrade/det-regionala-tillvaxtarbetet/jamstalld-regional-tillvaxt/ /utveckling-och-tillvaxt/vart-utvecklingsuppdrag/jamstalld-regional-tillvaxt/
+	Redirect 301 /om-region-halland/organisation/forvaltningar/regionservice1/maltidsservice/kafe-och-butik-varberg/ /om-region-halland/vara-restauranger-och-kafeer/
+	Redirect 301 /om-region-halland/organisation/forvaltningar/regionservice1/maltidsservice/ /om-region-halland/vara-restauranger-och-kafeer/
+	Redirect 301 /hallandssjukhus/ /
+	Redirect 301 /vard-halsa/ /halsa-och-vard/
+
+	# ***************************
+	# *** Broschyrbeställning ***
+	# ***************************
+	Redirect 301 /broschyrer /om-region-halland/kontakt/bestallning-av-trycksaker/
+	Redirect 301 /broschyrer/regionbiblioteket /om-region-halland/kontakt/bestallning-av-trycksaker/
 	RewriteBase /
 	
 	RewriteRule ^index\.php$ - [L]
@@ -17,14 +313,4 @@
 	RewriteRule . /index.php [L]
 
 </IfModule>
-# BEGIN WordPress
-<IfModule mod_rewrite.c>
-RewriteEngine On
-RewriteBase /
-RewriteRule ^index\.php$ - [L]
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule . /index.php [L]
-</IfModule>
-
 # END WordPress
