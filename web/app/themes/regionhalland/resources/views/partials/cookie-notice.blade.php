@@ -6,6 +6,6 @@
 		<p class="rh-cookie-description">
             {!! $cookie_notice['message'] !!}
 		</p>
-		<button id="cookie-consent" style="background-color: #378A30;" class="rh-button rh-button--primary cookie-button" aria-label="Acceptera cookies och dölj meddelandet" role="button">{!! $cookie_notice['button'] !!}</button>
+		<button id="cookie-consent" style="background-color: #378A30;width:13ex;" class="rh-button rh-button--primary cookie-button" aria-label="Acceptera cookies och dölj meddelandet" role="button">{!! $cookie_notice['button'] !!}</button>
 	</div>
 @endif
