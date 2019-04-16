@@ -25,7 +25,7 @@
             <ul>
                 <li><a href="/nyheter">Nyhetsarkiv</a></li>
                 <li><a href="http://press.regionhalland.se">Pressrum</a></li>
-                <li><a href="/om-region-halland/kontakt/region-halland-i-sociala-medier/">Region Halland i sociala medier</a></li>
+                <li><a href="/om-region-halland/kontakt/socialamedier/">Region Halland i sociala medier</a></li>
                 <li><a href="/demokrati-och-politik/anslagstavla/">Anslagstavla</a></li>
                 <li><a href="/demokrati-och-politik/moten-och-handlingar/">Möten och handlingar</a></li>
             </ul>
