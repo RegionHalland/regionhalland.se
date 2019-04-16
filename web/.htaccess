@@ -312,7 +312,5 @@
 	RewriteRule . /index.php [L]
 
 </IfModule>
-<<<<<<< HEAD
-=======
 # END WordPress
->>>>>>> 824164570856e7562956356fe8ad6fb3bf4c35c4
+
