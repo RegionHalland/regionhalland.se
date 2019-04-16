@@ -76,9 +76,9 @@
 										<p style="line-height:1.4">
 										@foreach ($myBreadcrumbs as $myBreadcrumb)
 											@if ($myBreadcrumb['url'])
-												<a href="{{ $myBreadcrumb['url'] }}" style="font-size: 0.8em; color:black; text-decoration:none;">{!! $myBreadcrumb['name'] !!}</a><span style="font-size: 0.8em; color:black">  >  </span>
+												<a href="{{ $myBreadcrumb['url'] }}" style="font-size: 0.9em; color:black; text-decoration:none;">{!! $myBreadcrumb['name'] !!}</a><span style="font-size: 0.9em; color:black">  >  </span>
 											@else
-												<a href="{{ $data['url'] }}" style="font-size: 0.8em; color:black; text-decoration:none;">{!! $myBreadcrumb['name'] !!}</a>
+												<a href="{{ $data['url'] }}" style="font-size: 0.9em; color:black; text-decoration:none;">{!! $myBreadcrumb['name'] !!}</a>
 											@endif
 										@endforeach
 										</p>
