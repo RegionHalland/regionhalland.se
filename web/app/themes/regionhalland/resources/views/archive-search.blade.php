@@ -73,13 +73,15 @@
 								@if(function_exists('get_region_halland_breadcrumbs'))
 									@php($myBreadcrumbs = get_region_halland_breadcrumbs_pages_search(get_region_halland_breadcrumbs_pages_search_id($data['_id']), $data['title'], 'Start'))
 									@if(isset($myBreadcrumbs))
+										<p style="line-height:1.4">
 										@foreach ($myBreadcrumbs as $myBreadcrumb)
 											@if ($myBreadcrumb['url'])
-												<a href="{{ $myBreadcrumb['url'] }}" style="color:black; text-decoration:none;">{!! $myBreadcrumb['name'] !!}</a><span style="color:#378A30">  >  </span>
+												<a href="{{ $myBreadcrumb['url'] }}" style="color:grey; text-decoration:none;">{!! $myBreadcrumb['name'] !!}</a><span style="color:darkgrey">  >  </span>
 											@else
-												<a href="{{ $data['url'] }}" style="color:black; text-decoration:none;">{!! $myBreadcrumb['name'] !!}</a>
+												<a href="{{ $data['url'] }}" style="color:darkgrey; text-decoration:none;">{!! $myBreadcrumb['name'] !!}</a>
 											@endif
 										@endforeach
+										</p>
 									@endif
 								@endif
 							</li>
