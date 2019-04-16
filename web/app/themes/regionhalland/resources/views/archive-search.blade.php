@@ -68,7 +68,7 @@
 							</li>
 						@foreach ($myData['documentList']['documents'] as $data)
 							<li class="py2">
-								<p><a class="h2" href="{{ $data['url'] }}" style="color: #378A30; text-decoration: none;">{!! $data['title'] !!}</a></p>
+								<p><a class="h2" href="{{ $data['url'] }}" style="color: #378A30; text-decoration: none; line-height: 1.4;">{!! $data['title'] !!}</a></p>
 								<p>Senast ändrad: {!! truncateDate($data['modified']) !!}</p>
 								@if(function_exists('get_region_halland_breadcrumbs'))
 									@php($myBreadcrumbs = get_region_halland_breadcrumbs_pages_search(get_region_halland_breadcrumbs_pages_search_id($data['_id']), $data['title'], 'Start'))
