@@ -24,7 +24,7 @@
 
 
 	<main>
-		<div class="center px4" id="main" style="max-width:1440px;">
+		<div class="center" id="main" style="max-width:1440px;">
 			<div class="left-align px4">
 				<h1 class="mb3">Sök på Region Halland</h1>
 
