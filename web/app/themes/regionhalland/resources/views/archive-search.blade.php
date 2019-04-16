@@ -46,7 +46,7 @@
 			</div>
 
 			<div class="left-align clearfix">
-				<div class="pt3 pb3 px4 col col-12 sm-col-12 md-col-8 lg-col-8">
+				<div class="pt3 pb3 px3 col col-12 sm-col-12 md-col-8 lg-col-8">
 
 					@if(isset($myData))
 
