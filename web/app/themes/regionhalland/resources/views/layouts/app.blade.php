@@ -8,7 +8,7 @@
 		
 		@include('partials.site-message')
         @include('partials.jump-to-content')
-		{{--@include('partials.cookie-notice')--}}
+		@include('partials.cookie-notice')
 
 		@include('partials.header')
 
