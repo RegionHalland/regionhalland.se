@@ -53,10 +53,23 @@
 						<h2 class="mb1" style="border-bottom: 4px solid #378A30">Sökresultat - sida {{$currentPage}} av {{$numberOfPages}}</h2>
 
 						<ul>
+							<li>
+								<div class="mt2 rh-search-external-1177" style="border: 1px solid #378A30; background-color: rgba(195,220,193,0.3);">
+									<h3 class="h2 rh-search-external-1177-title">
+										<a href="https://www.1177.se/" style="font-weight: normal; text-decoration: none; color:black;">1177 Vårdguiden</a>
+									</h3>
+									<p class="rh-search-external-1177-text">
+										Länk till annan webbplats
+									</p>
+									<p class="rh-search-external-1177-description">
+										Kontaktuppgifter, öppettider och övrig information om vård- och tandvårdsmottagningar hittar du på 1177.se. Där finns också information om hälsa, sjukdomar, besvär och rättigheter.
+									</p>
+								</div>
+							</li>
 						@foreach ($myData['documentList']['documents'] as $data)
 							<li class="py2">
 								<p><a class="h2" href="{{ $data['url'] }}" style="color: black; text-decoration: none;">{!! $data['title'] !!}</a></p>
-								<p>Senast ändrad: {!! $data['modified'] !!}</p>
+								<p>Senast ändrad: {!! truncateDate($data['modified']) !!}</p>
 								@if(function_exists('get_region_halland_breadcrumbs'))
 									@php($myBreadcrumbs = get_region_halland_breadcrumbs_pages_search(get_region_halland_breadcrumbs_pages_search_id($data['_id']), $data['title'], 'Start'))
 									@if(isset($myBreadcrumbs))
@@ -84,7 +97,7 @@
 
 				<div class="pt3 pb3 pl2 pr4 col col-12 sm-col-12 md-col-4 lg-col-4">
 					<h2 style="border-bottom: 4px solid #378A30">Söktips - Region Halland</h2>
-					<div class="mt2 pt2 pl2 pb2" style="border-left: 4px solid #378A30; background-color: #C3DCC1; border-bottom-left-radius: 5px; border-top-left-radius: 5px;">
+					<div class="mt2 pt2 pl2 pb2" style="border-left: 4px solid #378A30; background-color: rgba(195,220,193,0.3); border-bottom-left-radius: 5px; border-top-left-radius: 5px;">
 					<ul>
 						<li>Se till att alla ord är rättstavade</li>
 						<li class="pt1 pb1">Försök att använda synonymer</li>
@@ -131,4 +144,10 @@
 		</div>
 	</main>
 
+	<?php
+	function truncateDate($date) {
+	    $myDate = substr($date,0,10);
+	    return $myDate;
+	}
+	?>
 @endsection
