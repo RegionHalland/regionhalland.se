@@ -1,22 +1,3 @@
-<IfModule mod_rewrite.c>
-	
-	RewriteEngine On
-	
-	Redirect 301 /1177 https://www.1177.se/Halland/?ar=True
-	Redirect 301 /jobb /varbi/
-	Redirect 301 /kultur/konst-och-kulturupplevelser/ /kulturarrangemang/
-	Redirect 301 /kultur/kulturbarnunga/kulturprogram-for-barn-och-unga/ /kulturprogram/
-	
-	RewriteBase /
-	
-	RewriteRule ^index\.php$ - [L]
-	
-	RewriteCond %{REQUEST_FILENAME} !-f
-	RewriteCond %{REQUEST_FILENAME} !-d
-	
-	RewriteRule . /index.php [L]
-
-</IfModule>
 # BEGIN WordPress
 <IfModule mod_rewrite.c>
 RewriteEngine On
@@ -26,5 +7,4 @@ RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule . /index.php [L]
 </IfModule>
-
 # END WordPress

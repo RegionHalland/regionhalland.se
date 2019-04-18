@@ -25,7 +25,7 @@
             <ul>
                 <li><a href="/nyheter">Nyhetsarkiv</a></li>
                 <li><a href="http://press.regionhalland.se">Pressrum</a></li>
-                <li><a href="/om-region-halland/kontakt/region-halland-i-sociala-medier/">Region Halland i sociala medier</a></li>
+                <li><a href="/om-region-halland/kontakt/socialamedier/">Region Halland i sociala medier</a></li>
                 <li><a href="/demokrati-och-politik/anslagstavla/">Anslagstavla</a></li>
                 <li><a href="/demokrati-och-politik/moten-och-handlingar/">Möten och handlingar</a></li>
             </ul>
@@ -60,8 +60,8 @@
         <div class="left-align col col-12 sm-col-12 md-col-3 lg-col-3">
             <p class="h2 pt3">Andra webbplatser</p>
             <ul>
-                <li><a href="https://www.1177.se/Halland">1177</a></li>
-                <li><a href="https://vardgivare.regionhalland.se/">Vårdgivarwebben</a></li>
+                <li><a href="https://www.1177.se/Halland">1177 Vårdguiden</a></li>
+                <li><a href="https://vardgivare.regionhalland.se/">Webbplats för vårdgivare</a></li>
                 <li><a href="https://www.hallandstrafiken.se/">Hallandstrafiken</a></li>
                 <li><a href="https://www.visithalland.com/">Visit Halland</a></li>
                 <li><a href="http://www.teaterhalland.nu/">Teater Halland</a></li>
@@ -132,6 +132,17 @@
 <script src="{!! env('WP_HOME') !!}/styleguide2.2.1/js/components.js"></script>
 
 <script>
+    function debounce(delay, fn) {
+        var timer = null;
+        return function () {
+            var context = this, args = arguments;
+            clearTimeout(timer);
+            timer = setTimeout(function () {
+                fn.apply(context, args);
+            }, delay);
+        };
+    }
+
     $('a[href^="#"]').on( "click", function() {
         var target = $(this.hash);
         if (target.length) {
@@ -152,7 +163,7 @@
     });
 
     if ($("body.page-template-default")[0]){
-        $(window).scroll(function() {
+        $(window).scroll(debounce(250, function() {
 
             var myPosition = Math.round($('#content-nav-placeholder').offset().top - $(window).scrollTop());
             var myFooterTop = Math.round($('#footer-top-placeholder').offset().top - $(window).scrollTop());
@@ -169,6 +180,47 @@
                 $(".content-nav__item--tight").removeClass("content-nav__item--tight");
 
             }
-        });
+        }));
     }
+
+    $(".rh-header-button--search").on( "click", function() {
+        $(".rh-header-search-desktop").show();
+        $(".rh-header-button--search").hide();
+    });
+
+    // **************************************
+    // *** Javascript set cookie function ***
+    // **************************************
+    function setCookie(name,value,days) {
+        var expires = "";
+        if (days) {
+            var date = new Date();
+            date.setTime(date.getTime() + (days*24*60*60*1000));
+            expires = "; expires=" + date.toUTCString();
+        }
+        document.cookie = name + "=" + (value || "")  + expires + "; path=/";
+    }
+
+
+    // ****************************
+    // *** Cookie notice accept ***
+    // ****************************
+    $("#cookie-consent").on( "click", function() {
+        // set cookie with vanilla javascript function
+        setCookie('cookie_notice_accepted','1',365);
+        // Hide div with cookie notice text + button
+        $(".rh-cookie").hide();
+    });
+
+</script>
+<script type="text/javascript">var _baTheme=0, _baMode='Aktivera Talande Webb', _baUseCookies=true, _baHideOnLoad=true;</script>
+<script type="text/javascript" src="//www.browsealoud.com/plus/scripts/ba.js"></script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-1181886-12"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-1181886-12');
 </script>
