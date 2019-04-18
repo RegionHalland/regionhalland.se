@@ -14,7 +14,7 @@
 	<meta name="msapplication-TileColor" content="#ffffff" />
 	<meta name="msapplication-config" content="@asset('images/favicons/browserconfig.xml')" />
 	<meta name="theme-color" content="#ffffff" />
-
+	<title>{{ the_title() }} - Region Halland</title>
     <link rel="stylesheet" type="text/css" href="https://at.alicdn.com/t/font_o5hd5vvqpoqiwwmi.css">
 	<link href="{!! env('WP_HOME') !!}/styleguide2.2.1/css/components.css" rel="stylesheet"/>
 	<link rel="stylesheet" href="{!! env('WP_HOME') !!}/include/style/development.css" type="text/css" media="all" />
