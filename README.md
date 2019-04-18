@@ -100,5 +100,12 @@ git checkout v1.0.0
 
 ## Versionhistorik
 
+### 1.1.0
+- Stora korrigeringar av söksidan på mobil
+- Sökrutan i sidhuvudet justerat fokusläge
+- Puffarna har nytt responsivt beteende
+- Vänsternavigationen har nytt responsivt beteende
+- Bilder på innehållssidor är responsiva
+
 ### 1.0.0
 - Release av nya regionhalland.se
