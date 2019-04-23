@@ -11,7 +11,7 @@
 					<ul>
 					@foreach ($myVarbi as $varbi)
 						<li class="pl3 pt2 pb1 mt2" style="background-color:#F4F4F4; max-width:40em;">
-							<h2><a href="arbeten/?id={{ $varbi['id'] }}" style="text-decoration: none; color:black;">{{ $varbi['title'] }}</a></h2>
+							<h2><a href="ett-ledigt-jobb/?id={{ $varbi['id'] }}" style="text-decoration: none; color:black;">{{ $varbi['title'] }}</a></h2>
 							<p><strong>Ort:</strong> {{ $varbi['town'] }}</p>
 							<p><strong>Anställningsform:</strong> {{ $varbi['type'] }}, {{ $varbi['working_hours'] }}</p>
 							<p><strong>Publicerad:</strong> {{ $varbi['published'] }}</p>
