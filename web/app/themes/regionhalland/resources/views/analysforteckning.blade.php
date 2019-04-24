@@ -5,7 +5,7 @@
 @extends('layouts.app')
 
 @section('content')
-    {{-- @php($analysoversikt = array("klartex"=>"Bårhus, Obduktion Halmstad","Klinisk kemi Halland","Klinisk Mikrobiologi Halland")) --}}
+    
     <main class="rh-analysis-overview">
         <div class="center px3" id="main" style="max-width:1440px;">
             <div class="left-align pt3">
