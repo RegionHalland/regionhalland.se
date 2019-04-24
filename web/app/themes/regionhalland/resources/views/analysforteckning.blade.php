@@ -5,16 +5,20 @@
 @extends('layouts.app')
 
 @section('content')
-    
+
     <main class="rh-analysis-overview">
         <div class="center px3" id="main" style="max-width:1440px;">
             <div class="left-align pt3">
                 <h1 class="mb3">{{ the_title() }}</h1>
                 <p>{{ $post->post_content }}</p>
 
-                    <select class="mt2" style="height: 5ex; font-size: 1em;">
-                        <option value="barhus">Bårhus, Obduktion Halland</option>
-                        <option value="klinisk">Klinisk kemi Halland</option>
+                    <select name="Välj specialitet" class="mt2" style="height: 5ex; font-size: 1em;">
+                        <option value="" disabled selected>Välj specialitet</option>
+                        <option value="">Bårhus, Obduktion Halland</option>
+                        <option value="">Klinisk kemi Halland</option>
+                        <option value="">Klinisk mikrobiologi</option>
+                        <option value="">Klinisk patologi och cytologi Halland</option>
+                        <option value="">Transfusionsmedicin Halland</option>
                     </select>
                     <div class="ml1 rh-button rh-button--primary">Visa</div>
                     <div class="mt3 rh-filter-alphabet mb4" style="max-width: 54em;">
@@ -25,8 +29,6 @@
                             echo '<span class="rh-filter-alphabet-link">' . $strLetterU . "</span>";
                         }?>
                     </div>
-
-
 
                 <h2 class="mb3" style="border-bottom: 2px solid #004890;">Vad letar du efter?</h2>
                 <table class="rh-table-listing--alternating mb3" style="width:100%; line-height: 1.4">
