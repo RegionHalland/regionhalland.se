@@ -12,15 +12,17 @@
                 <h1 class="mb3">{{ the_title() }}</h1>
                 <p>{{ $post->post_content }}</p>
 
-                    <select name="Välj specialitet" class="mt2" style="height: 5ex; font-size: 1em;">
+                <form name="affiliation">
+                    <select name="a" class="mt2" style="height: 5ex; font-size: 1em;">
                         <option value="" disabled selected>Välj specialitet</option>
-                        <option value="">Bårhus, Obduktion Halland</option>
-                        <option value="">Klinisk kemi Halland</option>
-                        <option value="">Klinisk mikrobiologi</option>
-                        <option value="">Klinisk patologi och cytologi Halland</option>
-                        <option value="">Transfusionsmedicin Halland</option>
+                        <option value="1">Bårhus, Obduktion Halland</option>
+                        <option value="2">Klinisk kemi Halland</option>
+                        <option value="3">Klinisk mikrobiologi</option>
+                        <option value="4">Klinisk patologi och cytologi Halland</option>
+                        <option value="5">Transfusionsmedicin Halland</option>
                     </select>
-                    <div class="ml1 rh-button rh-button--primary">Visa</div>
+                    <input class="ml1 rh-button rh-button--primary" type='submit' value="Visa"/>
+                </form>
                     <div class="mt3 rh-filter-alphabet mb4" style="max-width: 54em;">
                         <?php $strAllLetters = "a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u,v,x,y,z,Å,Ä,Ö";
                         $arrAllLetters = explode(",",$strAllLetters);
