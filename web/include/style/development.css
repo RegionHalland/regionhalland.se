@@ -5,7 +5,15 @@
  *
 **/
 
-rh-article h1, h2, h3, h4, h5, h6 {
+.rh-table-listing--alternating tr:nth-child(even) {background: rgba(208, 227, 243, 0.6)}
+
+.rh-table-listing_cell {
+  padding-left: 1em;
+  padding-top: 1ex;
+  padding-bottom: 1ex;
+}
+
+.rh-article h1, h2, h3, h4, h5, h6 {
   line-height: 1.4;
   padding-top: 0.5ex;
   padding-bottom: 0.5ex;
