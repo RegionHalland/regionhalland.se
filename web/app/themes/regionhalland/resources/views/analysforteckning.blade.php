@@ -24,7 +24,7 @@
             $type = 3;
         }
     ?>
-    @php($myData = get_region_halland_analys_data($type, $id, $aid, $lid))
+    @php($myData = get_region_halland_api_analysforteckning_data($type, $id, $aid, $lid))
     <main class="rh-analysis-overview">
         <div class="center px3" id="main" style="max-width:1440px;">
             <div class="left-align pt3">
@@ -34,7 +34,7 @@
                 <form name="affiliation">
                     <select name="aid" method="get" class="mt2" style="height: 5ex; font-size: 1em;">
                         <option value="" disabled selected>Välj specialitet</option>
-                        @php($myAff = get_region_halland_analys_affiliations())
+                        @php($myAff = get_region_halland_api_analysforteckning_affiliations())
                         @php($mySelected = "")
                         @foreach ($myAff as $aff)
                             @if($aff['0'] == $aid)

@@ -4,16 +4,31 @@ web/disableinf5.html
 vendor/*
 web/app/themes/regionhalland/vendor/*
 
+# Biljetter
 web/app/datafiler/biljett/hsa/*
 !web/app/datafiler/biljett/hsa/.gitkeep
+web/app/datafiler/biljett/analys/*
+!web/app/datafiler/biljett/analys/.gitkeep
+
+# Cert
 web/app/datafiler/cert/*
 !web/app/datafiler/cert/.gitkeep
+
+# Enheter
 web/app/datafiler/enheter/*
 !web/app/datafiler/enheter/.gitkeep
+
+# Personer
 web/app/datafiler/personer/*
 !web/app/datafiler/personer/.gitkeep
+
+# Jobb
 web/app/datafiler/jobb/*
 !web/app/datafiler/jobb/.gitkeep
+
+# Analys
+web/app/datafiler/analys/*
+!web/app/datafiler/analys/.gitkeep
 
 # Cache
 web/app/themes/regionhalland/.cache-loader/*
