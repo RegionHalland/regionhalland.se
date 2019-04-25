@@ -9,7 +9,7 @@
 @foreach ($myData as $data)
 <tr>
     <td class="rh-table-listing_cell">{!! $data['system'] !!}</td>
-    <td class="rh-table-listing_cell"><a href="{!! env('WP_HOME') !!}/analysforteckning/?id={!! $data['id'] !!}">{!! $data['name'] !!}</a></td>
+    <td class="rh-table-listing_cell"><a href="./?id={!! $data['id'] !!}">{!! $data['name'] !!}</a></td>
     <td class="rh-table-listing_cell">{!! $data['laboratory-name'] !!}</td>
     <td class="rh-table-listing_cell">{!! $data['affiliation-id'] !!}</td>
 </tr>
