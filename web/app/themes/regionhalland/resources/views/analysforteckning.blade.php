@@ -5,65 +5,78 @@
 @extends('layouts.app')
 
 @section('content')
-    {{-- @php($analysoversikt = array("klartex"=>"Bårhus, Obduktion Halmstad","Klinisk kemi Halland","Klinisk Mikrobiologi Halland")) --}}
+    
+    <?php
+        $type = 0;
+        $id = 0;
+        $aid = 0;
+        $lid = "";
+        if(isset($_GET["id"])){
+            $id = $_GET["id"];
+            $type = 1;
+        }
+        if(isset($_GET["aid"])){
+            $aid = $_GET["aid"];
+            $type = 2;
+        }
+        if(isset($_GET["lid"])){
+            $lid = $_GET["lid"];
+            $type = 3;
+        }
+    ?>
+    @php($myData = get_region_halland_analys_data($type, $id, $aid, $lid))
     <main class="rh-analysis-overview">
         <div class="center px3" id="main" style="max-width:1440px;">
             <div class="left-align pt3">
                 <h1 class="mb3">{{ the_title() }}</h1>
                 <p>{{ $post->post_content }}</p>
 
-                    <select class="mt2" style="height: 5ex; font-size: 1em;">
-                        <option value="barhus">Bårhus, Obduktion Halland</option>
-                        <option value="klinisk">Klinisk kemi Halland</option>
+                <form name="affiliation">
+                    <select name="aid" method="get" class="mt2" style="height: 5ex; font-size: 1em;">
+                        <option value="" disabled selected>Välj specialitet</option>
+                        @php($myAff = get_region_halland_analys_affiliations())
+                        @php($mySelected = "")
+                        @foreach ($myAff as $aff)
+                            @if($aff['0'] == $aid)
+                                @php($mySelected = "selected")
+                            @endif
+                            <option {!! $mySelected !!} value="{!! $aff['0'] !!}">{!! $aff['1'] !!}</option>
+                        @php($mySelected = "")
+                        @endforeach
                     </select>
-                    <div class="ml1 rh-button rh-button--primary">Visa</div>
+                    <input class="ml1 rh-button rh-button--primary" type='submit' value="Visa"/>
+                </form>
                     <div class="mt3 rh-filter-alphabet mb4" style="max-width: 54em;">
+                        @php($myActive = 0)
                         <?php $strAllLetters = "a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u,v,x,y,z,Å,Ä,Ö";
-                        $arrAllLetters = explode(",",$strAllLetters);
-                        foreach ($arrAllLetters as $letter) {
+                            $arrAllLetters = explode(",",$strAllLetters);
+                            foreach ($arrAllLetters as $letter) {
                             $strLetterU = strtoupper($letter);
-                            echo '<span class="rh-filter-alphabet-link">' . $strLetterU . "</span>";
-                        }?>
+                        ?>
+                            @if($strLetterU == $lid)
+                                @php($myActive = 1)
+                            @endif
+                            @if($myActive == 1)
+                            <span class="rh-filter-alphabet-link" style="color:red;font-weight:bold;">
+                                <a href="{!! env('WP_HOME') !!}/analysforteckning/?lid={!! $strLetterU !!}">{!! $strLetterU !!}</a>
+                            </span>
+                            @else
+                            <span class="rh-filter-alphabet-link">
+                                <a href="{!! env('WP_HOME') !!}/analysforteckning/?lid={!! $strLetterU !!}">{!! $strLetterU !!}</a>
+                            </span>
+                            @endif
+                        @php($myActive = 0)
+                        <?php } ?>
                     </div>
-
-
-
-                <h2 class="mb3" style="border-bottom: 2px solid #004890;">Vad letar du efter?</h2>
-                <table class="rh-table-listing--alternating mb3" style="width:100%; line-height: 1.4">
-                    <tr>
-                        <th class="rh-table-listing_cell" data-analysis-type="Bårhus, obduktion Halland" style="text-align:left;"><strong>System</strong></th>
-                        <th class="rh-table-listing_cell" data-analysis-type="Klinisk kemi Halland" style="text-align:left;"><strong>Analysnamn</strong></th>
-                        <th class="rh-table-listing_cell" style="text-align:left;"><strong>Lab</strong></th>
-                    </tr>
-                    <tr>
-                        <td class="rh-table-listing_cell">P-</td>
-                        <td class="rh-table-listing_cell"><a href="">Dabiqatran</a></td>
-                        <td class="rh-table-listing_cell">KEM (HSTD)</td>
-                    </tr>
-                    <tr>
-                        <td class="rh-table-listing_cell">P-</td>
-                        <td class="rh-table-listing_cell"><a href="">Dabiqatran</a></td>
-                        <td class="rh-table-listing_cell">KEM (HSTD)</td>
-                    </tr>
-                    <tr>
-                        <td class="rh-table-listing_cell">P-</td>
-                        <td class="rh-table-listing_cell"><a href="">Dabiqatran</a></td>
-                        <td class="rh-table-listing_cell">KEM (HSTD)</td>
-                    </tr>
-                    <tr>
-                        <td class="rh-table-listing_cell">P-</td>
-                        <td class="rh-table-listing_cell"><a href="">Dabiqatran</a></td>
-                        <td class="rh-table-listing_cell">KEM (HSTD)</td>
-                    </tr>
-                    <tr>
-                        <td class="rh-table-listing_cell">P-</td>
-                        <td class="rh-table-listing_cell"><a href="">Dabiqatran</a></td>
-                        <td class="rh-table-listing_cell">KEM (HSTD)</td>
-                    </tr>
-
-                </table>
-
-
+                    @if($type == 1)
+                        @include('partials.analys-single')
+                    @endif
+                    @if($type == 2)
+                        @include('partials.analys-aff')
+                    @endif
+                    @if($type == 3)
+                        @include('partials.analys-letter')
+                    @endif
             </div>
         </div>
     </main>
