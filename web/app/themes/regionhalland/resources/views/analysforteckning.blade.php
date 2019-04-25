@@ -58,11 +58,11 @@
                             @endif
                             @if($myActive == 1)
                             <span class="rh-filter-alphabet-link" style="color:red;font-weight:bold;">
-                                <a href="{!! env('WP_HOME') !!}/analysforteckning/?lid={!! $strLetterU !!}">{!! $strLetterU !!}</a>
+                                <a href="./?lid={!! $strLetterU !!}">{!! $strLetterU !!}</a>
                             </span>
                             @else
                             <span class="rh-filter-alphabet-link">
-                                <a href="{!! env('WP_HOME') !!}/analysforteckning/?lid={!! $strLetterU !!}">{!! $strLetterU !!}</a>
+                                <a href="./?lid={!! $strLetterU !!}">{!! $strLetterU !!}</a>
                             </span>
                             @endif
                         @php($myActive = 0)
