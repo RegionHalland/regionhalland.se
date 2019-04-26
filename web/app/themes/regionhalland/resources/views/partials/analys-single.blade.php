@@ -32,11 +32,44 @@
     <td class="rh-table-listing_cell"><strong>Provtagningsmaterial:</strong></td>
     <td class="rh-table-listing_cell">
     	{!! $myData['sampling-material-name'] !!}<br>
-    	{!! $myData['sampling-material-description'] !!}
+    	{!! $myData['sampling-material-description'] !!}<br>
+        <a href="{!! $myData['sampling-material-link-url'] !!}" target="_blank">{!! $myData['sampling-material-link-text'] !!}</a>
     </td>
 </tr>
 @endif
-@if($myData['unit-name'])
+@if($myData['informations-text-provtagning'])
+<tr>
+    <td class="rh-table-listing_cell"><strong>Provtagning:</strong></td>
+    <td class="rh-table-listing_cell">
+        {!! $myData['informations-text-provtagning'] !!}
+    </td>
+</tr>
+@endif
+@if($myData['informations-text-take-care'])
+<tr>
+    <td class="rh-table-listing_cell"><strong>Omhändertagande:</strong></td>
+    <td class="rh-table-listing_cell">
+        {!! $myData['informations-text-take-care'] !!}
+    </td>
+</tr>
+@endif
+@if($myData['informations-text-indication'])
+<tr>
+    <td class="rh-table-listing_cell"><strong>Indikation:</strong></td>
+    <td class="rh-table-listing_cell">
+        {!! $myData['informations-text-indication'] !!}
+    </td>
+</tr>
+@endif
+@if($myData['method'])
+<tr>
+    <td class="rh-table-listing_cell"><strong>Metod:</strong></td>
+    <td class="rh-table-listing_cell">
+        {!! $myData['method'] !!}
+    </td>
+</tr>
+@endif
+@if($myData['unit-name'] && $myData['unit-name'] != 'Ingen enhet')
 <tr>
     <td class="rh-table-listing_cell"><strong>Enhet:</strong></td>
     <td class="rh-table-listing_cell">
@@ -60,11 +93,27 @@
     </td>
 </tr>
 @endif
+@if($myData['informations-text-answer'])
+<tr>
+    <td class="rh-table-listing_cell"><strong>Svarstolkning:</strong></td>
+    <td class="rh-table-listing_cell">
+        {!! $myData['informations-text-answer'] !!}
+    </td>
+</tr>
+@endif
 @if($myData['frequency'])
 <tr>
     <td class="rh-table-listing_cell"><strong>Analysfrekvens:</strong></td>
     <td class="rh-table-listing_cell">
     	{!! $myData['frequency'] !!}
+    </td>
+</tr>
+@endif
+@if($myData['response-time'])
+<tr>
+    <td class="rh-table-listing_cell"><strong>Svarstid:</strong></td>
+    <td class="rh-table-listing_cell">
+        {!! $myData['response-time'] !!}
     </td>
 </tr>
 @endif
@@ -81,6 +130,14 @@
     <td class="rh-table-listing_cell"><strong>Ackrediterad:</strong></td>
     <td class="rh-table-listing_cell">
     	{!! $myData['accredited-text'] !!}
+    </td>
+</tr>
+@endif
+@if($myData['biobank-text'])
+<tr>
+    <td class="rh-table-listing_cell"><strong>Biobank:</strong></td>
+    <td class="rh-table-listing_cell">
+        {!! $myData['biobank-text'] !!}
     </td>
 </tr>
 @endif
