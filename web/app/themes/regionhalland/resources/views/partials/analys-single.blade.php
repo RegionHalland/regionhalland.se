@@ -1,7 +1,7 @@
 <h2 class="mb3" style="border-bottom: 2px solid #004890;">{!! $myData['name'] !!}</h2>
-<table class="rh-table-listing--alternating mb3" style="width:100%; line-height: 1.4">
+<table class="rh-table-listing--hr mb3" style="width:100%; line-height: 1.4">
 @if($myData['vas-order-code'])
-<tr>
+<tr class="rh-table-listing__row">
     <td class="rh-table-listing_cell"><strong>VAS Provkod:</strong></td>
     <td class="rh-table-listing_cell">
     	{!! $myData['vas-order-code'] !!}
@@ -9,7 +9,7 @@
 </tr>
 @endif
 @if($myData['laboratory-name'])
-<tr>
+<tr class="rh-table-listing__row">
     <td class="rh-table-listing_cell"><strong>Analyserande lab:</strong></td>
     <td class="rh-table-listing_cell">
     	{!! $myData['laboratory-name'] !!}<br>
@@ -18,7 +18,7 @@
 </tr>
 @endif
 @if($myData['referral-name'])
-<tr>
+<tr class="rh-table-listing__row">
     <td class="rh-table-listing_cell"><strong>Remiss:</strong></td>
     <td class="rh-table-listing_cell">
     	{!! $myData['referral-name'] !!}<br>
@@ -28,7 +28,7 @@
 </tr>
 @endif
 @if($myData['sampling-material-name'])
-<tr>
+<tr class="rh-table-listing__row">
     <td class="rh-table-listing_cell"><strong>Provtagningsmaterial:</strong></td>
     <td class="rh-table-listing_cell">
     	{!! $myData['sampling-material-name'] !!}<br>
@@ -38,7 +38,7 @@
 </tr>
 @endif
 @if($myData['informations-text-provtagning'])
-<tr>
+<tr class="rh-table-listing__row">
     <td class="rh-table-listing_cell"><strong>Provtagning:</strong></td>
     <td class="rh-table-listing_cell">
         {!! $myData['informations-text-provtagning'] !!}
@@ -46,7 +46,7 @@
 </tr>
 @endif
 @if($myData['informations-text-take-care'])
-<tr>
+<tr class="rh-table-listing__row">
     <td class="rh-table-listing_cell"><strong>Omhändertagande:</strong></td>
     <td class="rh-table-listing_cell">
         {!! $myData['informations-text-take-care'] !!}
@@ -54,7 +54,7 @@
 </tr>
 @endif
 @if($myData['informations-text-indication'])
-<tr>
+<tr class="rh-table-listing__row">
     <td class="rh-table-listing_cell"><strong>Indikation:</strong></td>
     <td class="rh-table-listing_cell">
         {!! $myData['informations-text-indication'] !!}
@@ -62,7 +62,7 @@
 </tr>
 @endif
 @if($myData['method'])
-<tr>
+<tr class="rh-table-listing__row">
     <td class="rh-table-listing_cell"><strong>Metod:</strong></td>
     <td class="rh-table-listing_cell">
         {!! $myData['method'] !!}
@@ -70,7 +70,7 @@
 </tr>
 @endif
 @if($myData['unit-name'] && $myData['unit-name'] != 'Ingen enhet')
-<tr>
+<tr class="rh-table-listing__row">
     <td class="rh-table-listing_cell"><strong>Enhet:</strong></td>
     <td class="rh-table-listing_cell">
     	{!! $myData['unit-name'] !!}
@@ -78,7 +78,7 @@
 </tr>
 @endif
 @if($myData['informations-text-info'])
-<tr>
+<tr class="rh-table-listing__row">
     <td class="rh-table-listing_cell"><strong>Kommentar/mer info:</strong></td>
     <td class="rh-table-listing_cell">
     	{!! $myData['informations-text-info'] !!}
@@ -86,7 +86,7 @@
 </tr>
 @endif
 @if($myData['informations-text-interval'])
-<tr>
+<tr class="rh-table-listing__row">
     <td class="rh-table-listing_cell"><strong>Referensintervall:</strong></td>
     <td class="rh-table-listing_cell">
     	{!! $myData['informations-text-interval'] !!}
@@ -94,7 +94,7 @@
 </tr>
 @endif
 @if($myData['informations-text-answer'])
-<tr>
+<tr class="rh-table-listing__row">
     <td class="rh-table-listing_cell"><strong>Svarstolkning:</strong></td>
     <td class="rh-table-listing_cell">
         {!! $myData['informations-text-answer'] !!}
@@ -102,7 +102,7 @@
 </tr>
 @endif
 @if($myData['frequency'])
-<tr>
+<tr class="rh-table-listing__row">
     <td class="rh-table-listing_cell"><strong>Analysfrekvens:</strong></td>
     <td class="rh-table-listing_cell">
     	{!! $myData['frequency'] !!}
@@ -110,7 +110,7 @@
 </tr>
 @endif
 @if($myData['response-time'])
-<tr>
+<tr class="rh-table-listing__row">
     <td class="rh-table-listing_cell"><strong>Svarstid:</strong></td>
     <td class="rh-table-listing_cell">
         {!! $myData['response-time'] !!}
@@ -118,7 +118,7 @@
 </tr>
 @endif
 @if($myData['price'])
-<tr>
+<tr class="rh-table-listing__row">
     <td class="rh-table-listing_cell"><strong>Pris:</strong></td>
     <td class="rh-table-listing_cell">
     	{!! $myData['price'] !!}
@@ -126,7 +126,7 @@
 </tr>
 @endif
 @if($myData['accredited-text'])
-<tr>
+<tr class="rh-table-listing__row">
     <td class="rh-table-listing_cell"><strong>Ackrediterad:</strong></td>
     <td class="rh-table-listing_cell">
     	{!! $myData['accredited-text'] !!}
@@ -134,7 +134,7 @@
 </tr>
 @endif
 @if($myData['biobank-text'])
-<tr>
+<tr class="rh-table-listing__row">
     <td class="rh-table-listing_cell"><strong>Biobank:</strong></td>
     <td class="rh-table-listing_cell">
         {!! $myData['biobank-text'] !!}

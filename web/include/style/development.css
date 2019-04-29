@@ -6,6 +6,13 @@
 **/
 
 .rh-table-listing--alternating tr:nth-child(even) {background: rgba(208, 227, 243, 0.6)}
+.rh-table-listing--hr {
+  border-collapse: collapse;
+}
+
+.rh-table-listing__row {
+  border-bottom: 1px solid black;
+}
 
 .rh-table-listing_cell {
   padding-left: 1em;
