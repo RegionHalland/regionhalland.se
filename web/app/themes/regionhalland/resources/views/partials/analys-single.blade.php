@@ -1,6 +1,6 @@
 
 <div class="rh-label-previous mb2">
-    <span class="rh-label-previous-icon"></span>
+    <span class="rh-label-previous-icon--blue"></span>
     <p class="rh-label-previous-title">
     @if($_SESSION["type"] == 2)
         <a href="./?sid=<?=$_SESSION["sid"]?>">Analysförteckning</a>
