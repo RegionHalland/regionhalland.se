@@ -77,13 +77,9 @@
                                         @php($myActive = 1)
                                     @endif
                                     @if($myActive == 1)
-                                    <span class="rh-filter-alphabet-link" style="color:red;font-weight:bold;">
-                                        <a href="./?lid={!! $strLetterU !!}">{!! $strLetterU !!}</a>
-                                    </span>
+                                        <a class="rh-filter-alphabet-link--active" href="./?lid={!! $strLetterU !!}">{!! $strLetterU !!}</a>
                                     @else
-                                    <span class="rh-filter-alphabet-link">
-                                        <a href="./?lid={!! $strLetterU !!}">{!! $strLetterU !!}</a>
-                                    </span>
+                                        <a class="rh-filter-alphabet-link" href="./?lid={!! $strLetterU !!}">{!! $strLetterU !!}</a>
                                     @endif
                                 @php($myActive = 0)
                                 <?php } ?>
