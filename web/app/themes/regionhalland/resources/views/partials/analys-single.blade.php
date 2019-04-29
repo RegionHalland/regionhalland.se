@@ -151,7 +151,7 @@
     </td>
 </tr>
 @endif
-@if($myData['accredited-text'] && $myData['accredited-value'] == 1)
+@if($myData['accredited-text'] && ($myData['accredited-value'] == 0 || $myData['accredited-value'] == 1))
 <tr class="rh-table-listing__row">
     <td class="rh-table-listing_cell--hr"><strong>Ackrediterad:</strong></td>
     <td class="rh-table-listing_cell--hr">
@@ -159,7 +159,7 @@
     </td>
 </tr>
 @endif
-@if($myData['biobank-text'] && $myData['biobank-value'] == 1)
+@if($myData['biobank-text'] && ($myData['biobank-value'] == 0 || $myData['biobank-value'] == 1))
 <tr class="rh-table-listing__row">
     <td class="rh-table-listing_cell--hr"><strong>Biobank:</strong></td>
     <td class="rh-table-listing_cell--hr">
