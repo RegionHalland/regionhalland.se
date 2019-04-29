@@ -8,7 +8,7 @@
 @foreach ($myData as $data)
 <tr>
     <td class="rh-table-listing_cell">{!! $data['system'] !!}</td>
-    <td class="rh-table-listing_cell"><a href="./?id={!! $data['link_to_id'] !!}">{!! $data['name'] !!}</a></td>
+    <td class="rh-table-listing_cell"><a href="./?aid={!! $data['link_to_id'] !!}">{!! $data['name'] !!}</a></td>
     <td class="rh-table-listing_cell">{!! $data['laboratory-name'] !!}</td>
 </tr>
 @endforeach

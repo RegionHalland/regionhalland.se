@@ -5,24 +5,38 @@
 {{-- Container --}}
     
     <?php
+
+        session_start();
+
         $type = 0;
-        $id = 0;
         $aid = 0;
+        $sid = 0;
         $lid = "";
-        if(isset($_GET["id"])){
-            $id = $_GET["id"];
-            $type = 1;
-        }
+        $all = 0;
+        
         if(isset($_GET["aid"])){
             $aid = $_GET["aid"];
+            $type = 1;
+        }
+        if(isset($_GET["sid"])){
+            $sid = $_GET["sid"];
             $type = 2;
+            $_SESSION["sid"] = $sid;
+            $_SESSION["type"] = "2";
         }
         if(isset($_GET["lid"])){
             $lid = $_GET["lid"];
             $type = 3;
+            $_SESSION["lid"] = $lid;
+            $_SESSION["type"] = "3";
+        }
+        if(isset($_GET["all"])){
+            $type = 4;
+            $_SESSION["type"] = "4";
         }
     ?>
-    @php($myData = get_region_halland_api_analysforteckning_data($type, $id, $aid, $lid))
+
+    @php($myData = get_region_halland_api_analysforteckning_data($type, $aid, $sid, $lid))
     
     <div class="mx-auto clearfix" style="max-width: 1440px">
         
@@ -37,12 +51,12 @@
                         <p>{{ $post->post_content }}</p>
 
                         <form name="affiliation">
-                            <select name="aid" method="get" class="mt2" style="height: 5ex; font-size: 1em;">
+                            <select name="sid" method="get" class="mt2" style="height: 5ex; font-size: 1em;">
                                 <option value="" disabled selected>Välj specialitet</option>
                                 @php($myAff = get_region_halland_api_analysforteckning_affiliations())
                                 @php($mySelected = "")
                                 @foreach ($myAff as $aff)
-                                    @if($aff['0'] == $aid)
+                                    @if($aff['0'] == $sid)
                                         @php($mySelected = "selected")
                                     @endif
                                     <option {!! $mySelected !!} value="{!! $aff['0'] !!}">{!! $aff['1'] !!}</option>
@@ -81,6 +95,9 @@
                             @endif
                             @if($type == 3)
                                 @include('partials.analys-letter')
+                            @endif
+                            @if($type == 4)
+                                @include('partials.analys-all')
                             @endif
                     </div>
                 </div>

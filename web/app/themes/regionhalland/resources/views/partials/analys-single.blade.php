@@ -1,3 +1,16 @@
+
+@if($_SESSION["type"] == 2)
+<span><a href="./?sid=<?=$_SESSION["sid"]?>">BACKA TILL SPECIALITET</a></span><br><br>
+@endif
+
+@if($_SESSION["type"] == 3)
+<span><a href="./?lid=<?=$_SESSION["lid"]?>">BACKA TILL LETTER</a></span><br><br>
+@endif
+
+@if($_SESSION["type"] == 4)
+<span><a href="./?all=1">BACKA TILL ALLA</a></span><br><br>
+@endif
+
 <h2 class="mb3" style="border-bottom: 2px solid #004890;">{!! $myData['name'] !!}</h2>
 <table class="rh-table-listing--hr mb3" style="width:100%; line-height: 1.4">
 @if($myData['vas-order-code'])
@@ -13,8 +26,9 @@
     <td class="rh-table-listing_cell"><strong>Analyserande lab:</strong></td>
     <td class="rh-table-listing_cell">
     	{!! $myData['laboratory-name'] !!}<br>
-    	{!! $myData['laboratory-description'] !!}
-    </td>
+    	{!! $myData['laboratory-description'] !!}<br>
+        <a href="{!! $myData['laboratory-link-url'] !!}" target="_blank">{!! $myData['laboratory-link-text'] !!}</a>
+     </td>
 </tr>
 @endif
 @if($myData['referral-name'])
@@ -82,6 +96,9 @@
     <td class="rh-table-listing_cell"><strong>Kommentar/mer info:</strong></td>
     <td class="rh-table-listing_cell">
     	{!! $myData['informations-text-info'] !!}
+        @if($myData['informations-text-info'])
+            <a href="{!! $myData['links-link-url'] !!}" target="_blank">{!! $myData['links-link-text'] !!}</a>
+        @endif
     </td>
 </tr>
 @endif
@@ -125,7 +142,7 @@
     </td>
 </tr>
 @endif
-@if($myData['accredited-text'])
+@if($myData['accredited-text'] && $myData['accredited-value'] == 1)
 <tr class="rh-table-listing__row">
     <td class="rh-table-listing_cell"><strong>Ackrediterad:</strong></td>
     <td class="rh-table-listing_cell">
@@ -133,7 +150,7 @@
     </td>
 </tr>
 @endif
-@if($myData['biobank-text'])
+@if($myData['biobank-text'] && $myData['biobank-value'] == 1)
 <tr class="rh-table-listing__row">
     <td class="rh-table-listing_cell"><strong>Biobank:</strong></td>
     <td class="rh-table-listing_cell">
