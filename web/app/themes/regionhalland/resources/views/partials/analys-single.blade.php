@@ -1,31 +1,18 @@
 
-@if($_SESSION["type"] == 2)
-    <div class="rh-label-previous mb2">
-        <span class="rh-label-previous-icon"></span>
-        <p class="rh-label-previous-title">
-            <a href="./?sid=<?=$_SESSION["sid"]?>">Analysförteckning</a>
-        </p>
-    </div>
-@endif
-
-@if($_SESSION["type"] == 3)
-    <div class="rh-label-previous mb2">
-        <span class="rh-label-previous-icon"></span>
-        <p class="rh-label-previous-title">
-            <a href="./?lid=<?=$_SESSION["lid"]?>">Analysförteckning</a>
-        </p>
-    </div>
-
-@endif
-
-@if($_SESSION["type"] == 4)
-    <div class="rh-label-previous mb2">
-        <span class="rh-label-previous-icon"></span>
-        <p class="rh-label-previous-title">
-            <a href="./?all=1">Analysförteckning</a>
-        </p>
-    </div>
-@endif
+<div class="rh-label-previous mb2">
+    <span class="rh-label-previous-icon"></span>
+    <p class="rh-label-previous-title">
+    @if($_SESSION["type"] == 2)
+        <a href="./?sid=<?=$_SESSION["sid"]?>">Analysförteckning</a>
+    @elseif($_SESSION["type"] == 3)
+        <a href="./?lid=<?=$_SESSION["lid"]?>">Analysförteckning</a>
+    @elseif($_SESSION["type"] == 4)
+        <a href="./?all=1">Analysförteckning</a>
+    @else
+        <a href="./">Analysförteckning</a>
+    @endif
+    </p>
+</div>
 
 <h2 class="mb3" style="border-bottom: 2px solid #004890;">{!! $myData['name'] !!}</h2>
 <table class="rh-table-listing--hr mb3" style="width:100%; line-height: 1.4">
@@ -33,7 +20,7 @@
 <tr class="rh-table-listing__row">
     <td class="rh-table-listing_cell"><strong>VAS Provkod:</strong></td>
     <td class="rh-table-listing_cell">
-    	{!! $myData['vas-order-code'] !!}
+        {!! $myData['vas-order-code'] !!}
     </td>
 </tr>
 @endif
