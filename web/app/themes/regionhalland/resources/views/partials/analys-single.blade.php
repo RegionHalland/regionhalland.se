@@ -1,14 +1,30 @@
 
 @if($_SESSION["type"] == 2)
-<span><a href="./?sid=<?=$_SESSION["sid"]?>">BACKA TILL SPECIALITET</a></span><br><br>
+    <div class="rh-label-previous">
+        <span class="rh-label-previous-icon"></span>
+        <p class="rh-label-previous-title">
+            <a href="./?sid=<?=$_SESSION["sid"]?>">Analysförteckningen</a>
+        </p>
+    </div>
 @endif
 
 @if($_SESSION["type"] == 3)
-<span><a href="./?lid=<?=$_SESSION["lid"]?>">BACKA TILL LETTER</a></span><br><br>
+    <div class="rh-label-previous">
+        <span class="rh-label-previous-icon"></span>
+        <p class="rh-label-previous-title">
+            <a href="./?lid=<?=$_SESSION["lid"]?>">Analysförteckningen</a>
+        </p>
+    </div>
+
 @endif
 
 @if($_SESSION["type"] == 4)
-<span><a href="./?all=1">BACKA TILL ALLA</a></span><br><br>
+    <div class="rh-label-previous">
+        <span class="rh-label-previous-icon"></span>
+        <p class="rh-label-previous-title">
+            <a href="./?all=1">Analysförteckningen</a>
+        </p>
+    </div>
 @endif
 
 <h2 class="mb3" style="border-bottom: 2px solid #004890;">{!! $myData['name'] !!}</h2>
