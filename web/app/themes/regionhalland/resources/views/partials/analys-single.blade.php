@@ -14,7 +14,7 @@
     </p>
 </div>
 
-<h2 class="mb3" style="border-bottom: 2px solid #004890;">{!! $myData['name'] !!}</h2>
+<h2 class="mb3" style="border-bottom: 2px solid #004890;">({!! $myData['name'] !!})</h2>
 <table class="rh-table-listing--hr mb3" style="width:100%; line-height: 1.4">
 @if($myData['vas-order-code'])
 <tr class="rh-table-listing__row">
@@ -30,7 +30,9 @@
     <td class="rh-table-listing_cell">
     	{!! $myData['laboratory-name'] !!}<br>
     	{!! $myData['laboratory-description'] !!}<br>
-        <a href="{!! $myData['laboratory-link-url'] !!}" target="_blank">{!! $myData['laboratory-link-text'] !!}</a>
+        @if($myData['laboratory-link-url'])
+            <a href="{!! $myData['laboratory-link-url'] !!}" target="_blank">{!! $myData['laboratory-link-text'] !!}</a>
+        @endif
      </td>
 </tr>
 @endif
@@ -40,7 +42,9 @@
     <td class="rh-table-listing_cell">
     	{!! $myData['referral-name'] !!}<br>
     	{!! $myData['referral-description'] !!}<br>
-    	<a href="{!! $myData['referral-link-url'] !!}" target="_blank">{!! $myData['referral-link-text'] !!}</a>
+    	@if($myData['referral-link-url'])
+            <a href="{!! $myData['referral-link-url'] !!}" target="_blank">{!! $myData['referral-link-text'] !!}</a>
+        @endif
     </td>
 </tr>
 @endif
@@ -50,7 +54,9 @@
     <td class="rh-table-listing_cell">
     	{!! $myData['sampling-material-name'] !!}<br>
     	{!! $myData['sampling-material-description'] !!}<br>
-        <a href="{!! $myData['sampling-material-link-url'] !!}" target="_blank">{!! $myData['sampling-material-link-text'] !!}</a>
+        @if($myData['sampling-material-link-url'])
+            <a href="{!! $myData['sampling-material-link-url'] !!}" target="_blank">{!! $myData['sampling-material-link-text'] !!}</a>
+        @endif
     </td>
 </tr>
 @endif
@@ -99,7 +105,7 @@
     <td class="rh-table-listing_cell"><strong>Kommentar/mer info:</strong></td>
     <td class="rh-table-listing_cell">
     	{!! $myData['informations-text-info'] !!}
-        @if($myData['informations-text-info'])
+        @if($myData['links-link-url'])
             <a href="{!! $myData['links-link-url'] !!}" target="_blank">{!! $myData['links-link-text'] !!}</a>
         @endif
     </td>
