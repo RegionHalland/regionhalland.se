@@ -77,7 +77,7 @@
                                         @php($myActive = 1)
                                     @endif
                                     @if($myActive == 1)
-                                        <a class="rh-filter-alphabet-link--active" href="./?lid={!! $strLetterU !!}">{!! $strLetterU !!}</a>
+                                        <a class="rh-filter-alphabet-link rh-filter-alphabet-link--active" href="./?lid={!! $strLetterU !!}">{!! $strLetterU !!}</a>
                                     @else
                                         <a class="rh-filter-alphabet-link" href="./?lid={!! $strLetterU !!}">{!! $strLetterU !!}</a>
                                     @endif
