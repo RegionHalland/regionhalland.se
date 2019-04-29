@@ -38,13 +38,9 @@
                 </button>
             </div>
         </form>
-
     </div>
 
-    <div class="rh-header-menu">
-        <button class="rh-header-button rh-header-button--search"></button>
-        {{--<button class="rh-header-button rh-header-button--menu"></button>--}}
-    </div>
+
 </nav>
 
 @yield('content')
