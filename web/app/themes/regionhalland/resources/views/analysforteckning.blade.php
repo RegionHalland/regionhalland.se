@@ -49,6 +49,7 @@
                     <div class="left-align pt3">
                         <h1 class="mb3">{{ the_title() }}</h1>
                         <p>{{ $post->post_content }}</p>
+                        <a href="./?all=1">Lista alla analyser</a>
 
                         <form name="affiliation">
                             <select name="sid" method="get" class="mt2" style="height: 5ex; font-size: 1em;">
