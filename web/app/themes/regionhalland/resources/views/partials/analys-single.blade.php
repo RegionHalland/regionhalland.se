@@ -92,14 +92,6 @@
     </td>
 </tr>
 @endif
-@if($myData['unit-name'] && $myData['unit-name'] != 'Ingen enhet')
-<tr class="rh-table-listing__row">
-    <td class="rh-table-listing_cell"><strong>Enhet:</strong></td>
-    <td class="rh-table-listing_cell">
-    	{!! $myData['unit-name'] !!}
-    </td>
-</tr>
-@endif
 @if($myData['informations-text-info'])
 <tr class="rh-table-listing__row">
     <td class="rh-table-listing_cell"><strong>Kommentar/mer info:</strong></td>
@@ -110,6 +102,14 @@
         @endif
     </td>
 </tr>
+@endif
+@if($myData['unit-name'] && $myData['unit-name'] != 'Ingen enhet')
+    <tr class="rh-table-listing__row">
+        <td class="rh-table-listing_cell"><strong>Enhet:</strong></td>
+        <td class="rh-table-listing_cell">
+            {!! $myData['unit-name'] !!}
+        </td>
+    </tr>
 @endif
 @if($myData['informations-text-interval'])
 <tr class="rh-table-listing__row">
