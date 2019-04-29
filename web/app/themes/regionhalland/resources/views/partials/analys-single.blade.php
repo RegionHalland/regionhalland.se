@@ -1,28 +1,28 @@
 
 @if($_SESSION["type"] == 2)
-    <div class="rh-label-previous">
+    <div class="rh-label-previous mb2">
         <span class="rh-label-previous-icon"></span>
         <p class="rh-label-previous-title">
-            <a href="./?sid=<?=$_SESSION["sid"]?>">Analysförteckningen</a>
+            <a href="./?sid=<?=$_SESSION["sid"]?>">Analysförteckning</a>
         </p>
     </div>
 @endif
 
 @if($_SESSION["type"] == 3)
-    <div class="rh-label-previous">
+    <div class="rh-label-previous mb2">
         <span class="rh-label-previous-icon"></span>
         <p class="rh-label-previous-title">
-            <a href="./?lid=<?=$_SESSION["lid"]?>">Analysförteckningen</a>
+            <a href="./?lid=<?=$_SESSION["lid"]?>">Analysförteckning</a>
         </p>
     </div>
 
 @endif
 
 @if($_SESSION["type"] == 4)
-    <div class="rh-label-previous">
+    <div class="rh-label-previous mb2">
         <span class="rh-label-previous-icon"></span>
         <p class="rh-label-previous-title">
-            <a href="./?all=1">Analysförteckningen</a>
+            <a href="./?all=1">Analysförteckning</a>
         </p>
     </div>
 @endif
