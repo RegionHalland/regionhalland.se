@@ -1,3 +1,7 @@
+{{--
+	Template Name: Analysförteckning
+--}}
+
 @extends('layouts.analys')
 
 @section('content')
