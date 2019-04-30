@@ -1,12 +1,8 @@
 <div class="left-align pt3">
 	
-	<div class="rh-label-previous mb2">
-	    <span class="rh-label-previous-icon"></span>
-	    <p class="rh-label-previous-title">
-			<a href="./">Tillbaka till listan</a>
-	    </p>
-	</div>
-
+	<form action="./">
+		<button class="rh-button rh-button--secondary" aria-label="Visa alla lediga jobb" role="button" type="submit">Visa alla jobb</button>
+	</form>
 
 	@php($myVarbi = get_region_halland_varbi_works(2, $id))
 	@if(isset($myVarbi))
