@@ -1,7 +1,7 @@
 <div class="left-align pt3">
 	
 	<div class="rh-label-previous mb2">
-	    <span class="rh-label-previous-icon--blue"></span>
+	    <span class="rh-label-previous-icon"></span>
 	    <p class="rh-label-previous-title">
 			<a href="./">Tillbaka till listan</a>
 	    </p>
