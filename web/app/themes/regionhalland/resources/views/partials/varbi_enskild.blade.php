@@ -1,7 +1,7 @@
 <div class="left-align pt3">
-	
-	<form action="./">
-		<button class="rh-button rh-button--secondary" aria-label="Visa alla lediga jobb" role="button" type="submit">Visa alla jobb</button>
+
+	<form action="./" class="right-align" class="pb3">
+		<button class="rh-button" aria-label="Visa alla lediga jobb" role="button" type="submit">Åter till alla jobb</button>
 	</form>
 
 	@php($myVarbi = get_region_halland_varbi_works(2, $id))
