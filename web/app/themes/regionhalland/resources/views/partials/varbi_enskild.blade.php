@@ -1,6 +1,6 @@
 <div class="left-align pt3">
 
-	<form action="./" class="right-align" class="pb3">
+	<form action="./" class="pb3">
 		<button class="rh-button" aria-label="Visa alla lediga jobb" role="button" type="submit">Åter till alla jobb</button>
 	</form>
 
