@@ -5,6 +5,10 @@
  *
 **/
 
+b {
+  font-weight: bold;
+}
+
 .rh-table-listing--alternating tr:nth-child(even) {background: rgba(208, 227, 243, 0.6)}
 .rh-table-listing--hr {
   border-collapse: collapse;
