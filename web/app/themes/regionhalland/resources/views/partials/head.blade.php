@@ -3,16 +3,16 @@
 	<meta http-equiv="x-ua-compatible" content="ie=edge" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 	
-	<link rel="apple-touch-icon" sizes="180x180" href="{!! env('WP_HOME') !!}/include/favicons/apple-touch-icon.png')" />
-	<link rel="icon" type="image/png" sizes="32x32" href="{!! env('WP_HOME') !!}/include/favicons/favicon-32x32.png')" />
-	<link rel="icon" type="image/png" sizes="16x16" href="{!! env('WP_HOME') !!}/include/favicons/favicon-16x16.png')"/>
-	<link rel="manifest" href="{!! env('WP_HOME') !!}/include/favicons/site.webmanifest')" />
-	<link rel="mask-icon" href="{!! env('WP_HOME') !!}/include/favicons/safari-pinned-tab.svg')" color="#6ba3cb" />
-	<link rel="shortcut icon" href="{!! env('WP_HOME') !!}/include/favicons/favicon.ico')" />
+	<link rel="apple-touch-icon" sizes="180x180" href="{!! env('WP_HOME') !!}/include/favicons/apple-touch-icon.png" />
+	<link rel="icon" type="image/png" sizes="32x32" href="{!! env('WP_HOME') !!}/include/favicons/favicon-32x32.png" />
+	<link rel="icon" type="image/png" sizes="16x16" href="{!! env('WP_HOME') !!}/include/favicons/favicon-16x16.png"/>
+	<link rel="manifest" href="{!! env('WP_HOME') !!}/include/favicons/site.webmanifest" />
+	<link rel="mask-icon" href="{!! env('WP_HOME') !!}/include/favicons/safari-pinned-tab.svg" color="#6ba3cb" />
+	<link rel="shortcut icon" href="{!! env('WP_HOME') !!}/include/favicons/favicon.ico" />
 	<meta name="apple-mobile-web-app-title" content="Region Halland" />
 	<meta name="application-name" content="Region Halland" />
 	<meta name="msapplication-TileColor" content="#ffffff" />
-	<meta name="msapplication-config" href="{!! env('WP_HOME') !!}/include/favicons/browserconfig.xml')" />
+	<meta name="msapplication-config" href="{!! env('WP_HOME') !!}/include/favicons/browserconfig.xml" />
 	<meta name="theme-color" content="#ffffff" />
 	<title>{{ the_title() }} - Region Halland</title>
     <link rel="stylesheet" type="text/css" href="https://at.alicdn.com/t/font_o5hd5vvqpoqiwwmi.css">
