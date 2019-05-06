@@ -64,6 +64,9 @@
 				<td class="rh-table-listing_cell">{{ $myVarbi['lastday'] }}</td>
 			</tr>
 		</table>
+		<p>
+			<a href="{{ $myVarbi['applyURI'] }}"><button class="rh-button rh-button--secondary" role="button">Sök tjänsten</button></a>
+		</p>
 	@endif
 
 </div>
