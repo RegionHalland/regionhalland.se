@@ -14,6 +14,7 @@
 	<meta name="msapplication-TileColor" content="#ffffff" />
 	<meta name="msapplication-config" content="@asset('images/favicons/browserconfig.xml')" />
 	<meta name="theme-color" content="#ffffff" />
+	<meta name="description" content="Region Halland arbetar för att erbjuda en god hälso- och sjukvård och främja en hållbar utveckling i regionen. Vår vision är att göra Halland till den bästa livsplatsen." />
 	<title>{{ the_title() }} - Region Halland</title>
     <link rel="stylesheet" type="text/css" href="https://at.alicdn.com/t/font_o5hd5vvqpoqiwwmi.css">
 	<link href="{!! env('WP_HOME') !!}/styleguide2.2.1/css/components.css" rel="stylesheet"/>
