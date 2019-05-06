@@ -81,9 +81,16 @@
 
 		<aside class="pt4 col col-12 sm-col-12 md-col-12 lg-col-3">
 			{{-- Content Navigation --}}
-			<a href="https://regionhalland.varbi.com/se/what:login/">
-				<button class="rh-button rh-button--secondary" aria-label="Logga in på Varbi-plattformen för att söka jobb" role="button">Logga in</button>
-			</a>
+			<p>
+				<a href="https://regionhalland.varbi.com/se/what:login/">
+					<button class="rh-button rh-button--secondary" aria-label="Logga in på Varbi-plattformen för att söka jobb" role="button">Logga in</button>
+				</a>
+			</p>
+			<p>
+				<a href="https://regionhalland.varbi.com/se/what:subscribeform/backToJobs:1/?token=70117c353fde97237ec4b71a130d841b">
+					<button class="rh-button rh-button--secondary" aria-label="Prenumerera på jobbannonser från Region Halland via Varbi-plattformen" role="button">Prenumerera</button>
+				</a>
+			</p>
 			@include('partials.content-nav')
 			{{-- Content Navigation END --}}
 		</aside>
