@@ -51,6 +51,7 @@
 									@php($programPris = get_region_halland_acf_page_kulturprogram_pris())
 									@if($programPris)
 										<p><strong>Pris i Halland:</strong> {{ $programPris }}</p>
+										<p>Priset som anges är det subventionerade priset exklusive moms.</p>
                                     @endif
 
                                     <p><strong>Typ:</strong>
