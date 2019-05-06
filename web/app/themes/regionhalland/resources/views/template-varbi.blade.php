@@ -81,6 +81,9 @@
 
 		<aside class="pt4 col col-12 sm-col-12 md-col-12 lg-col-3">
 			{{-- Content Navigation --}}
+			<a href="https://regionhalland.varbi.com/se/what:login/">
+				<button class="rh-button rh-button--secondary" aria-label="Logga in på Varbi-plattformen för att söka jobb" role="button">Logga in</button>
+			</a>
 			@include('partials.content-nav')
 			{{-- Content Navigation END --}}
 		</aside>
