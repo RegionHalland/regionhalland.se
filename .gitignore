@@ -22,6 +22,22 @@ web/app/uploads/*
 web/app/upgrade/*
 !web/app/upgrade/.gitkeep
 
+# Datafiler
+web/app/datafiler/analys/*
+!web/app/datafiler/analys/.gitkeep
+web/app/datafiler/biljett/analys/*
+!web/app/datafiler/biljett/analys/.gitkeep
+web/app/datafiler/biljett/hsa/*
+!web/app/datafiler/biljett/hsa/.gitkeep
+web/app/datafiler/cert/*
+!web/app/datafiler/cert/.gitkeep
+web/app/datafiler/enheter/*
+!web/app/datafiler/enheter/.gitkeep
+web/app/datafiler/jobb/*
+!web/app/datafiler/jobb/.gitkeep
+web/app/datafiler/personer/*
+!web/app/datafiler/personer/.gitkeep
+
 # Wordpress
 web/wp/*
 
