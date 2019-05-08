@@ -2,10 +2,10 @@
 @php($myPerson = get_region_halland_acf_page_personer_enheter_person())
 @php($myEnhet = get_region_halland_acf_page_personer_enheter_enhet())
 
-@php($myPersonData = get_region_halland_personer_enheter(1, $myPerson, ""))
-@php($myEnhetData = get_region_halland_personer_enheter(2, "", $myEnhet))
+@php($myPersonData = get_region_halland_api_personer_enheter(1, $myPerson, ""))
+@php($myEnhetData = get_region_halland_api_personer_enheter(2, "", $myEnhet))
 
-@if($myPersonData)
+@if($myPersonData['status'] == 1)
     <div class="rh-personal-info pt2">
         <div class="rh-box-info-alone">
             <h5>{{ $myPersonData['firstname'] }} {{ $myPersonData['lastname'] }}</h5>
@@ -15,7 +15,7 @@
     </div>
 @endif
 
-@if($myEnhetData)
+@if($myEnhetData['status'] == 1)
     <div class="rh-unit-info pt2">
 
         <h5>{{ $myEnhetData['enhet_name'] }}</h5>

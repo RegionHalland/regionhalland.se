@@ -36,6 +36,8 @@
 				</article>
 				{{-- Content END --}}
 
+				{{-- HSA --}}
+					@include('partials.contact-card')
 				{{-- HSA END --}}
 				
 				{{-- Author --}}
