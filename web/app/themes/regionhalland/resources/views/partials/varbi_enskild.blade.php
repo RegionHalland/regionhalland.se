@@ -1,12 +1,8 @@
 <div class="left-align pt3">
-	
-	<div class="rh-label-previous mb2">
-	    <span class="rh-label-previous-icon--blue"></span>
-	    <p class="rh-label-previous-title">
-			<a href="./">Tillbaka till listan</a>
-	    </p>
-	</div>
 
+	<form action="./" class="pb3">
+		<button class="rh-button" aria-label="Visa alla lediga jobb" role="button" type="submit">Åter till alla jobb</button>
+	</form>
 
 	@php($myVarbi = get_region_halland_varbi_works(2, $id))
 	@if(isset($myVarbi))
@@ -68,6 +64,9 @@
 				<td class="rh-table-listing_cell">{{ $myVarbi['lastday'] }}</td>
 			</tr>
 		</table>
+		<p>
+			<a href="{{ $myVarbi['applyURI'] }}"><button class="rh-button rh-button--secondary" role="button">Sök tjänsten</button></a>
+		</p>
 	@endif
 
 </div>

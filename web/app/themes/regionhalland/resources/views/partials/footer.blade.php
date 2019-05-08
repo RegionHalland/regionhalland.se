@@ -129,7 +129,7 @@
  --}}
 <script src="{!! env('WP_HOME') !!}/include/scripts/jquery.3.3.1.min.js?ver=3.3.1"></script>
 
-<script src="{!! env('WP_HOME') !!}/styleguide2.2.1/js/components.js"></script>
+<script src="{!! env('WP_HOME') !!}/styleguide3.1.0/js/components.js"></script>
 
 <script>
     function debounce(delay, fn) {
