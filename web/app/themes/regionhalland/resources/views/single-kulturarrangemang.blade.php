@@ -5,11 +5,9 @@
 	<div class="center rh-hero">
 		<img class="rh-image-hero" src="{{ get_the_post_thumbnail_url() }}" alt="">
 		<div class="rh-caption-hero">
-			<h5 class="rh-caption-hero-title">
-				{{ get_region_halland_acf_page_kulturarrangemang_start_tid_dag() }}
-				{{ get_region_halland_acf_page_kulturarrangemang_start_tid_manad() }}
-				{{ $post->post_title }}
-			</h5>
+			{{ get_region_halland_acf_page_kulturarrangemang_start_tid_dag() }}
+			{{ get_region_halland_acf_page_kulturarrangemang_start_tid_manad() }}
+			{{ $post->post_title }}
 		</div>
 	</div>
 
