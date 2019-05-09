@@ -5,9 +5,7 @@
 		<div class="center rh-hero">
 			<img class="rh-image-hero" src="{{ get_the_post_thumbnail_url() }}" alt="">
 			<div class="rh-caption-hero">
-				<h5 class="rh-caption-hero-title">
-					{{ get_the_title() }}
-				</h5>
+				{{ get_the_title() }}
 			</div>
 		</div>
 
