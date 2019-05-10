@@ -63,6 +63,17 @@
 					@endforeach
 				@endif
 
+				@if($myItems['litteratur'])
+					<h2 class="pb2 rh-lists-title">Litteratur</h2>
+					@foreach($myItems['litteratur'] as $item)
+						<li class="rh-lists-items">
+							<p class="rh-lists-items-left"><a href="{{ $item['page']->url }}" style="color:black; text-decoration: none;">{{ $item['page']->post_title }}</a></p>
+							{{--<p class="rh-lists-items-right"><strong>Målgrupp:</strong> {{ $item['page']->malgrupp }}</p>--}}
+							<hr class="rh-lists-items-hr">
+						</li>
+					@endforeach
+				@endif
+
 				@if($myItems['musik'])
 					<h2 class="pb2 rh-lists-title">Musik</h2>
 					@foreach($myItems['musik'] as $item)
@@ -88,17 +99,6 @@
 				@if($myItems['teater'])
 					<h2 class="pb2 rh-lists-title">Teater</h2>
 					@foreach($myItems['teater'] as $item)
-						<li class="rh-lists-items">
-							<p class="rh-lists-items-left"><a href="{{ $item['page']->url }}" style="color:black; text-decoration: none;">{{ $item['page']->post_title }}</a></p>
-							{{--<p class="rh-lists-items-right"><strong>Målgrupp:</strong> {{ $item['page']->malgrupp }}</p>--}}
-							<hr class="rh-lists-items-hr">
-						</li>
-					@endforeach
-				@endif
-
-				@if($myItems['litteratur'])
-					<h2 class="pb2 rh-lists-title">Litteratur</h2>
-					@foreach($myItems['litteratur'] as $item)
 						<li class="rh-lists-items">
 							<p class="rh-lists-items-left"><a href="{{ $item['page']->url }}" style="color:black; text-decoration: none;">{{ $item['page']->post_title }}</a></p>
 							{{--<p class="rh-lists-items-right"><strong>Målgrupp:</strong> {{ $item['page']->malgrupp }}</p>--}}
