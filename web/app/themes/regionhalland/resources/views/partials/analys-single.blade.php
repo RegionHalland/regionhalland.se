@@ -43,7 +43,10 @@
     	{!! $myData['referral-name'] !!}<br>
     	{!! $myData['referral-description'] !!}<br>
     	@if($myData['referral-link-url'])
-            <a href="{!! $myData['referral-link-url'] !!}" target="_blank">{!! $myData['referral-link-text'] !!}</a>
+            <br><a href="{!! $myData['referral-link-url'] !!}" target="_blank">{!! $myData['referral-link-text'] !!}</a>
+        @endif
+        @if($myData['links-exist-referral'] == 1)
+            <br><a href="{!! $myData['links-link-url-referral'] !!}" target="_blank">{!! $myData['links-link-text-referral'] !!}</a>
         @endif
     </td>
 </tr>
@@ -55,7 +58,10 @@
     	{!! $myData['sampling-material-name'] !!}<br>
     	{!! $myData['sampling-material-description'] !!}<br>
         @if($myData['sampling-material-link-url'])
-            <a href="{!! $myData['sampling-material-link-url'] !!}" target="_blank">{!! $myData['sampling-material-link-text'] !!}</a>
+            <br><a href="{!! $myData['sampling-material-link-url'] !!}" target="_blank">{!! $myData['sampling-material-link-text'] !!}</a>
+        @endif
+        @if($myData['links-exist-provtagning'] == 1)
+            <br><a href="{!! $myData['links-link-url-provtagning'] !!}" target="_blank">{!! $myData['links-link-text-provtagning'] !!}</a>
         @endif
     </td>
 </tr>
@@ -73,6 +79,9 @@
     <td class="rh-table-listing_cell--hr"><strong>Omhändertagande:</strong></td>
     <td class="rh-table-listing_cell--hr">
         {!! $myData['informations-text-take-care'] !!}
+        @if($myData['links-exist-take-care'] == 1)
+            <br><a href="{!! $myData['links-link-url-take-care'] !!}" target="_blank">{!! $myData['links-link-text-take-care'] !!}</a>
+        @endif
     </td>
 </tr>
 @endif
@@ -81,6 +90,9 @@
     <td class="rh-table-listing_cell--hr"><strong>Indikation:</strong></td>
     <td class="rh-table-listing_cell--hr">
         {!! $myData['informations-text-indication'] !!}
+        @if($myData['links-exist-indication'] == 1)
+            <br><a href="{!! $myData['links-link-url-indication'] !!}" target="_blank">{!! $myData['links-link-text-indication'] !!}</a>
+        @endif
     </td>
 </tr>
 @endif
@@ -97,8 +109,8 @@
     <td class="rh-table-listing_cell--hr"><strong>Kommentar/mer info:</strong></td>
     <td class="rh-table-listing_cell--hr">
     	{!! $myData['informations-text-info'] !!}
-        @if($myData['links-link-url'])
-            <a href="{!! $myData['links-link-url'] !!}" target="_blank">{!! $myData['links-link-text'] !!}</a>
+        @if($myData['links-exist-information'] == 1)
+            <br><a href="{!! $myData['links-link-url-information'] !!}" target="_blank">{!! $myData['links-link-text-information'] !!}</a>
         @endif
     </td>
 </tr>
@@ -124,6 +136,9 @@
     <td class="rh-table-listing_cell--hr"><strong>Svarstolkning:</strong></td>
     <td class="rh-table-listing_cell--hr">
         {!! $myData['informations-text-answer'] !!}
+        @if($myData['links-exist-answer'] == 1)
+            <br><a href="{!! $myData['links-link-url-answer'] !!}" target="_blank">{!! $myData['links-link-text-answer'] !!}</a>
+        @endif
     </td>
 </tr>
 @endif
@@ -132,6 +147,14 @@
     <td class="rh-table-listing_cell--hr"><strong>Analysfrekvens:</strong></td>
     <td class="rh-table-listing_cell--hr">
     	{!! $myData['frequency'] !!}
+    </td>
+</tr>
+@endif
+@if($myData['informations-text-error'])
+<tr class="rh-table-listing__row">
+    <td class="rh-table-listing_cell--hr"><strong>Felkällor:</strong></td>
+    <td class="rh-table-listing_cell--hr">
+        {!! $myData['informations-text-error'] !!}
     </td>
 </tr>
 @endif
@@ -151,7 +174,7 @@
     </td>
 </tr>
 @endif
-@if($myData['accredited-text'] && ($myData['accredited-value'] == 0 || $myData['accredited-value'] == 1))
+@if($myData['accredited-text'] && ($myData['accredited-value'] == 1 || $myData['accredited-value'] == 2))
 <tr class="rh-table-listing__row">
     <td class="rh-table-listing_cell--hr"><strong>Ackrediterad:</strong></td>
     <td class="rh-table-listing_cell--hr">
@@ -159,11 +182,14 @@
     </td>
 </tr>
 @endif
-@if($myData['biobank-text'] && ($myData['biobank-value'] == 0 || $myData['biobank-value'] == 1))
+@if($myData['biobank-text'] && ($myData['biobank-value'] == 1 || $myData['biobank-value'] == 2))
 <tr class="rh-table-listing__row">
     <td class="rh-table-listing_cell--hr"><strong>Biobank:</strong></td>
     <td class="rh-table-listing_cell--hr">
         {!! $myData['biobank-text'] !!}
+        @if($myData['links-exist-biobank'] == 1)
+            <br><a href="{!! $myData['links-link-url-biobank'] !!}" target="_blank">{!! $myData['links-link-text-biobank'] !!}</a>
+        @endif
     </td>
 </tr>
 @endif
