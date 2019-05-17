@@ -48,7 +48,9 @@
     </form>
 
     <br><br>
-    <a href="./">Töm urval</a>
+    <a href="./">
+        <button class="rh-button" aria-label="Töm urval" role="button">Töm urval</button>
+    </a>
     <br><br>
 
     @if($myPagination['antal_items'] > 0)
