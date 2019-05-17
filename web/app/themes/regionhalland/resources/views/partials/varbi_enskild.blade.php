@@ -4,7 +4,7 @@
 		<button class="rh-button" aria-label="Visa alla lediga jobb" role="button" type="submit">Åter till alla jobb</button>
 	</form>
 
-	@php($myVarbi = get_region_halland_varbi_works(2, $id))
+	@php($myVarbi = get_region_halland_varbi_works(3, $id, 0, 0, 0))
 	@if(isset($myVarbi))
 		<h1 class="pb3">{{ $myVarbi['title'] }}</h1>
 		<p><sstrong>Ort:</sstrong> {{ $myVarbi['town'] }}</p>
@@ -55,6 +55,26 @@
 				<td class="rh-table-listing_cell"><strong>Referensnummer</strong></td>
 				<td class="rh-table-listing_cell">{{ $myVarbi['ref_no'] }}</td>
 			</tr>
+			@if($myVarbi['kontakt'])
+			<tr>
+				<td class="rh-table-listing_cell"><strong>Kontakt</strong></td>
+				<td class="rh-table-listing_cell">
+					@foreach ($myVarbi['kontakt'] as $kontakt)
+						{{ $kontakt['0'] }}, {{ $kontakt['2'] }}
+					@endforeach
+				</td>
+			</tr>
+			@endif
+			@if($myVarbi['facket'])
+			<tr>
+				<td class="rh-table-listing_cell"><strong>Facklig företrädare</strong></td>
+				<td class="rh-table-listing_cell">
+					@foreach ($myVarbi['facket'] as $facket)
+						{{ $facket['0'] }}, {{ $facket['2'] }}<br>
+					@endforeach
+				</td>
+			</tr>
+			@endif
 			<tr>
 				<td class="rh-table-listing_cell"><strong>Publicerat</strong></td>
 				<td class="rh-table-listing_cell">{{ $myVarbi['published'] }}</td>

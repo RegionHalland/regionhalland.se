@@ -8,11 +8,29 @@
 
     <?php
 
+    	$type = 1;
+    	$mid = 0;
+		$fid = 0;
+		$gid = 0;
+
         if(isset($_GET["id"])){
             $id = $_GET["id"];
+            $type = 3;
+        }
+
+        if(isset($_GET["mid"])){
+            $mid = $_GET["mid"];
             $type = 2;
-        } else {
-            $type = 1;
+        }
+
+        if(isset($_GET["fid"])){
+            $fid = $_GET["fid"];
+            $type = 2;
+        }
+
+        if(isset($_GET["gid"])){
+            $gid = $_GET["gid"];
+            $type = 2;
         }
 
     ?>
@@ -55,11 +73,11 @@
 				{{-- HSA END --}}
 				<div class="left-align pt0">
 					
-					@if($type == 1)
+					@if($type == 1 || $type == 2)
 						@include('partials.varbi_lista')
 		            @endif
 		            
-		            @if($type == 2)
+		            @if($type == 3)
 						@include('partials.varbi_enskild')
 		            @endif
 		            
