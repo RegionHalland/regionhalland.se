@@ -44,12 +44,21 @@
             @endforeach
         </select>
         <input class="ml1 rh-button rh-button--primary" type='submit' value="Visa"/>
+
     </form>
 
     <br><br>
+    <a href="./">Töm urval</a>
+    <br><br>
 
     @if($myPagination['antal_items'] > 0)
-        <span><h2 class="mb1" style="border-bottom: 4px solid #378A30">{{ $myPagination['antal_items'] }} lediga jobb - sida {{ $myPagination['current_page'] }} av {{ $myPagination['total_pages'] }}</h2></span>
+        <span>
+            @if($myPagination['antal_items'] == 1)
+                <h2 class="mb1" style="border-bottom: 4px solid #378A30">{{ $myPagination['antal_items'] }} ledigt jobb - sida {{ $myPagination['current_page'] }} av {{ $myPagination['total_pages'] }}</h2>
+            @else
+                <h2 class="mb1" style="border-bottom: 4px solid #378A30">{{ $myPagination['antal_items'] }} lediga jobb - sida {{ $myPagination['current_page'] }} av {{ $myPagination['total_pages'] }}
+            @endif
+        </span>
         <ul>
         <?php while ($i < $myPagination['end_item']) { ?>
             <li class="pl3 pt2 pb1 mt2" style="background-color:#F4F4F4; max-width:40em;">
