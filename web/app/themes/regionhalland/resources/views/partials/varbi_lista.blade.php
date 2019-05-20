@@ -58,7 +58,7 @@
             @if($myPagination['antal_items'] == 1)
                 <h2 class="mb1" style="border-bottom: 4px solid #378A30">{{ $myPagination['antal_items'] }} ledigt jobb - sida {{ $myPagination['current_page'] }} av {{ $myPagination['total_pages'] }}</h2>
             @else
-                <h2 class="mb1" style="border-bottom: 4px solid #378A30">{{ $myPagination['antal_items'] }} lediga jobb - sida {{ $myPagination['current_page'] }} av {{ $myPagination['total_pages'] }}
+                <h2 class="mb1" style="border-bottom: 4px solid #378A30">{{ $myPagination['antal_items'] }} lediga jobb - sida {{ $myPagination['current_page'] }} av {{ $myPagination['total_pages'] }}</h2>
             @endif
         </span>
         <ul>
@@ -73,7 +73,7 @@
         <?php $i++; } ?>
         </ul>
     @else
-        <span><h2 class="mb1" style="border-bottom: 4px solid #378A30">I det urval du har gjort finns det inga lediga jobb</h2></span>
+        <h2 class="mb1" style="border-bottom: 4px solid #378A30">I det urval du har gjort finns det inga lediga jobb</h2>
     @endif
 
     <br><br>
