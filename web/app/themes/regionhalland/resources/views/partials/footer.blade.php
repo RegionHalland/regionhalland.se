@@ -183,9 +183,9 @@
         }));
     }
 
-    $(".rh-header-button--search").on( "click", function() {
-        $(".rh-header-search-desktop").show();
-        $(".rh-header-button--search").hide();
+    $("#searchtoggle").on( "click", function() {
+        $(".rh-header-search-desktop").toggle();
+        $(".rh-header-button--search").toggle();
     });
 
     // **************************************

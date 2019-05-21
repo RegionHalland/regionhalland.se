@@ -3,8 +3,8 @@
     {{-- Utilities --}}
     <div class="rh-toplinks">
         <ul class="rh-toplinks-nav" aria-label="Genvägar i sidhuvudet">
-            <li class="rh-toplinks-nav-item">
-                <i class="feather icon-volume-1 rh-toplinks-nav-link-icon"></i>
+            <li>
+                <a onclick="toggleBar();" href="#" class="rh-round-button icon-volume-1"></a>
                 <a id="bapluslogo" class="rh-toplinks-nav-link logo" title="Aktivera Talande Webb" onclick="toggleBar();" href="#">Talande Webb</a>
             </li>
         </ul>
@@ -30,7 +30,7 @@
     </div>
 
     <div class="rh-header-menu">
-        <button class="rh-header-button rh-header-button--search"></button>
+        <span id="searchtoggle" class="rh-round-button icon-search"></span>
         {{--<button class="rh-header-button rh-header-button--menu"></button>--}}
     </div>
 </nav>
