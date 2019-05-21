@@ -11,7 +11,7 @@
     </div>
 
     {{-- Utilities END --}}
-    <div class="rh-header-search-desktop">
+    <div class="pl1 rh-header-search-desktop">
         <form name="myForm" method="get" action="{!! env('FINDWISE_SEARCH_URL') !!}">
             <?php 
                 $strSearchText = "";
