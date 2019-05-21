@@ -74,7 +74,25 @@ footer a {
   background-color: white;
 }
 
+.rh-table-listing--alternating tr:nth-child(even) {background: rgba(208, 227, 243, 0.6)}
+.rh-table-listing--hr {
+  border-collapse: collapse;
+}
 
+.rh-table-listing__row {
+  border-bottom: 1px solid #B1B1B1;
+}
+
+.rh-table-listing_cell {
+  padding-left: 1em;
+  padding-top: 1.5ex;
+  padding-bottom: 1.5ex;
+}
+
+.rh-table-listing_cell--hr {
+  padding-top: 2ex;
+  padding-bottom: 2ex;
+}
 
 .content-highlight {
   -webkit-animation-name: content-hightlight-animation;

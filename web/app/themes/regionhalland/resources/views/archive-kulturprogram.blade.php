@@ -12,7 +12,7 @@
 				</p>
 			</div>
 			<h1 class="pb2 rh-lists-title">Kulturprogram för barn och unga</h1>
-			<p style="font-size: 1.2em; line-height: 1.4;" class="col-12 sm-col-8 md-col-8 lg-col-8">Förskola, skola och andra arrangörer kan köpa subventionerade kulturprogram för barn och unga 2-18 år, för skolföreställningar eller offentliga föreställningar i Halland.</p>
+			<div style="font-size: 1.2em; line-height: 1.4;" class="col-12 sm-col-8 md-col-8 lg-col-8">Förskola, skola och andra arrangörer kan köpa subventionerade kulturprogram för barn och unga 2-18 år, för skolföreställningar eller offentliga föreställningar i Halland</div>
 			<p><a href="/kultur/kulturbarnunga/bokning-av-kulturprogram-for-barn-och-unga/">Så här bokar och redovisar du subventionerade kulturprogram för barn och unga</a></p>
 			<p><a href="/kultur/kulturbarnunga/regionala-subventioner-till-kultur-for-barn-och-unga/">Läs mer om regionala subventioner till kultur för barn och unga</a></p>
 			
@@ -55,6 +55,17 @@
 				@if($myItems['kulturarv'])
 					<h2 class="pb2 rh-lists-title">Kulturarv</h2>
 					@foreach($myItems['kulturarv'] as $item)
+						<li class="rh-lists-items">
+							<p class="rh-lists-items-left"><a href="{{ $item['page']->url }}" style="color:black; text-decoration: none;">{{ $item['page']->post_title }}</a></p>
+							{{--<p class="rh-lists-items-right"><strong>Målgrupp:</strong> {{ $item['page']->malgrupp }}</p>--}}
+							<hr class="rh-lists-items-hr">
+						</li>
+					@endforeach
+				@endif
+
+				@if($myItems['litteratur'])
+					<h2 class="pb2 rh-lists-title">Litteratur</h2>
+					@foreach($myItems['litteratur'] as $item)
 						<li class="rh-lists-items">
 							<p class="rh-lists-items-left"><a href="{{ $item['page']->url }}" style="color:black; text-decoration: none;">{{ $item['page']->post_title }}</a></p>
 							{{--<p class="rh-lists-items-right"><strong>Målgrupp:</strong> {{ $item['page']->malgrupp }}</p>--}}
