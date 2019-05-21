@@ -5,46 +5,56 @@
     @php($i = $myPagination['start_item'])
     
     <form method="get" name="municipality">
-        <select name="fid" class="mt2" style="height: 5ex; font-size: 1em;">
-            <option value="" disabled selected>Välj yrkesområde</option>
-            @php($myFieldData = region_halland_varbi_works_get_field_data())
-            @php($myFieldSelected = "")
-            @foreach ($myFieldData as $field)
-                @if($field['id'] == $fid)
-                    @php($myFieldSelected = "selected")
-                @endif
-                <option {!! $myFieldSelected !!} value="{!! $field['id'] !!}">{!! $field['name'] !!}</option>
-            @php($myFieldSelected = "")
-            @endforeach
-        </select>
-        <select name="gid" class="mt2" style="height: 5ex; font-size: 1em;">
-            <option value="" disabled selected>Välj yrkesgrupp</option>
-            @php($myGroupData = region_halland_varbi_works_get_group_data())
-            @php($myGroupSelected = "")
-            @foreach ($myGroupData as $group)
-                @if($group['field_id'] == $fid)
-                    @if($group['group_id'] == $gid)
-                        @php($myGroupSelected = "selected")
+        <p>
+            <select name="fid" class="mt2" style="height: 5ex; font-size: 1em;">
+                <option value="" disabled selected>Välj yrkesområde</option>
+                @php($myFieldData = region_halland_varbi_works_get_field_data())
+                @php($myFieldSelected = "")
+                @foreach ($myFieldData as $field)
+                    @if($field['id'] == $fid)
+                        @php($myFieldSelected = "selected")
                     @endif
-                    <option {!! $myGroupSelected !!} value="{!! $group['group_id'] !!}">{!! $group['group_name'] !!}</option>
-                @endif
-            @php($myGroupSelected = "")
-            @endforeach
-        </select>
-        <select name="mid" class="mt2" style="height: 5ex; font-size: 1em;">
-            <option value="" disabled selected>Välj kommun</option>
-            @php($myKommunData = region_halland_varbi_works_get_kommun_data())
-            @php($myKommunSelected = "")
-            @foreach ($myKommunData as $kommun)
-                @if($kommun['id'] == $mid)
-                    @php($myKommunSelected = "selected")
-                @endif
-                <option {!! $myKommunSelected !!} value="{!! $kommun['id'] !!}">{!! $kommun['name'] !!}</option>
-            @php($myKommunSelected = "")
-            @endforeach
-        </select>
-        <input class="ml1 rh-button rh-button--primary" type='submit' value="Visa"/>
-
+                    <option {!! $myFieldSelected !!} value="{!! $field['id'] !!}">{!! $field['name'] !!}</option>
+                @php($myFieldSelected = "")
+                @endforeach
+            </select>
+            <input class="ml1 rh-button rh-button--primary" type='submit' value="Visa"/>
+        </p>
+        @if($fid != 0)
+        <p>
+            <select name="gid" class="mt2" style="height: 5ex; font-size: 1em;">
+                <option value="" disabled selected>Välj yrkesgrupp</option>
+                @php($myGroupData = region_halland_varbi_works_get_group_data())
+                @php($myGroupSelected = "")
+                @foreach ($myGroupData as $group)
+                    @if($group['field_id'] == $fid)
+                        @if($group['group_id'] == $gid)
+                            @php($myGroupSelected = "selected")
+                        @endif
+                        <option {!! $myGroupSelected !!} value="{!! $group['group_id'] !!}">{!! $group['group_name'] !!}</option>
+                    @endif
+                @php($myGroupSelected = "")
+                @endforeach
+            </select>
+            <input class="ml1 rh-button rh-button--primary" type='submit' value="Visa"/>
+        </p>
+        @endif
+        <p>
+            <select name="mid" class="mt2" style="height: 5ex; font-size: 1em;">
+                <option value="" disabled selected>Välj kommun</option>
+                @php($myKommunData = region_halland_varbi_works_get_kommun_data())
+                @php($myKommunSelected = "")
+                @foreach ($myKommunData as $kommun)
+                    @if($kommun['id'] == $mid)
+                        @php($myKommunSelected = "selected")
+                    @endif
+                    <option {!! $myKommunSelected !!} value="{!! $kommun['id'] !!}">{!! $kommun['name'] !!}</option>
+                @php($myKommunSelected = "")
+                @endforeach
+            </select>
+            <input class="ml1 rh-button rh-button--primary" type='submit' value="Visa"/>
+        </p>
+        
     </form>
 
     <br><br>
