@@ -14,7 +14,12 @@ rh-article h1, h2, h3, h4, h5, h6 {
   padding-bottom: 0.5ex;
 }
 
-.rh-article figure, img {
+.rh-article img {
+  max-width: 100%;
+  height: auto;
+}
+
+.rh-article figure {
   max-width: 100%;
   height: auto;
 }
