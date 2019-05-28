@@ -2,8 +2,8 @@
 @php($myPerson = get_region_halland_acf_page_personer_enheter_person())
 @php($myEnhet = get_region_halland_acf_page_personer_enheter_enhet())
 
-@php($myPersonData = get_region_halland_personer_enheter(1, $myPerson, ""))
-@php($myEnhetData = get_region_halland_personer_enheter(2, "", $myEnhet))
+@php($myPersonData = get_region_halland_api_personer_enheter(1, $myPerson, ""))
+@php($myEnhetData = get_region_halland_api_personer_enheter(2, "", $myEnhet))
 
 @if($myPersonData)
     <div class="rh-personal-info pt2">
