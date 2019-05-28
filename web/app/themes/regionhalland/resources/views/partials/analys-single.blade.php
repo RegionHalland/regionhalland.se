@@ -193,4 +193,12 @@
     </td>
 </tr>
 @endif
+@if($myData['updated-date'])
+<tr class="rh-table-listing__row">
+    <td class="rh-table-listing_cell--hr"><strong>Uppdaterad:</strong></td>
+    <td class="rh-table-listing_cell--hr">
+        {!! $myData['updated-date'] !!}
+    </td>
+</tr>
+@endif
 </table>
