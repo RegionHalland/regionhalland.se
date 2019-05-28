@@ -8,6 +8,8 @@
         <a href="./?lid=<?=$_SESSION["lid"]?>">Analysförteckning</a>
     @elseif($_SESSION["type"] == 4)
         <a href="./?all=1">Analysförteckning</a>
+    @elseif($_SESSION["type"] == 5)
+        <a href="./?q=<?=$_SESSION["q"]?>">Analysförteckning</a>
     @else
         <a href="./">Analysförteckning</a>
     @endif

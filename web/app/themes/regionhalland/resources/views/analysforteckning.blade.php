@@ -11,6 +11,8 @@
     <?php
 
         session_start();
+        
+        $_SESSION["type"] = "0";
 
         $type = 0;
         $aid = 0;
@@ -21,6 +23,7 @@
         
         if(isset($_GET["aid"])){
             $aid = $_GET["aid"];
+            $_SESSION["type"] = "1";
             $type = 1;
         }
         if(isset($_GET["sid"])){
@@ -41,6 +44,7 @@
         }
         if(isset($_GET["q"])){
             $type = 5;
+            $_SESSION["q"] = $q;
             $_SESSION["type"] = "5";
         }
     ?>
