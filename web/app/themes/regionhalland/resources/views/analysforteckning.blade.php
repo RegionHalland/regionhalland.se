@@ -17,6 +17,7 @@
         $sid = 0;
         $lid = "";
         $all = 0;
+        $q = "";
         
         if(isset($_GET["aid"])){
             $aid = $_GET["aid"];
@@ -38,6 +39,10 @@
             $type = 4;
             $_SESSION["type"] = "4";
         }
+        if(isset($_GET["q"])){
+            $type = 5;
+            $_SESSION["type"] = "5";
+        }
     ?>
 
     @php($myData = get_region_halland_api_analysforteckning_data($type, $aid, $sid, $lid))
@@ -52,8 +57,25 @@
                 <div class="center px3" id="main">
                     <div class="left-align pt3">
                         <h1 class="mb3">{{ the_title() }}</h1>
+                        
+                        <form name="myForm" method="get" action="./">
+                            <?php
+                            $strSearchText = "";
+                            if(isset($_GET["q"])){
+                                $strSearchText = $_GET["q"];
+                            }
+                            ?>
+                            <div class="rh-search-field">
+                                <input type="text" name="q" class="rh-search-term rh-search-term-larger" placeholder="Skriv din sökning här" value="<?=$strSearchText?>" aria-label="Sökruta" style="height: 7ex; max-width:60em;">
+                                <button type="submit" class="rh-search-button rh-search-button-larger" style="background-color: #378A30; color:white; height: 7ex;">
+                                Sök
+                                </button>
+                            </div>
+                        </form>
+                        
                         <p>{{ $post->post_content }}</p>
                         <a href="./?all=1">Lista alla analyser</a>
+
 
                         <form name="affiliation">
                             <select name="sid" method="get" class="mt2" style="height: 5ex; font-size: 1em;">
@@ -70,6 +92,8 @@
                             </select>
                             <input class="ml1 rh-button rh-button--primary" type='submit' value="Visa"/>
                         </form>
+                        
+
                             <div class="mt3 rh-filter-alphabet mb4" style="max-width: 54em;">
                                 @php($myActive = 0)
                                 <?php $strAllLetters = "a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u,v,x,y,z,Å,Ä,Ö";
@@ -99,6 +123,9 @@
                             @endif
                             @if($type == 4)
                                 @include('partials.analys-all')
+                            @endif
+                            @if($type == 5)
+                                @include('partials.analys-search')
                             @endif
                     </div>
                 </div>
