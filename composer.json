@@ -128,10 +128,6 @@
       "url": "https://github.com/RegionHalland/region-halland-search-findwise-region-halland.git"
     },
     {
-      "type": "vcs",
-      "url": "https://github.com/RegionHalland/region-halland-dummy-data-personer-enheter.git"
-    },
-    {
     "type": "vcs",
     "url": "https://github.com/RegionHalland/region-halland-breadcrumbs-pages-search.git"
     },
@@ -219,7 +215,6 @@
     "regionhalland/region-halland-parent-page": "1.0.0",
     "regionhalland/region-halland-findwise-region-halland": "1.1.1",
     "regionhalland/region-halland-search-findwise-region-halland": "1.1.0",
-    "regionhalland/region-halland-dummy-data-personer-enheter": "1.0.0",
     "regionhalland/region-halland-breadcrumbs-pages-search": "1.1.0",
     "regionhalland/region-halland-acf-page-personer-enheter": "1.0.1",
     "regionhalland/region-halland-acf-page-i-frame": "1.1.0",
