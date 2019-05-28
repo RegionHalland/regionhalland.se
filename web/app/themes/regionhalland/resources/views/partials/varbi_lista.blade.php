@@ -57,11 +57,11 @@
         
     </form>
 
-    <br><br>
-    <a href="./">
+
+    <a href="./" class="py2">
         <button class="rh-button" aria-label="Töm urval" role="button">Töm urval</button>
     </a>
-    <br><br>
+    
 
     @if($myPagination['antal_items'] > 0)
         <span>
