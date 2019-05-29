@@ -89,18 +89,25 @@
     <br><br>
     
     @if($myPagination['antal_items'] > 0)
+        <?php
+            if ($fid == 0 && $gid == 0 && $mid == 0) {
+                $myLink = "";
+            } else {
+                $myLink = "&fid=" .$fid. "&gid=" .$gid. "&mid=" .$mid;
+            }
+        ?>
         <div>
-            <span><a class="rh-pagination-link rh-pagination-link-previous" style="line-height: 3;" href="./?sida={{ $myPagination['first_page'] }}&fid={{ $fid }}&gid={{ $gid }}&mid={{ $mid }}"><<</a></span>
-            <span><a class="rh-pagination-link" style="line-height: 3;" href="./?sida={{ $myPagination['prev_page'] }}&fid={{ $fid }}&gid={{ $gid }}&mid={{ $mid }}"><</a></span>
+            <span><a class="rh-pagination-link rh-pagination-link-previous" style="line-height: 3;" href="./?sida={{ $myPagination['first_page'] }}{{ $myLink }}"><<</a></span>
+            <span><a class="rh-pagination-link" style="line-height: 3;" href="./?sida={{ $myPagination['prev_page'] }}{{ $myLink }}"><</a></span>
             @foreach ($myPagination['start_end'] as $start_end)
                 @if($myPagination['current_page'] == $start_end['number'])
-                    <strong><a class="rh-pagination-link" style="line-height: 3;background-color: #FCAF15;" href="./?sida={{ $start_end['number'] }}&fid={{ $fid }}&gid={{ $gid }}&mid={{ $mid }}">{!! $start_end['number'] !!}</a></strong>
+                    <strong><a class="rh-pagination-link" style="line-height: 3;background-color: #FCAF15;" href="./?sida={{ $start_end['number'] }}{{ $myLink }}">{!! $start_end['number'] !!}</a></strong>
                 @else
-                    <span><a class="rh-pagination-link"  style="line-height: 3;" href="./?sida={{ $start_end['number'] }}&fid={{ $fid }}&gid={{ $gid }}&mid={{ $mid }}">{!! $start_end['number'] !!}</a></span>
+                    <span><a class="rh-pagination-link"  style="line-height: 3;" href="./?sida={{ $start_end['number'] }}{{ $myLink }}">{!! $start_end['number'] !!}</a></span>
                 @endif
             @endforeach
-            <span><a class="rh-pagination-link"  style="line-height: 3;" href="./?sida={{ $myPagination['next_page'] }}&fid={{ $fid }}&gid={{ $gid }}&mid={{ $mid }}">></a></span>
-            <span><a class="rh-pagination-link rh-pagination-link-next"  style="line-height: 3;" href="./?sida={{ $myPagination['last_page'] }}&fid={{ $fid }}&gid={{ $gid }}&mid={{ $mid }}">>></a></span>
+            <span><a class="rh-pagination-link"  style="line-height: 3;" href="./?sida={{ $myPagination['next_page'] }}{{ $myLink }}">></a></span>
+            <span><a class="rh-pagination-link rh-pagination-link-next"  style="line-height: 3;" href="./?sida={{ $myPagination['last_page'] }}{{ $myLink }}">>></a></span>
         </div>
     @endif
 
