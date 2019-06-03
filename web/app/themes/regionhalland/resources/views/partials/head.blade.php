@@ -27,7 +27,7 @@
 	<link rel="stylesheet" href="https://use.typekit.net/whh2fjs.css">
 
 	<style>
-		body {font-family: proxima-nova;}
+		body {font-family: proxima-nova;font-size:110%;}
 
 		.rh-article ul {
 			list-style-type: disc;
