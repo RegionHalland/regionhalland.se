@@ -43,7 +43,7 @@
             @php($myKommunSelected = "")
             @endforeach
         </select>
-        <input class="ml1 rh-button rh-button--primary" type='submit' value="Visa"/>
+        <input class="ml1 rh-button rh-button--secondary" type='submit' value="Visa"/>
 
     </form>
 
