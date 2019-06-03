@@ -1,4 +1,4 @@
-<div class="left-align pt3">
+<div class="left-align rh-article pt3">
 
 	<form action="./" class="pb3">
 		<button class="rh-button" aria-label="Visa alla lediga jobb" role="button" type="submit">Åter till alla jobb</button>
@@ -7,9 +7,9 @@
 	@php($myVarbi = get_region_halland_varbi_works(3, $id, 0, 0, 0))
 	@if(isset($myVarbi))
 		<h1 class="pb3">{{ $myVarbi['title'] }}</h1>
-		<p><sstrong>Ort:</sstrong> {{ $myVarbi['town'] }}</p>
-		<p><sstrong>Anställningsform:</sstrong> {{ $myVarbi['type'] }}, {{ $myVarbi['working_hours'] }}</p>
-		<p><sstrong>Publicerad:</sstrong> {{ $myVarbi['published'] }}</p>
+		<p><strong>Ort:</strong> {{ $myVarbi['town'] }}</p>
+		<p><strong>Anställningsform:</strong> {{ $myVarbi['type'] }}, {{ $myVarbi['working_hours'] }}</p>
+		<p><strong>Publicerad:</strong> {{ $myVarbi['published'] }}</p>
 		<p class="pb2"><sstrong>Sista ansökningsdag:</sstrong> {{ $myVarbi['lastday'] }}</p>
 		<a href="{{ $myVarbi['applyURI'] }}"><button class="rh-button rh-button--secondary" role="button">Sök tjänsten</button></a>
 		<div class="py2" style="max-width: 55em;">{!! $myVarbi['description'] !!}</div>
