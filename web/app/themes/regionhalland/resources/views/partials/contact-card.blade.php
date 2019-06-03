@@ -6,10 +6,9 @@
     @php($myPersonData = get_region_halland_api_personer_enheter(1, $myPerson, ""))
     @if($myPersonData)
         <div class="rh-personal-info pt2 mb2">
-            <div class="rh-box-info-alone">
+            <div class="rh-box-info-alone" style="border-bottom: 2px solid #004890;">
                 <p><strong>{{ $myPersonData['firstname'] }} {{ $myPersonData['lastname'] }}</strong></p>
                 <span class="rh-personal-info-text">{{ $myPersonData['jobtitle'] }}</span>
-                <hr class="rh-personal-info-hr">
             </div>
         </div>
     @endif
@@ -43,7 +42,7 @@
                 @endforeach
             </ul>
             </p>
-            <p class="rh-unit-info-text"><strong>Besöksadress:</strong> {{ $myEnhetData['address_street'] }}<br>
+            <p class="rh-unit-info-text"><strong>Besöksadress: </strong>{{ $myEnhetData['address_street'] }}<br>
                 {{ $myEnhetData['address_postcode'] }} {{ $myEnhetData['address_city'] }}<br>
             </p>
         </div>
