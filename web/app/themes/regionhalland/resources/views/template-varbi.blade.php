@@ -55,7 +55,7 @@
 		{{-- Sidebar END --}}
 
 		{{-- Main Content --}}
-		<main class="pl3 pr2 pt3 pb1 col col-12 sm-col-12 md-col-12 lg-col-6 rh-article" id="main">
+		<main class="pl3 pr2 pt3 pb1 col col-12 sm-col-12 md-col-12 lg-col-6" id="main">
 			@while(have_posts()) @php(the_post())
 				
 				<h1>{{ the_title() }}</h1>
