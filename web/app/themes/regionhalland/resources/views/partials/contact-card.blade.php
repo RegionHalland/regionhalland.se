@@ -5,10 +5,10 @@
 @if($myPerson)
 @php($myPersonData = get_region_halland_api_personer_enheter(1, $myPerson, ""))
     @if($myPersonData)
-        <div class="rh-personal-info pt2">
+        <div class="rh-personal-info pt2 mb2">
             <div class="rh-box-info-alone">
-                <h5>{{ $myPersonData['firstname'] }} {{ $myPersonData['lastname'] }}</h5>
-                <h6 class="rh-personal-info-text">{{ $myPersonData['jobtitle'] }}</h6>
+                <p><strong>{{ $myPersonData['firstname'] }} {{ $myPersonData['lastname'] }}</strong></p>
+                <span class="rh-personal-info-text">{{ $myPersonData['jobtitle'] }}</span>
                 <hr class="rh-personal-info-hr">
             </div>
         </div>
@@ -20,7 +20,7 @@
     @if($myEnhetData)
         <div class="rh-unit-info pt2">
 
-            <h5>{{ $myEnhetData['enhet_name'] }}</h5>
+            <p><strong>{{ $myEnhetData['enhet_name'] }}</strong></p>
             <hr class="rh-unit-info-title-hr">
             <p class="rh-unit-info-text rh-unit-info-text-inline"><strong>Telefontider:</strong>
                 @foreach ($myEnhetData['enhet_telephones'] as $phones)
