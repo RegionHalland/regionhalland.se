@@ -5,6 +5,7 @@
 	<div class="rh-article left-align">
 		@if (!have_posts())
 			<h1 class="">{{ __('Sidan du söker efter verkar inte finnas.', 'halland') }}</h1>
+			<p>Kontaktuppgifter, öppettider och övrig information om vård- och tandvårdsmottagningar hittar du på <a href="www.1177.se/Halland/hitta-vard/">www.1177.se/Halland/hitta-vard/</a>.</p>
 
 			<h2>Det här kan du göra</h2>
 			<ul>
