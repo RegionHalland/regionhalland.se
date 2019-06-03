@@ -24,8 +24,11 @@
 	<link href="{!! env('WP_HOME') !!}/styleguide4.0.0/css/components.css" rel="stylesheet"/>
 	<link rel="stylesheet" href="{!! env('WP_HOME') !!}/include/style/development.css" type="text/css" media="all" />
 	{{-- <link href="https://unpkg.com/basscss@8.0.2/css/basscss.min.css" rel="stylesheet" />--}}
+	<link rel="stylesheet" href="https://use.typekit.net/whh2fjs.css">
 
 	<style>
+		body {font-family: proxima-nova;}
+
 		.rh-article ul {
 			list-style-type: disc;
 			padding-left: 2ex;
