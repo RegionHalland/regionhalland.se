@@ -43,7 +43,7 @@
                 @endforeach
             </ul>
             </p>
-            <p class="rh-unit-info-text"><strong>Besöksadress:</strong>{{ $myEnhetData['address_street'] }}<br>
+            <p class="rh-unit-info-text"><strong>Besöksadress:</strong> {{ $myEnhetData['address_street'] }}<br>
                 {{ $myEnhetData['address_postcode'] }} {{ $myEnhetData['address_city'] }}<br>
             </p>
         </div>
