@@ -19,9 +19,16 @@
     @if($myEnhetData)
         <div class="rh-unit-info pt2">
 
-            <p><strong>{{ $myEnhetData['enhet_name'] }}</strong></p>
-            <hr class="rh-unit-info-title-hr">
-            <p class="rh-unit-info-text rh-unit-info-text-inline"><strong>Telefontider:</strong>
+            <div class="mb2 pb2" style="border-bottom: 2px solid #004890;">
+                <strong>
+                    {{ $myEnhetData['enhet_name'] }}
+                </strong>
+            </div>
+
+            <p class="rh-unit-info-text rh-unit-info-text-inline">
+                <strong>
+                    Telefontider:
+                </strong>
                 @foreach ($myEnhetData['enhet_telephones'] as $phones)
                     {{ $phones['landsnummer'] }} {{ $phones['riktnummer'] }} {{ $phones['telefonnummer'] }}<br>
             <ul>
