@@ -46,7 +46,7 @@
                                     </li>
                                 @endforeach
                             </ul>
-                            <div class="col-12 center mt3">
+                            <div class="col-12 mt3" style="display: flex; justify-content: center;">
                                 <a href="/nyheter" class="rh-button rh-button--secondary" aria-label="Visa fler nyheter" role="button" style="text-decoration: none;">Visa fler nyheter</a>
                             </div>
                         </div>
