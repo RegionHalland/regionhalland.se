@@ -104,7 +104,7 @@ git checkout v1.0.0
 
 ### 1.4.0
 - Paginering av lediga jobb
-- Hämta personer/enheter via Varbo
+- Hämta personer/enheter via Hak
 - Ändring av 404-sida
 
 ### 1.3.0
