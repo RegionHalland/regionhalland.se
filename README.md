@@ -72,7 +72,7 @@ git checkout v1.0.0
 "regionhalland/region-halland-breadcrumbs": "1.1.1"
 "regionhalland/region-halland-tree-first-level": "1.1.0"
 "regionhalland/region-halland-mobile-detect": "1.0.0"
-"regionhalland/region-halland-varbi-works": "1.0.0"
+"regionhalland/region-halland-varbi-works": "1.4.0"
 "regionhalland/region-halland-prepare-the-content": "1.0.0"
 "regionhalland/region-halland-find-on-page": "1.1.0"
 "regionhalland/region-halland-mixed-functions": "1.1.0"
@@ -80,7 +80,7 @@ git checkout v1.0.0
 "regionhalland/region-halland-nav-sidebar": "1.0.1"
 "regionhalland/region-halland-nav-site": "1.0.1"
 "regionhalland/region-halland-news-archive-taxonomi-category": "1.3.2"
-"regionhalland/region-halland-acf-page-kulturprogram": "2.0.0"
+"regionhalland/region-halland-acf-page-kulturprogram": "2.1.1"
 "regionhalland/region-halland-acf-options-page-site-message": "1.0.1"
 "regionhalland/region-halland-acf-page-ingress": "1.1.2"
 "regionhalland/region-halland-acf-page-kulturarrangemang": "2.3.0"
@@ -91,14 +91,32 @@ git checkout v1.0.0
 "regionhalland/region-halland-parent-page": "1.0.0"
 "regionhalland/region-halland-findwise-region-halland": "1.1.1"
 "regionhalland/region-halland-search-findwise-region-halland": "1.1.0"
-"regionhalland/region-halland-dummy-data-personer-enheter": "1.0.0"
 "regionhalland/region-halland-breadcrumbs-pages-search": "1.1.0"
 "regionhalland/region-halland-acf-page-personer-enheter": "1.0.1"
 "regionhalland/region-halland-acf-page-i-frame": "1.1.0"
+"regionhalland/region-halland-array-pagination": "1.0.1"
+"regionhalland/region-halland-api-analysforteckning": "1.8.0"
+"regionhalland/region-halland-api-personer-enheter": "1.0.2"
 ```
 
 
 ## Versionhistorik
+
+### 1.4.0
+- Paginering av lediga jobb
+- Hämta personer/enheter via Varbo
+- Ändring av 404-sida
+
+### 1.3.0
+- Filtrering av lediga jobb via Varbi
+- Ett flertal mindre justeringar av design
+
+### 1.2.0
+- Lediga jobb via Varbi tillagd
+- Title-tag på samtliga sidor
+
+### 1.1.0
+- F5-kontroller ignoeras via .gitignore
 
 ### 1.1.0
 - Stora korrigeringar av söksidan på mobil
