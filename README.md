@@ -97,10 +97,14 @@ git checkout v1.0.0
 "regionhalland/region-halland-array-pagination": "1.0.1"
 "regionhalland/region-halland-api-analysforteckning": "1.8.0"
 "regionhalland/region-halland-api-personer-enheter": "1.0.2"
+"regionhalland/region-halland-site-map-regionhalland": "1.2.0"
 ```
 
 
 ## Versionhistorik
+
+### 1.5.0
+- Lagt till plugin för site-map
 
 ### 1.4.0
 - Paginering av lediga jobb
