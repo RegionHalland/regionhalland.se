@@ -152,6 +152,10 @@
       "url": "https://github.com/RegionHalland/region-halland-api-personer-enheter.git"
     },
     {
+      "type": "vcs",
+      "url": "https://github.com/RegionHalland/region-halland-site-map-regionhalland.git"
+    },
+    {
        "type": "vcs",
        "url": "https://github.com/RegionHalland/mfpconnect.git"
     },
@@ -188,7 +192,6 @@
     "wpackagist-plugin/wp-nested-pages": "2.0.4",
     "wpackagist-plugin/disable-gutenberg": "*",
     "wpackagist-plugin/admin-menu-editor": "1.8.5",
-    "wpackagist-plugin/google-sitemap-generator": "4.1.0",
     "wpackagist-plugin/wp-migrate-db": "1.0.10",
     "wpackagist-plugin/user-role-editor": "^4.35",
     "regionhalland/region-halland-acf-add-theme-subpage": "1.0.0",
@@ -221,6 +224,7 @@
     "regionhalland/region-halland-array-pagination": "1.0.1",
     "regionhalland/region-halland-api-analysforteckning": "1.8.0",
     "regionhalland/region-halland-api-personer-enheter": "1.0.2",
+    "regionhalland/region-halland-site-map-regionhalland": "1.2.0",
     "regionhalland/mfpconnect": "1.0.1",
     "regionhalland/mfpconnectmedia": "1.0.1",
     "wpackagist-plugin/enable-media-replace":"3.2.9"
