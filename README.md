@@ -72,7 +72,7 @@ git checkout v1.0.0
 "regionhalland/region-halland-breadcrumbs": "1.1.1"
 "regionhalland/region-halland-tree-first-level": "1.1.0"
 "regionhalland/region-halland-mobile-detect": "1.0.0"
-"regionhalland/region-halland-varbi-works": "1.4.0"
+"regionhalland/region-halland-varbi-works": "1.5.0"
 "regionhalland/region-halland-prepare-the-content": "1.0.0"
 "regionhalland/region-halland-find-on-page": "1.1.0"
 "regionhalland/region-halland-mixed-functions": "1.1.0"
@@ -102,6 +102,9 @@ git checkout v1.0.0
 
 
 ## Versionhistorik
+
+### 1.5.1
+- Uppdaterat Varbi-pluginen från 1.4.0 till 1.5.0
 
 ### 1.5.0
 - Lagt till plugin för site-map
