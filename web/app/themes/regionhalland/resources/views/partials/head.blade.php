@@ -13,14 +13,9 @@
 	<meta name="msapplication-TileColor" content="#ffffff" />
 	<meta name="msapplication-config" href="{!! env('WP_HOME') !!}/include/favicons/browserconfig.xml" />
 	<meta name="theme-color" content="#ffffff" />
-	<meta name="description" content="Region Halland arbetar för att erbjuda en god hälso- och sjukvård och främja en hållbar utveckling i regionen. Vår vision är att göra Halland till den bästa livsplatsen." />
-	@php($myPostType = get_post_type())
-	@if($myPostType == 'page')
-		<title>{{ $post->post_title }} - Region Halland</title>
-	@else
-		<title>{{ $myPostType }} - Region Halland</title>
-	@endif
-    <link rel="stylesheet" type="text/css" href="{!! env('WP_HOME') !!}/include/alicdn/font_o5hd5vvqpoqiwwmi_190529.css">
+	<meta name="description" content="{{ get_region_halland_meta_data_region_halland_description() }}" />
+	<title>{{ get_region_halland_meta_data_region_halland_title() }}</title>
+	<link rel="stylesheet" type="text/css" href="{!! env('WP_HOME') !!}/include/alicdn/font_o5hd5vvqpoqiwwmi_190529.css">
 	<link href="{!! env('WP_HOME') !!}/styleguide4.1.0/css/components.css" rel="stylesheet"/>
 	<link rel="stylesheet" href="{!! env('WP_HOME') !!}/include/style/development.css" type="text/css" media="all" />
 	{{-- <link href="https://unpkg.com/basscss@8.0.2/css/basscss.min.css" rel="stylesheet" />--}}

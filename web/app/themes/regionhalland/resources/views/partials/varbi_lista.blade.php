@@ -7,7 +7,7 @@
     <form method="get" name="municipality">
         <p>
             <select name="fid" class="mt2" style="height: 5ex; font-size: 1em;">
-                <option value="" disabled selected>Välj yrkesområde</option>
+                <option value="0" selected>Välj yrkesområde</option>
                 @php($myFieldData = region_halland_varbi_works_get_field_data())
                 @php($myFieldSelected = "")
                 @foreach ($myFieldData as $field)
@@ -23,7 +23,7 @@
         @if($fid != 0)
         <p>
             <select name="gid" class="mt2" style="height: 5ex; font-size: 1em;">
-                <option value="" disabled selected>Välj yrkesgrupp</option>
+                <option value="0" selected>Välj yrkesgrupp</option>
                 @php($myGroupData = region_halland_varbi_works_get_group_data())
                 @php($myGroupSelected = "")
                 @foreach ($myGroupData as $group)
@@ -41,7 +41,7 @@
         @endif
         <p>
             <select name="mid" class="mt2" style="height: 5ex; font-size: 1em;">
-                <option value="" disabled selected>Välj kommun</option>
+                <option value="0" selected>Välj kommun</option>
                 @php($myKommunData = region_halland_varbi_works_get_kommun_data())
                 @php($myKommunSelected = "")
                 @foreach ($myKommunData as $kommun)
@@ -62,6 +62,7 @@
         <button class="rh-button" aria-label="Töm urval" role="button">Töm urval</button>
     </a>
     
+    <br><br><br>
 
     @if($myPagination['antal_items'] > 0)
         <span>

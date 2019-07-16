@@ -4,7 +4,7 @@
 
 @if($myPerson)
     @php($myPersonData = get_region_halland_api_personer_enheter(1, $myPerson, ""))
-    @if($myPersonData)
+    @if($myPersonData['status'] == 1)
         <div class="rh-personal-info pt2 mb2">
             <div class="rh-box-info-alone pb2 mb2" style="border-bottom: 2px solid #004890;">
                 <p><strong>{{ $myPersonData['firstname'] }} {{ $myPersonData['lastname'] }}</strong></p>
@@ -16,7 +16,7 @@
 
 @if($myEnhet)
     @php($myEnhetData = get_region_halland_api_personer_enheter(2, "", $myEnhet))
-    @if($myEnhetData)
+    @if($myEnhetData['status'] == 1)
         <div class="rh-unit-info pt2">
 
             <div class="mb2 pb2" style="border-bottom: 2px solid #004890;">

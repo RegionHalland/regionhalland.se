@@ -156,6 +156,10 @@
       "url": "https://github.com/RegionHalland/region-halland-site-map-regionhalland.git"
     },
     {
+      "type": "vcs",
+      "url": "https://github.com/RegionHalland/region-halland-meta-data-region-halland.git"
+    },
+    {
        "type": "vcs",
        "url": "https://github.com/RegionHalland/mfpconnect.git"
     },
@@ -194,6 +198,7 @@
     "wpackagist-plugin/admin-menu-editor": "1.8.5",
     "wpackagist-plugin/wp-migrate-db": "1.0.10",
     "wpackagist-plugin/user-role-editor": "^4.35",
+    "wpackagist-plugin/enable-media-replace":"3.2.9",
     "regionhalland/region-halland-acf-add-theme-subpage": "1.0.0",
     "regionhalland/region-halland-acf-cookie-notice": "1.0.0",
     "regionhalland/region-halland-breadcrumbs": "1.1.1",
@@ -225,9 +230,9 @@
     "regionhalland/region-halland-api-analysforteckning": "1.8.0",
     "regionhalland/region-halland-api-personer-enheter": "1.0.2",
     "regionhalland/region-halland-site-map-regionhalland": "1.2.0",
+    "regionhalland/region-halland-meta-data-region-halland": "1.0.0",
     "regionhalland/mfpconnect": "1.0.1",
-    "regionhalland/mfpconnectmedia": "1.0.1",
-    "wpackagist-plugin/enable-media-replace":"3.2.9"
+    "regionhalland/mfpconnectmedia": "1.0.1"
   },
   "require-dev": {
     "squizlabs/php_codesniffer": "^3.0.2",

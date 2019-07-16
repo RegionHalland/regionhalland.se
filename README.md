@@ -98,10 +98,18 @@ git checkout v1.0.0
 "regionhalland/region-halland-api-analysforteckning": "1.8.0"
 "regionhalland/region-halland-api-personer-enheter": "1.0.2"
 "regionhalland/region-halland-site-map-regionhalland": "1.2.0"
+"regionhalland/region-halland-meta-data-region-halland": "1.0.0"
 ```
 
 
 ## Versionhistorik
+
+### 1.6.0
+- Ny plugin med funktioner för sajtens metadata
+- Viktigt meddelande, ny funktion för att kontrollera om det finns en länk
+- Ny kontroll om det finns data för personer/enheter
+- Uppdaterat Varbi-sidan så att man kan tömma valen via dropdown
+- Döpt om temat till "Region Halland - WP Tema" + lagt till en screenshot med logga
 
 ### 1.5.1
 - Uppdaterat Varbi-pluginen från 1.4.0 till 1.5.0

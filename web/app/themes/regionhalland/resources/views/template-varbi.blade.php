@@ -19,18 +19,26 @@
         }
 
         if(isset($_GET["mid"])){
-            $mid = $_GET["mid"];
-            $type = 2;
+        	if ($_GET["mid"] != 0) {
+	            $mid = $_GET["mid"];
+	            $type = 2;
+        	}
         }
 
         if(isset($_GET["fid"])){
-            $fid = $_GET["fid"];
-            $type = 2;
+        	if ($_GET["fid"] != 0) {
+	            $fid = $_GET["fid"];
+	            $type = 2;
+        	}
         }
 
         if(isset($_GET["gid"])){
-            $gid = $_GET["gid"];
-            $type = 2;
+        	if ($_GET["fid"] != 0) {
+	        	if ($_GET["gid"] != 0) {
+	    		    $gid = $_GET["gid"];
+	            	$type = 2;
+	        	}
+        	}
         }
 
     ?>
