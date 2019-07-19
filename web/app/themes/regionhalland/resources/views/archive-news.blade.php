@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-<main>
+<main id="main">
 	<div class="center px4" id="main" style="max-width: 1440px;">
 		<div class="left-align clearfix">
 			<div class="col col-12 sm-col-12 md-col-8 lg-col-8">

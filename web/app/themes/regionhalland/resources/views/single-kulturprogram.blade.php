@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-	<main>
+	<main id="main">
 		<div class="center rh-hero">
 			<img class="rh-image-hero" src="{{ get_the_post_thumbnail_url() }}" alt="">
 			<div class="rh-caption-hero">

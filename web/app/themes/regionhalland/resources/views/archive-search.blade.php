@@ -23,7 +23,7 @@
 	@php($arrLast = $myData['documentList']['pagination']['lastPage'])
 
 
-	<main>
+	<main id="main">
 		<div class="center" id="main" style="max-width:1440px;">
 			<div class="left-align px4">
 				<h1 class="mb3">Sök på Region Halland</h1>
