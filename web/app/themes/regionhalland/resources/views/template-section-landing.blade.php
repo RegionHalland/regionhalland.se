@@ -41,7 +41,7 @@
                                             <h2 class="h3 rh-article-title">
                                                 <a class="rh-article-title-link" style="color: #378A30;" href="{{ $item['permalink'] }}">{{ $item['title'] }}</a>
                                             </h2>
-                                            <p class="rh-article-published">Publicerad: {{ $item['date'] }}</p>
+                                            <p class="rh-article-published" style="color: #767676;">Publicerad: {{ $item['date'] }}</p>
                                             <p class="rh-article-description">
                                                 {{ wp_trim_words(region_halland_remove_shortcode($item['content']), 20, '...') }}
                                             </p>
