@@ -38,7 +38,9 @@
                             <ul class="flex flex-wrap pb3 mx3 pt3 px2" aria-label="Nyheter" style="background-color: white; border-radius: 0.4ex; box-shadow: 1px 2px 6px grey;">
                                 @foreach($newsitems as $item)
                                     <li class="rh-article pb2 col-12 sm-col-6 md-col-6 lg-col-6 px2">
-                                        <h2 class="h3 rh-article-title"><a class="rh-article-title-link" style="color: #378A30;" href="{{ $item['permalink'] }}">{{ $item['title'] }}<a/></h2>
+                                        <h2 class="h3 rh-article-title">
+                                            <a class="rh-article-title-link" style="color: #378A30;" href="{{ $item['permalink'] }}">{{ $item['title'] }}</a>
+                                        </h2>
                                         <p class="rh-article-published">Publicerad: {{ $item['date'] }}</p>
                                         <p class="rh-article-description">
                                             {{ wp_trim_words(region_halland_remove_shortcode($item['content']), 20, '...') }}
