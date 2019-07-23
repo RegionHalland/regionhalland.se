@@ -26,7 +26,7 @@
 
         @php($myBlurbs = get_region_halland_acf_main_post_page_links_blurbs())
         @if(isset($myBlurbs))
-        <ul class="clearfix center mb2 mt2" style="max-width:1440px;">
+        <ul class="clearfix center mb2 mt2" aria-label="Puffar" style="max-width:1440px;">
 
             <li class="left-align col col-12 sm-col-6 md-col-6 lg-col-4">
                 <div class="rh-blurb mx1 my2">
