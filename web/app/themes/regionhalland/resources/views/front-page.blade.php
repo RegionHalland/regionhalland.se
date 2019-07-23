@@ -34,7 +34,7 @@
                         <img src="{!! $myBlurbs[0]['image_url'] !!}" style="width:100%; position: absolute; top:50%; transform: translateY(-50%);">
                     </div>
                     <div class="mx2 pt2 rh-blurb__description">
-                        <h3><a href="{{ $myBlurbs[0]['link_url'] }}" target="{{ $myBlurbs[0]['link_target'] }}" style="color:black">{{ $myBlurbs[0]['link_title'] }}</a></h3>
+                        <h1 class="h3"><a href="{{ $myBlurbs[0]['link_url'] }}" target="{{ $myBlurbs[0]['link_target'] }}" style="color:black">{{ $myBlurbs[0]['link_title'] }}</a></h1>
                         <p>{{ $myBlurbs[0]['post_content'] }}</p>
                     </div>
                 </div>
@@ -46,7 +46,7 @@
                     <img src="{!! $myBlurbs[1]['image_url'] !!}" style="width:100%; position: absolute; top:50%; transform: translateY(-50%);">
                     </div>
                     <div class="rh-blurb__description mx2 pt2" >
-                        <h3><a href="{{ $myBlurbs[1]['link_url'] }}" target="{{ $myBlurbs[1]['link_target'] }}" style="color:black">{{ $myBlurbs[1]['link_title'] }}</a></h3>
+                        <h1 class="h3"><a href="{{ $myBlurbs[1]['link_url'] }}" target="{{ $myBlurbs[1]['link_target'] }}" style="color:black">{{ $myBlurbs[1]['link_title'] }}</a></h1>
                         <p>{{ $myBlurbs[1]['post_content'] }}</p>
                     </div>
                 </div>
@@ -58,7 +58,7 @@
                     <img src="{!! $myBlurbs[2]['image_url'] !!}" style="width:100%; position: absolute; top:50%; transform: translateY(-50%);">
                     </div>
                     <div class="mx2 pt2 rh-blurb__description">
-                        <h3><a href="{{ $myBlurbs[2]['link_url'] }}" target="{{ $myBlurbs[2]['link_target'] }}" style="color:black">{{ $myBlurbs[2]['link_title'] }}</a></h3>
+                        <h1 class="h3"><a href="{{ $myBlurbs[2]['link_url'] }}" target="{{ $myBlurbs[2]['link_target'] }}" style="color:black">{{ $myBlurbs[2]['link_title'] }}</a></h1>
                         <p>{{ $myBlurbs[2]['post_content'] }}</p>
                     </div>
                 </div>
@@ -70,7 +70,7 @@
                     <img src="{!! $myBlurbs[3]['image_url'] !!}" style="width:100%; position: absolute; top:50%; transform: translateY(-50%);">
                     </div>
                     <div class="rh-blurb__description mx2 pt2">
-                        <h3><a href="{{ $myBlurbs[3]['link_url'] }}" target="{{ $myBlurbs[3]['link_target'] }}" style="color:black">{{ $myBlurbs[3]['link_title'] }}</a></h3>
+                        <h1 class="h3"><a href="{{ $myBlurbs[3]['link_url'] }}" target="{{ $myBlurbs[3]['link_target'] }}" style="color:black">{{ $myBlurbs[3]['link_title'] }}</a></h1>
                         <p>{{ $myBlurbs[3]['post_content'] }}</p>
                     </div>
                 </div>
@@ -82,7 +82,7 @@
                        <img src="{!! $myBlurbs[4]['image_url'] !!}" style="width:100%; position: absolute; top:50%; transform: translateY(-50%);">
                     </div>
                     <div class="rh-blurb__description mx2 pt2">
-                        <h3><a href="{{ $myBlurbs[4]['link_url'] }}" target="{{ $myBlurbs[4]['link_target'] }}" style="color:black">{{ $myBlurbs[4]['link_title'] }}</a></h3>
+                        <h1 class="h3"><a href="{{ $myBlurbs[4]['link_url'] }}" target="{{ $myBlurbs[4]['link_target'] }}" style="color:black">{{ $myBlurbs[4]['link_title'] }}</a></h1>
                         <p>{{ $myBlurbs[4]['post_content'] }}</p>
                     </div>
                 </div>
