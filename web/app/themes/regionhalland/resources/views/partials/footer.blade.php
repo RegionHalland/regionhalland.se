@@ -1,3 +1,9 @@
+<?php
+    $id1 = uniqid();
+    $id2 = uniqid();
+    $id3 = uniqid();
+    $id4 = uniqid();
+?>
 <footer id="footer-top-placeholder" style="background-color: #C3DCC1; line-height: 1.4;">
     <div class="clearfix center px3 pb3" style="max-width: 1440px;">
         <div class="left-align col col-12 sm-col-12 md-col-3 lg-col-3">
@@ -21,8 +27,8 @@
         </div>
 
         <div class="left-align col col-12 sm-col-12 md-col-3 lg-col-3">
-            <p class="h2 pt3">Aktuellt</p>
-            <ul>
+            <p class="h2 pt3" ID="{{ $id1 }}">Aktuellt</p>
+            <ul aria-labelledby="{{ $id1 }}">
                 <li><a href="/nyheter">Nyhetsarkiv</a></li>
                 <li><a href="http://press.regionhalland.se">Pressrum</a></li>
                 <li><a href="/om-region-halland/kontakt/socialamedier/">Region Halland i sociala medier</a></li>
@@ -31,16 +37,16 @@
             </ul>
         </div>
         <div class="left-align col col-12 sm-col-12 md-col-3 lg-col-3">
-            <p class="h2 pt3">Om webbplatsen</p>
-            <ul>
+            <p class="h2 pt3" id="{{ $id2 }}">Om webbplatsen</p>
+            <ul aria-labelledby="{{ $id2 }}">
                 <li><a href="/om-region-halland/om-webbplatsen/">Information om cookies</a></li>
                 <li><a href="/om-region-halland/dataskydd/">Behandling av personuppgifter</a></li>
             </ul>
 
-            <p class="h2 pt3">Ämnesområden</p>
+            <p class="h2 pt3" id="{{ $id3 }}">Ämnesområden</p>
             @php($first_level_pages = get_region_halland_tree_first_level())
             @if(isset($first_level_pages) && !empty($first_level_pages))
-                <ul>
+                <ul aria-labelledby="{{ $id3 }}">
                     @foreach($first_level_pages as $first_level_page)
                         @if($first_level_page->active === true)
                             <li>
@@ -58,8 +64,8 @@
         </div>
 
         <div class="left-align col col-12 sm-col-12 md-col-3 lg-col-3">
-            <p class="h2 pt3">Andra webbplatser</p>
-            <ul>
+            <p class="h2 pt3" id="{{ $id4 }}">Andra webbplatser</p>
+            <ul aria-labelledby="{{ $id4 }}">
                 <li><a href="https://www.1177.se/Halland">1177 Vårdguiden</a></li>
                 <li><a href="https://vardgivare.regionhalland.se/">Webbplats för vårdgivare</a></li>
                 <li><a href="https://www.hallandstrafiken.se/">Hallandstrafiken</a></li>
