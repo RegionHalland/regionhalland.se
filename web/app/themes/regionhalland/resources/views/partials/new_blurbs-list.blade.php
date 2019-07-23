@@ -9,7 +9,7 @@
                         <img src="{!! $blurbs['image_url'] !!}" style="height:100%;">
                     </div>
                     <div class="rh-blurb__description mx2 pt2">
-                        <h3 style="line-height: 1.3"><a href="{{ $blurbs['link_url'] }}" target="{{ $blurbs['link_target'] }}" style="color:black;">{{ $blurbs['link_title'] }}</a></h3>
+                        <h2 class="h3" style="line-height: 1.3"><a href="{{ $blurbs['link_url'] }}" target="{{ $blurbs['link_target'] }}" style="color:black;">{{ $blurbs['link_title'] }}</a></h2>
                         <p style="line-height: 1.4">{{ $blurbs['post_content'] }}</p>
                     </div>
                 </div>
