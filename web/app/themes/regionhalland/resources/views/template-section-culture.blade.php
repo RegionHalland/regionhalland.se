@@ -58,7 +58,7 @@
         @endif
 
         @php($myBlurbs = get_region_halland_acf_main_post_page_links_blurbs(1571))
-        @if(isset($myBlurbs))
+        @if($myBlurbs)
             <div class="center" style="max-width: 1440px;">
                 <ul class="clearfix center mb2 mt2" style="max-width:1440px;">
                     @foreach ($myBlurbs as $blurbs)

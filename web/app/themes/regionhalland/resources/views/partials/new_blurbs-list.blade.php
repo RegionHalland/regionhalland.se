@@ -1,5 +1,5 @@
 @php($myBlurbs = get_region_halland_acf_main_post_page_links_blurbs())
-@if(isset($myBlurbs))
+@if($myBlurbs)
     <div class="center" style="max-width: 1440px;">
         <ul class="clearfix center mb2 mt2" aria-label="Puffar" style="max-width:1440px;">
         @foreach ($myBlurbs as $blurbs)
