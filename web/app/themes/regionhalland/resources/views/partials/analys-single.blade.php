@@ -17,7 +17,33 @@
 </div>
 
 <h2 class="mb3" style="border-bottom: 2px solid #004890;">({!! $myData['name'] !!})</h2>
+
+
+</di class="clearfix">
+    @if($myData['vas-order-code'])
+        <div class="col col-12 md-col-6">
+            <strong>VAS Provkod:</strong>
+        </div>
+        <div class="col col-12 md-col-6">
+            {!! $myData['vas-order-code'] !!}
+        </div>
+    @endif
+    @if($myData['vas-order-code'])
+        <div class="col col-12 md-col-6">
+            <strong>Analyserande lab:</strong>
+        </div>
+        <div class="col col-12 md-col-6">
+            {!! $myData['laboratory-name'] !!}<br>
+            {!! $myData['laboratory-description'] !!}<br>
+            @if($myData['laboratory-link-url'])
+                <a href="{!! $myData['laboratory-link-url'] !!}" target="_blank">{!! $myData['laboratory-link-text'] !!}</a>
+            @endif
+        </div>
+    @endif
+    </div>
+
 <table class="rh-table-listing--hr mb3" style="width:100%; line-height: 1.4">
+    {{--
 @if($myData['vas-order-code'])
 <tr class="rh-table-listing__row">
     <td class="rh-table-listing_cell--hr"><strong>VAS Provkod:</strong></td>
@@ -26,7 +52,11 @@
     </td>
 </tr>
 @endif
+--}}
+    {{--
 @if($myData['laboratory-name'])
+
+
 <tr class="rh-table-listing__row">
     <td class="rh-table-listing_cell--hr"><strong>Analyserande lab:</strong></td>
     <td class="rh-table-listing_cell--hr">
@@ -38,6 +68,7 @@
      </td>
 </tr>
 @endif
+--}}
 @if($myData['referral-name'])
 <tr class="rh-table-listing__row">
     <td class="rh-table-listing_cell--hr"><strong>Remiss:</strong></td>
