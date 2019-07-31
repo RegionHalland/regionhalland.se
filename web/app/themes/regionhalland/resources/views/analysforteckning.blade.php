@@ -98,6 +98,8 @@
                                 <?php } ?>
                             </div>
                             <a href="./?all=1">Lista alla analyser</a>
+
+                            <h2>Lista endast analyser från vald specilitet</h2>
                             <form name="affiliation">
                                 <select name="sid" method="get" class="mt2" style="height: 5ex; font-size: 1em;">
                                     <option value="" disabled selected>Välj specialitet</option>
