@@ -79,25 +79,6 @@
                         
                         <p>{{ $post->post_content }}</p>
 
-
-
-                        <form name="affiliation">
-                            <select name="sid" method="get" class="mt2" style="height: 5ex; font-size: 1em;">
-                                <option value="" disabled selected>Välj specialitet</option>
-                                @php($myAff = get_region_halland_api_analysforteckning_affiliations())
-                                @php($mySelected = "")
-                                @foreach ($myAff as $aff)
-                                    @if($aff['0'] == $sid)
-                                        @php($mySelected = "selected")
-                                    @endif
-                                    <option {!! $mySelected !!} value="{!! $aff['0'] !!}">{!! $aff['1'] !!}</option>
-                                @php($mySelected = "")
-                                @endforeach
-                            </select>
-                            <input class="ml1 rh-button rh-button--primary" type='submit' value="Visa"/>
-                        </form>
-                        
-
                             <div class="mt3 rh-filter-alphabet mb4" style="max-width: 54em;">
                                 @php($myActive = 0)
                                 <?php $strAllLetters = "a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u,v,x,y,z,Å,Ä,Ö";
@@ -117,6 +98,21 @@
                                 <?php } ?>
                             </div>
                             <a href="./?all=1">Lista alla analyser</a>
+                            <form name="affiliation">
+                                <select name="sid" method="get" class="mt2" style="height: 5ex; font-size: 1em;">
+                                    <option value="" disabled selected>Välj specialitet</option>
+                                    @php($myAff = get_region_halland_api_analysforteckning_affiliations())
+                                    @php($mySelected = "")
+                                    @foreach ($myAff as $aff)
+                                        @if($aff['0'] == $sid)
+                                            @php($mySelected = "selected")
+                                        @endif
+                                        <option {!! $mySelected !!} value="{!! $aff['0'] !!}">{!! $aff['1'] !!}</option>
+                                        @php($mySelected = "")
+                                    @endforeach
+                                </select>
+                                <input class="ml1 rh-button rh-button--primary" type='submit' value="Visa"/>
+                            </form>
                             @if($type == 1)
                                 @include('partials.analys-single')
                             @endif
