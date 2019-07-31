@@ -78,7 +78,7 @@
                         </form>
                         
                         <p>{{ $post->post_content }}</p>
-                        <a href="./?all=1">Lista alla analyser</a>
+
 
 
                         <form name="affiliation">
@@ -116,6 +116,7 @@
                                 @php($myActive = 0)
                                 <?php } ?>
                             </div>
+                            <a href="./?all=1">Lista alla analyser</a>
                             @if($type == 1)
                                 @include('partials.analys-single')
                             @endif
