@@ -21,19 +21,19 @@
 
 </di class="clearfix">
     @if($myData['vas-order-code'])
-        <div class="col col-12 md-col-4">
+        <div class="col col-12 md-col-4 mb2">
             <strong>VAS Provkod:</strong>
         </div>
-        <div class="col col-12 md-col-8">
+        <div class="col col-12 md-col-8 mb2">
             {!! $myData['vas-order-code'] !!}
         </div>
         <hr class="my2">
     @endif
     @if($myData['laboratory-name'])
-        <div class="col col-12 md-col-4">
+        <div class="col col-12 md-col-4 mb2">
             <strong>Analyserande lab:</strong>
         </div>
-        <div class="col col-12 md-col-8">
+        <div class="col col-12 md-col-8 mb2">
             {!! $myData['laboratory-name'] !!}<br>
             {!! $myData['laboratory-description'] !!}<br>
             @if($myData['laboratory-link-url'])
@@ -43,10 +43,10 @@
         <hr class="my2">
     @endif
     @if($myData['referral-name'])
-        <div class="col col-12 md-col-4">
+        <div class="col col-12 md-col-4 mb2">
             <strong>Remiss:</strong>
         </div>
-        <div class="col col-12 md-col-8">
+        <div class="col col-12 md-col-8 mb2">
             {!! $myData['referral-name'] !!}<br>
             {!! $myData['referral-description'] !!}<br>
             @if($myData['referral-link-url'])
@@ -59,10 +59,10 @@
         <hr class="my2">
     @endif
     @if($myData['sampling-material-name'])
-        <div class="col col-12 md-col-4">
+        <div class="col col-12 md-col-4 mb2">
             <strong>Provtagningsmaterial:</strong>
         </div>
-        <div class="col col-12 md-col-8">
+        <div class="col col-12 md-col-8 mb2">
             {!! $myData['sampling-material-name'] !!}<br>
             {!! $myData['sampling-material-description'] !!}<br>
             @if($myData['sampling-material-link-url'])
@@ -75,10 +75,10 @@
         <hr class="my2">
     @endif
     @if($myData['informations-text-provtagning'])
-        <div class="col col-12 md-col-4">
+        <div class="col col-12 md-col-4 mb2">
             <strong>Provtagning:</strong>
         </div>
-        <div class="col col-12 md-col-8">
+        <div class="col col-12 md-col-8 mb2">
             {!! $myData['informations-text-provtagning'] !!}
         </div>
         <hr class="my2">
