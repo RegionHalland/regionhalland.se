@@ -27,7 +27,7 @@
         <div class="col col-12 md-col-8">
             {!! $myData['vas-order-code'] !!}
         </div>
-        <hr>
+        <hr class="my2">
     @endif
     @if($myData['laboratory-name'])
         <div class="col col-12 md-col-4">
@@ -40,7 +40,7 @@
                 <a href="{!! $myData['laboratory-link-url'] !!}" target="_blank">{!! $myData['laboratory-link-text'] !!}</a>
             @endif
         </div>
-        <hr>
+        <hr class="my2">
     @endif
     </div>
 
