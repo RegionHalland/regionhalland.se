@@ -58,6 +58,13 @@
             {{-- Main Content --}}
             <main class="rh-analysis-overview pl2 pr2 pt3 pb1 col col-12 sm-col-12 md-col-12 lg-col-9" id="main">
 
+                <article class="rh-article">
+                    @if(get_region_halland_acf_page_ingress())
+                        <p><strong>{{ get_region_halland_acf_page_ingress() }}</strong></p>
+                    @endif
+                    {!! the_content() !!}
+                </article>
+
                 <div class="center px3" id="main">
                     <div class="left-align pt3">
                         <h1 class="mb3">{{ the_title() }}</h1>
