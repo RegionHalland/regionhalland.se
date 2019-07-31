@@ -66,7 +66,7 @@
                             @if(get_region_halland_acf_page_ingress())
                                 <p><strong>{{ get_region_halland_acf_page_ingress() }}</strong></p>
                             @endif
-                            {!! the_content() !!}
+                                <p>{{ $post->post_content }}</p>
                         </article>
 
                         <form name="myForm" method="get" action="./">
@@ -83,8 +83,6 @@
                                 </button>
                             </div>
                         </form>
-                        
-                        <p>{{ $post->post_content }}</p>
 
                             <div class="mt3 rh-filter-alphabet mb2" style="max-width: 54em;">
                                 @php($myActive = 0)
