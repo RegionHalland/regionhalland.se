@@ -71,7 +71,7 @@
                             ?>
                             <div class="rh-search-field">
                                 <input type="text" name="q" class="rh-search-term rh-search-term-larger" placeholder="Skriv din sökning här" value="<?=$strSearchText?>" aria-label="Sökruta" style="height: 7ex; max-width:60em;">
-                                <button type="submit" class="rh-search-button rh-search-button-larger" style="background-color: #378A30; color:white; height: 7ex;">
+                                <button type="submit" class="rh-search-button rh-search-button-larger" style="background-color: #004890; color:white; height: 7ex;">
                                 Sök
                                 </button>
                             </div>
