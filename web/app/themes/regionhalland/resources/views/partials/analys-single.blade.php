@@ -28,7 +28,7 @@
             {!! $myData['vas-order-code'] !!}
         </div>
     @endif
-    @if($myData['vas-order-code'])
+    @if($myData['laboratory-name'])
         <div class="col col-12 md-col-6">
             <strong>Analyserande lab:</strong>
         </div>
