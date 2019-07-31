@@ -62,7 +62,7 @@
                     <div class="left-align pt3">
                         <h1 class="mb3">{{ the_title() }}</h1>
 
-                        <article class="rh-article">
+                        <article class="rh-article mb2">
                             @if(get_region_halland_acf_page_ingress())
                                 <p><strong>{{ get_region_halland_acf_page_ingress() }}</strong></p>
                             @endif
