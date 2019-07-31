@@ -79,7 +79,7 @@
                         
                         <p>{{ $post->post_content }}</p>
 
-                            <div class="mt3 rh-filter-alphabet m1" style="max-width: 54em;">
+                            <div class="mt3 rh-filter-alphabet mb2" style="max-width: 54em;">
                                 @php($myActive = 0)
                                 <?php $strAllLetters = "a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u,v,x,y,z,Å,Ä,Ö";
                                     $arrAllLetters = explode(",",$strAllLetters);
@@ -99,7 +99,7 @@
                             </div>
                             <a href="./?all=1">Lista alla analyser</a>
 
-                            <h2>Lista endast analyser från vald specilitet</h2>
+                            <h2 class="mt3">Lista endast analyser från vald specilitet</h2>
                             <form name="affiliation">
                                 <select name="sid" method="get" class="mt2" style="height: 5ex; font-size: 1em;">
                                     <option value="" disabled selected>Välj specialitet</option>
