@@ -21,24 +21,26 @@
 
 </di class="clearfix">
     @if($myData['vas-order-code'])
-        <div class="col col-12 md-col-6">
+        <div class="col col-12 md-col-4">
             <strong>VAS Provkod:</strong>
         </div>
-        <div class="col col-12 md-col-6">
+        <div class="col col-12 md-col-8">
             {!! $myData['vas-order-code'] !!}
         </div>
+        <hr>
     @endif
     @if($myData['laboratory-name'])
-        <div class="col col-12 md-col-6">
+        <div class="col col-12 md-col-4">
             <strong>Analyserande lab:</strong>
         </div>
-        <div class="col col-12 md-col-6">
+        <div class="col col-12 md-col-8">
             {!! $myData['laboratory-name'] !!}<br>
             {!! $myData['laboratory-description'] !!}<br>
             @if($myData['laboratory-link-url'])
                 <a href="{!! $myData['laboratory-link-url'] !!}" target="_blank">{!! $myData['laboratory-link-text'] !!}</a>
             @endif
         </div>
+        <hr>
     @endif
     </div>
 
