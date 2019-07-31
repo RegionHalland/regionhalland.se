@@ -47,8 +47,6 @@
             <strong>Remiss:</strong>
         </div>
         <div class="col col-12 md-col-8">
-            {!! $myData['vas-order-code'] !!}
-        </div>
             {!! $myData['referral-name'] !!}<br>
             {!! $myData['referral-description'] !!}<br>
             @if($myData['referral-link-url'])
@@ -57,6 +55,7 @@
             @if($myData['links-exist-referral'] == 1)
                 <br><a href="{!! $myData['links-link-url-referral'] !!}" target="_blank">{!! $myData['links-link-text-referral'] !!}</a>
             @endif
+        </div>
         <hr class="my2">
     @endif
     @if($myData['sampling-material-name'])
