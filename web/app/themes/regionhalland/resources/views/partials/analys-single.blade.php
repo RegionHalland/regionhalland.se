@@ -42,6 +42,49 @@
         </div>
         <hr class="my2">
     @endif
+    @if($myData['referral-name'])
+        <div class="col col-12 md-col-4">
+            <strong>Remiss:</strong>
+        </div>
+        <div class="col col-12 md-col-8">
+            {!! $myData['vas-order-code'] !!}
+        </div>
+            {!! $myData['referral-name'] !!}<br>
+            {!! $myData['referral-description'] !!}<br>
+            @if($myData['referral-link-url'])
+                <br><a href="{!! $myData['referral-link-url'] !!}" target="_blank">{!! $myData['referral-link-text'] !!}</a>
+            @endif
+            @if($myData['links-exist-referral'] == 1)
+                <br><a href="{!! $myData['links-link-url-referral'] !!}" target="_blank">{!! $myData['links-link-text-referral'] !!}</a>
+            @endif
+        <hr class="my2">
+    @endif
+    @if($myData['sampling-material-name'])
+        <div class="col col-12 md-col-4">
+            <strong>Provtagningsmaterial:</strong>
+        </div>
+        <div class="col col-12 md-col-8">
+            {!! $myData['sampling-material-name'] !!}<br>
+            {!! $myData['sampling-material-description'] !!}<br>
+            @if($myData['sampling-material-link-url'])
+                <br><a href="{!! $myData['sampling-material-link-url'] !!}" target="_blank">{!! $myData['sampling-material-link-text'] !!}</a>
+            @endif
+            @if($myData['links-exist-provtagning'] == 1)
+                <br><a href="{!! $myData['links-link-url-provtagning'] !!}" target="_blank">{!! $myData['links-link-text-provtagning'] !!}</a>
+            @endif
+        </div>
+        <hr class="my2">
+    @endif
+    @if($myData['informations-text-provtagning'])
+        <div class="col col-12 md-col-4">
+            <strong>Provtagning:</strong>
+        </div>
+        <div class="col col-12 md-col-8">
+            {!! $myData['informations-text-provtagning'] !!}
+        </div>
+        <hr class="my2">
+    @endif
+
     </div>
 
 <table class="rh-table-listing--hr mb3" style="width:100%; line-height: 1.4">
@@ -71,6 +114,8 @@
 </tr>
 @endif
 --}}
+
+   {{--
 @if($myData['referral-name'])
 <tr class="rh-table-listing__row">
     <td class="rh-table-listing_cell--hr"><strong>Remiss:</strong></td>
@@ -86,6 +131,9 @@
     </td>
 </tr>
 @endif
+--}}
+
+    {{--
 @if($myData['sampling-material-name'])
 <tr class="rh-table-listing__row">
     <td class="rh-table-listing_cell--hr"><strong>Provtagningsmaterial:</strong></td>
@@ -101,6 +149,8 @@
     </td>
 </tr>
 @endif
+--}}
+{{--
 @if($myData['informations-text-provtagning'])
 <tr class="rh-table-listing__row">
     <td class="rh-table-listing_cell--hr"><strong>Provtagning:</strong></td>
@@ -109,6 +159,8 @@
     </td>
 </tr>
 @endif
+--}}
+
 @if($myData['informations-text-take-care'])
 <tr class="rh-table-listing__row">
     <td class="rh-table-listing_cell--hr"><strong>Omhändertagande:</strong></td>
