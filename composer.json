@@ -73,14 +73,6 @@
     },
     {
       "type": "vcs",
-      "url": "https://github.com/RegionHalland/region-halland-nav-sidebar.git"
-    },
-    {
-      "type": "vcs",
-      "url": "https://github.com/RegionHalland/region-halland-nav-site.git"
-    },
-    {
-      "type": "vcs",
       "url": "https://github.com/RegionHalland/region-halland-news-archive-taxonomi-category.git"
     },
     {
@@ -209,8 +201,6 @@
     "regionhalland/region-halland-find-on-page": "1.1.0",
     "regionhalland/region-halland-mixed-functions": "1.1.0",
     "regionhalland/region-halland-page-children": "1.1.0",
-    "regionhalland/region-halland-nav-sidebar": "1.0.1",
-    "regionhalland/region-halland-nav-site": "1.0.1",
     "regionhalland/region-halland-news-archive-taxonomi-category": "1.3.2",
     "regionhalland/region-halland-acf-page-kulturprogram": "2.1.1",
     "regionhalland/region-halland-acf-options-page-site-message": "1.3.1",

@@ -47,19 +47,12 @@
 {{-- Container --}}
 <div class="mx-auto clearfix" style="max-width: 1440px">
 	<div>
-		<div class="{{ isset($nav_sidebar) && !empty($nav_sidebar) ? 'justify-start' : 'justify-between' }}">
+		<div class="justify-between">
 
 		{{-- Sidebar --}}
-		@if(function_exists('get_region_halland_nav_sidebar'))
-			@php($nav_sidebar = get_region_halland_nav_sidebar())
-			@if(isset($nav_sidebar) && !empty($nav_sidebar))
-				<aside class="rh-xpad--left pt3 pb2 col col-12 sm-col-12 md-col-12 lg-col-3">
-					{{-- Sidebar Navigation --}}
-					@include('partials.nav-sidebar')
-					{{-- Sidebar Navigation END--}}
-				</aside>
-			@endif
-		@endif
+		<aside class="rh-xpad--left pt3 pb2 col col-12 sm-col-12 md-col-12 lg-col-3">
+			@include('partials.nav-sidebar')
+		</aside>
 		{{-- Sidebar END --}}
 
 		{{-- Main Content --}}
