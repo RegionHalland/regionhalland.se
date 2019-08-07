@@ -30,7 +30,8 @@
 				</article>
 
 				{{-- HSA --}}
-				@include('partials.contact-card')
+				@include('partials.contact-card-person')
+				@include('partials.contact-card-enhet')
 				
 				{{-- Author --}}
 				<div class="pt4">
