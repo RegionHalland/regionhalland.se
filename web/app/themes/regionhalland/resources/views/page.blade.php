@@ -11,48 +11,46 @@
 		<aside class="rh-xpad--left pt3 pb2 col col-12 sm-col-12 md-col-12 lg-col-3">
 			@include('partials.nav-sidebar')
 		</aside>
-		{{-- Sidebar END --}}
 
 		{{-- Main Content --}}
 		<main class="pl3 pr2 pt3 pb1 col col-12 sm-col-12 md-col-12 lg-col-6" id="main">
+
 			@while(have_posts()) @php(the_post())
 				
+				{{-- Prepare The Content --}}
+				@php(get_region_halland_prepare_the_content())
+				
+				{{-- Title --}}
 				<h1>{{ the_title() }}</h1>
 				
 				{{-- Content --}}
-				@if(function_exists('get_region_halland_prepare_the_content'))
-					@php(get_region_halland_prepare_the_content())
-				@endif
 				<article class="rh-article">
 					<p><strong>{{ get_region_halland_acf_page_ingress() }}</strong></p>
 					{!! the_content() !!}
 				</article>
-				{{-- Content END --}}
 
 				{{-- HSA --}}
-					@include('partials.contact-card')
-				{{-- HSA END --}}
+				@include('partials.contact-card')
 				
 				{{-- Author --}}
 				<div class="pt4">
 					@include('partials.author-info')
 				</div>
-				{{-- Author END --}}
+				
+				{{-- Feedback --}}
 				@include('partials.feedback')
 
 			@endwhile
 
 		</main>
-		{{-- Main Content END --}}
 
+		{{-- Content Navigation --}}
 		<aside class="pt4 col col-12 sm-col-12 md-col-12 lg-col-3">
-			{{-- Content Navigation --}}
 			@include('partials.content-nav')
-			{{-- Content Navigation END --}}
 		</aside>
 
 		</div>
 	</div>
 </div>
-{{-- Container END --}}
+
 @endsection
