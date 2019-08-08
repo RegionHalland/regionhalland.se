@@ -105,6 +105,8 @@ git checkout v1.0.0
 ## Versionhistorik
 
 ### 1.6.0
+- Flyttat article till en egen partial
+- Delat upp personer/enheter till respektive partial
 - Ny plugin med funktioner för sajtens metadata
 - Viktigt meddelande, ny funktion för att kontrollera om det finns en länk
 - Ny kontroll om det finns data för personer/enheter
