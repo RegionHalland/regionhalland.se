@@ -17,18 +17,12 @@
 
 			@while(have_posts()) @php(the_post())
 				
-				{{-- Prepare The Content --}}
-				@php(get_region_halland_prepare_the_content())
-				
 				{{-- Title --}}
 				<h1>{{ the_title() }}</h1>
 				
 				{{-- Content --}}
-				<article class="rh-article">
-					<p><strong>{{ get_region_halland_acf_page_ingress() }}</strong></p>
-					{!! the_content() !!}
-				</article>
-
+				@include('partials.article')
+				
 				{{-- HSA --}}
 				@include('partials.contact-card-person')
 				@include('partials.contact-card-enhet')
