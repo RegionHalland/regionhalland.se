@@ -1,7 +1,7 @@
 @if(!is_front_page())
     @php($breadcrumbs = get_region_halland_breadcrumbs())
     @if(isset($breadcrumbs))
-		<nav aria-label="Breadcrumbs" class="rh-breadcrumbs">
+		<nav aria-label="Breadcrumbs">
 			<div class="rh-breadcrumbs hidden-sm">
 			    <ol class="rh-breadcrumb-group pl3 mx-auto" style="max-width:1440px;">
 					@foreach ($breadcrumbs as $breadcrumb)
