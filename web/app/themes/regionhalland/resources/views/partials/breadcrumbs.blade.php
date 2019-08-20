@@ -1,20 +1,20 @@
 @if(!is_front_page())
     @php($breadcrumbs = get_region_halland_breadcrumbs())
     @if(isset($breadcrumbs))
-		<nav>
+		<nav aria-label="Breadcrumbs" class="rh-breadcrumbs">
 			<div class="rh-breadcrumbs hidden-sm">
-				<ul class="rh-breadcrumb-group pl3 mx-auto" style="max-width:1440px;">
+			    <ol class="rh-breadcrumb-group pl3 mx-auto" style="max-width:1440px;">
 					@foreach ($breadcrumbs as $breadcrumb)
-						<li class="rh-breadcrumb-group-item" @if ($loop->last) aria-current="page" @endif itemscope itemprop="itemListElement" itemtype="http://schema.org/ListItem">
+						<li class="rh-breadcrumbs__item" @if ($loop->last) aria-current="page" @endif itemscope itemprop="itemListElement" itemtype="http://schema.org/ListItem">
 							@if ($breadcrumb['url'])
-								<a class="rh-breadcrumb-group-link" href="{{ $breadcrumb['url'] }}">{!! $breadcrumb['name'] !!}</a>
+								<a class="rh-breadcrumbs__link" href="{{ $breadcrumb['url'] }}">{!! $breadcrumb['name'] !!}</a>
 							@else
 								{!! $breadcrumb['name'] !!}
 							@endif
 							<meta itemprop="position" content="{{ $loop->iteration }}">
 						</li>
 					@endforeach
-				</ul>
+				</ol>
 			</div>
 		</nav>
     @endif
