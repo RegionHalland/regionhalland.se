@@ -72,6 +72,9 @@ git checkout v1.0.0
 
 ## Versionhistorik
 
+### 1.7.0
+- Lagt till fältet "place" för enheter
+
 ### 1.6.0
 - Flyttat article till en egen partial
 - Delat upp personer/enheter till respektive partial
