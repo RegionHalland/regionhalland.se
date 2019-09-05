@@ -27,7 +27,7 @@
                 <ul>
                     @foreach ($myEnhetData['visiting_hours'] as $visiting)
                         <li>
-                            {{ $visiting['day'] }} {{ $visiting['openingTime'] }} - {{ $visiting['closingTime'] }}
+                            {{ $visiting['day'] }} {{ $visiting['openingTime'] }} - {{ $visiting['closingTime'] }} {{ $visiting['place'] }}
                         </li>
                     @endforeach
                 </ul>

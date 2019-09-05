@@ -1,6 +1,6 @@
 <!doctype html>
 
-<html data-server="{!! env('SITE_SERVER') !!}" data-version="1.6.0" style="height: 101%;" @php(language_attributes())>
+<html data-server="{!! env('SITE_SERVER') !!}" data-version="1.7.0" style="height: 101%;" @php(language_attributes())>
 
 @include('partials.head')
 
