@@ -4,6 +4,12 @@
  *. https://github.com/RegionHalland/styleguide/
  *
 **/
+
+
+footer a {
+  line-height: 44px;
+}
+
 b {
   font-weight: bold;
 }
