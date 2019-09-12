@@ -11,7 +11,7 @@
 	<meta name="apple-mobile-web-app-title" content="Region Halland" />
 	<meta name="application-name" content="Region Halland" />
 	<meta name="msapplication-TileColor" content="#ffffff" />
-	<meta name="msapplication-config" href="{!! env('WP_HOME') !!}/include/favicons/browserconfig.xml" />
+	<meta name="msapplication-config" content="{!! env('WP_HOME') !!}/include/favicons/browserconfig.xml" />
 	<meta name="theme-color" content="#ffffff" />
 	<meta name="description" content="{{ get_region_halland_meta_data_region_halland_description() }}" />
 	<title>{{ get_region_halland_meta_data_region_halland_title() }}</title>
