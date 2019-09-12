@@ -162,12 +162,12 @@
     });
 
 </script>
-<script type="text/javascript">var _baTheme=0, _baMode='Aktivera Talande Webb', _baUseCookies=true, _baHideOnLoad=true;</script>
+<script>var _baTheme=0, _baMode='Aktivera Talande Webb', _baUseCookies=true, _baHideOnLoad=true;</script>
 
 <!-- How it looked before -->
 <!-- <script type="text/javascript" src="//www.browsealoud.com/plus/scripts/ba.js"></script> -->
 
-<script type="text/javascript" src="{!! env('WP_HOME') !!}/include/aloud/ba.js"></script>
+<script src="{!! env('WP_HOME') !!}/include/aloud/ba.js"></script>
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-1181886-12"></script>
