@@ -17,7 +17,7 @@
 	<title>{{ get_region_halland_meta_data_region_halland_title() }}</title>
 	<link rel="stylesheet" type="text/css" href="{!! env('WP_HOME') !!}/include/alicdn/font_o5hd5vvqpoqiwwmi_190529.css">
 	{{-- <link href="{!! env('WP_HOME') !!}/styleguide4.1.0/css/components.css" rel="stylesheet"/> --}}
-	<link rel="stylesheet" href="{!! env('WP_HOME') !!}/include/style/regionhalland.1.0.0-5.1.0.css" type="text/css" media="all" />
+	<link rel="stylesheet" href="{!! env('WP_HOME') !!}/include/style/regionhalland.1.1.0-5.1.0.css" type="text/css" media="all" />
 	<link rel="stylesheet" href="{!! env('WP_HOME') !!}/include/style/development.css" type="text/css" media="all" />
 	{{-- <link href="https://unpkg.com/basscss@8.0.2/css/basscss.min.css" rel="stylesheet" /> --}}
 	<style>
