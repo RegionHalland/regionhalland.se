@@ -2,7 +2,7 @@
     <a href="/"><img class="" src="/include/img/rh-logo.jpg" alt="Länk till förstasidan"></a>
     {{-- Utilities --}}
     <div class="rh-toplinks">
-        <ul class="rh-toplinks-nav" aria-label="Genvägar i sidhuvudet" role="group">
+        <ul class="rh-toplinks-nav" title="Genvägar i sidhuvudet">
             <li>
                 <a onclick="toggleBar();" href="#" class="rh-round-button icon-volume-1" title="Aktivera Talande Webb"></a>
                 <a id="bapluslogo" class="rh-toplinks-nav-link logo" title="Aktivera Talande Webb" onclick="toggleBar();" href="#">Talande Webb</a>
