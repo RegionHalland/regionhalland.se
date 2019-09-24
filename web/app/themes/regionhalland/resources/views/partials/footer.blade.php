@@ -41,7 +41,7 @@
             <ul aria-labelledby="{{ $id2 }}">
                 <li><a href="/om-region-halland/om-webbplatsen/">Information om cookies</a></li>
                 <li><a href="/om-region-halland/dataskydd/">Behandling av personuppgifter</a></li>
-                <li><a href="/om-region-halland/om-webbplatsen/webbplatsens-tillganglighet/">Tillgänglighetsredogörelse</a></li>
+                <li><a href="/om-region-halland/om-webbplatsen/webbplatsens-tillganglighet/">Redogörelse för tillgänglighet</a></li>
             </ul>
 
             <p class="h2 pt3" id="{{ $id3 }}">Ämnesområden</p>
