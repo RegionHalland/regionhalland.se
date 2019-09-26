@@ -72,6 +72,9 @@ git checkout v1.0.0
 
 ## Versionhistorik
 
+### 1.8.0
+- Småfixar kring tillgänglighet
+
 ### 1.7.0
 - Lagt till fältet "place" för enheter
 
