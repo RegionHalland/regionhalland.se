@@ -7,7 +7,9 @@
 	<span class="rh-search-elements-inline pb1">Publicerad: 
 		<time itemprop="datePublished" datetime="{{ $post['date'] }}">{{ $post['date'] }}</time>
 	</span>
-	<p class="rh-search-elements-description">{{ $post['ingress'] }}</p>
+	@if($post['ingress'])
+		<p class="rh-search-elements-description">{{ $post['ingress'] }}</p>
+	@endif
 	<p class="rh-search-elements-description">
 		{{ html_entity_decode(wp_trim_words($post['content'], 60, '...')) }}
 	</p>
